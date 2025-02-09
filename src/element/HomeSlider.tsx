@@ -13,11 +13,7 @@ import {
 import IMAGES from "../component/theme";
 import { useRef, useState } from "react";
 
-const swiperDataBlog = [
-  { image: IMAGES.MainSlider4 },
-  { image: IMAGES.MainSlider5 },
-  { image: IMAGES.MainSlider1 },
-];
+const swiperDataBlog = [{ image: IMAGES.MainSlider4 }];
 
 const thumSliderData = [{ number: "01" }, { number: "02" }, { number: "03" }];
 
@@ -55,36 +51,39 @@ const Index3HomeSlider = () => {
               <div className="silder-content">
                 <div className="inner-content">
                   <h1 className="title">
-                    <span className="text-primary">Ideal Home</span> THE MODERN
-                    ART OF SIMPLICITY
+                    <span className="text-primary">Ideal Factory</span> The most
+                    trusted home upgrade provider in the UAE.
                   </h1>
                   <p className="m-b30">
-                    Morbi pharetra fermentum facilisis. Aenean eleifend quam
-                    ante, at luctus turpis rhoncus quis. Quisque in est luctus,
-                    blandit lorem quis, placerat augue.
+                    Outdated interiors? Looking to transform your space?{" "}
+                    <span>
+                      We partner with selected homeowners seeking extraordinary
+                      results with high-quality home solutions.{" "}
+                    </span>
                   </p>
                   <Link
                     href="about-us"
                     className="btn shadow-primary btn-primary"
                   >
-                    READ MORE <i className="m-l10 fas fa-caret-right" />
+                    Request a Quote Today!{" "}
+                    <i className="m-l10 fas fa-caret-right" />
                   </Link>
                 </div>
               </div>
             </SwiperSlide>
           ))}
-          <div className="swiper-pagination swiper-pagination-white"></div>
-          <div className="slider-one-pagination">
+          {/* <div className="swiper-pagination swiper-pagination-white"></div> */}
+          {/* <div className="slider-one-pagination">
             <div className="btn-prev swiper-button-home-prev swiper-button-white c-pointer">
               <i className="fas fa-chevron-left" />
             </div>
             <div className="btn-next swiper-button-home-next swiper-button-white c-pointer">
               <i className="fas fa-chevron-right" />
             </div>
-          </div>
+          </div> */}
         </Swiper>
 
-        <Swiper
+        {/* <Swiper
           slidesPerView={3}
           spaceBetween={0}
           freeMode={true}
@@ -118,7 +117,7 @@ const Index3HomeSlider = () => {
               </div>
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> */}
         <div className="scroll-down">Scroll Down</div>
       </div>
     </>
