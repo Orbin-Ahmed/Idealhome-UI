@@ -42,19 +42,25 @@ const AboutUs = () => {
           <div className="year-exp shadow m-b30">
             <h2 className="year text-primary">20+</h2>
             <h4 className="text">
-              YEARS OF <span className="text-primary">EXPERIENCE</span>
+              YEARS OF <span className="text-primary">EXPERIENCE</span> |
+              <span> Partnered with Schúco, Germany's Innovation Leader</span>
             </h4>
           </div>
           <p className="m-b15">
-            At Ideal Factory, we blend innovation and craftsmanship to deliver
-            high-performance UPVC doors, windows, and luxury joinery tailored to
-            the UAE&apos;s unique architectural demands. From Dubai&apos;s
-            modern skylines to Abu Dhabi&apos;s luxury villas, our solutions
-            combine heat-resistant UPVC technology, precision engineering, and
-            timeless design to elevate residential and commercial spaces.
+            At Ideal Factory, we combine German engineered precision from Schuco
+            with our decades of expertise to deliver high-performance UPVC
+            doors, windows, and luxury joinery. Designed to meet the UAE&apos;s
+            unique architectural demands, our solutions feature heat resistant
+            UPVC technology, timeless design, and unmatched craftsmanship,
+            transforming both residential and commercial spaces. From Abu
+            Dhabi&apos;s luxury villas to modern architectural masterpieces, we
+            elevate every project with innovation and quality.
           </p>
           <p className="m-b30"></p>
-          <Link href="/about-us" className="btn shadow-primary btn-primary">
+          <Link
+            href="/about-us"
+            className="btn shadow-primary btn-primary w-100 btn-quote"
+          >
             Request a Quote Today! <i className="m-l10 fas fa-caret-right" />
           </Link>
         </motion.div>

@@ -55,10 +55,12 @@ const Index3HomeSlider = () => {
                     trusted home upgrade provider in the UAE.
                   </h1>
                   <p className="m-b30">
-                    Outdated interiors? Looking to transform your space?{" "}
+                    Outdated interiors? Looking to transform your space? <br />
                     <span>
-                      We partner with selected homeowners seeking extraordinary
-                      results with high-quality home solutions.{" "}
+                      In collaboration with Schüco, Germany's leader in
+                      innovative building systems, we deliver extraordinary
+                      results with premium home solutions that combine
+                      cutting-edge technology and timeless design.{" "}
                     </span>
                   </p>
                   <Link
