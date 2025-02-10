@@ -2078,6 +2078,14 @@ textarea.form-control-lg {
 .form-check-inline .form-check-input ~ .invalid-feedback {
   margin-left: .5em; }
 
+.btn-quote {
+  font-size: 3rem !important;
+  justify-content: center;
+  font-weight: 500 !important;
+  font-family: "Oswald", sans-serif !important;
+  line-height: 1.2 !important;
+}
+
 .btn {
   display: inline-block;
   font-weight: 400;

@@ -63,9 +63,9 @@ const Index3HomeSlider = () => {
                   </p>
                   <Link
                     href="about-us"
-                    className="btn shadow-primary btn-primary"
+                    className="btn shadow-primary btn-primary w-100 btn-quote"
                   >
-                    Request a Quote Today!{" "}
+                    Request For Quote Today!{" "}
                     <i className="m-l10 fas fa-caret-right" />
                   </Link>
                 </div>
