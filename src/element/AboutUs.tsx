@@ -11,7 +11,7 @@ const AboutUs = () => {
     <div className="container">
       <div className="section-head style-1 text-center">
         <h2 className="title">
-          WELCOME TO <span className="text-primary">Ideal Factory</span>
+          WELCOME TO <span className="text-primary">IDEAL FACTORY</span>
         </h2>
         <div className="dz-separator style-1 text-primary"></div>
       </div>
