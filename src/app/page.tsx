@@ -81,7 +81,7 @@ export default function Home() {
         </section>
 
         {/* <!-- Team --> */}
-        <section
+        {/* <section
           className="content-inner section-title style-2 line-img"
           data-name="Our Team"
         >
@@ -98,7 +98,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* <!-- Testimonials --> */}
         <section
