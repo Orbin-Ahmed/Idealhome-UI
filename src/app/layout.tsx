@@ -7,6 +7,7 @@ import "../assets/vendor/swiper/swiper-bundle.min.css";
 import "../assets/css/common.css";
 import "../assets/css/skins.css";
 import "../assets/css/style.css";
+import "../assets/css/custom.css";
 import { ThemContaxt } from "@/component/ThemContaxt";
 import Script from "next/script";
 
