@@ -177,11 +177,11 @@ export const MenuList = [
 ];
 export const MenuList2 = [
   {
-    menu: "Services",
+    menu: "Products",
     className: "menu-down",
     child: [
-      { children: "Services", to: "/services" },
-      { children: "Services Details ", to: "/services-details" },
+      { children: "Schüco uPVC", to: "/services" },
+      { children: "Bespoke Joinery", to: "/services-details" },
     ],
   },
 

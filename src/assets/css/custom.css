@@ -1,5 +1,13 @@
 .btn-quote {
-    font-size: 2rem !important;
+    font-size: 1.75rem !important;
+    justify-content: center;
+    font-weight: 600 !important;
+    font-family: "Oswald", sans-serif !important;
+    line-height: 1.2 !important;
+  }
+
+  .btn-quote-2 {
+    font-size: 1.5rem !important;
     justify-content: center;
     font-weight: 600 !important;
     font-family: "Oswald", sans-serif !important;

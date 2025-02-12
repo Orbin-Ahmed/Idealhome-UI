@@ -53,24 +53,25 @@ const Index3HomeSlider = () => {
                 <div className="silder-content">
                   <div className="inner-content">
                     <h1 className="title">
-                      <span className="text-primary">Ideal Factory</span> The
-                      most trusted home upgrade provider in the UAE.
+                      {/* <span className="text-primary">Ideal Factory</span>{" "} */}
+                      Enhance Your Dream Villa with Premium Interiors and uPVC
+                      Solutions
                     </h1>
                     <p className="m-b30">
-                      Outdated interiors? Looking to transform your space?{" "}
+                      {/* Outdated interiors? Looking to transform your space?{" "} */}
                       <br />
                       <span>
-                        In collaboration with Schüco, Germany's leader in
-                        innovative building systems, we deliver extraordinary
-                        results with premium home solutions that combine
-                        cutting-edge technology and timeless design.{" "}
+                        Transform your new villa with German-engineered Schüco
+                        uPVC windows, Doors & bespoke joinery. Energy-efficient,
+                        durable, and tailored for UAE's climate. Free
+                        consultation!
                       </span>
                     </p>
                     <Link
                       href="about-us"
                       className="btn shadow-primary btn-primary w-100 btn-quote"
                     >
-                      REQUEST FOR A QUOTE TODAY{" "}
+                      Reserve Your Expert Design Consultation{" "}
                     </Link>
                   </div>
                 </div>

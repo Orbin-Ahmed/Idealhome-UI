@@ -36,8 +36,7 @@ const AboutUs = () => {
           className="col-lg-6 m-b30"
         >
           <h4 className="title">
-            Crafting Premium Architectural Solutions in the UAE: UPVC Excellence
-            & Bespoke Joinery
+            Bespoke Joinery and Premium uPVC Solutions for Your Dream Home
           </h4>
           <div className="year-exp shadow m-b30">
             <h2 className="year text-primary">20+</h2>
@@ -47,22 +46,26 @@ const AboutUs = () => {
             </h4>
           </div>
           <p className="m-b15">
-            At Ideal Factory, we combine German engineered precision from Schuco
-            with our decades of expertise to deliver high-performance UPVC
-            doors, windows, and luxury joinery. Designed to meet the UAE&apos;s
-            unique architectural demands, our solutions feature heat resistant
-            UPVC technology, timeless design, and unmatched craftsmanship,
-            transforming both residential and commercial spaces. From Abu
-            Dhabi&apos;s luxury villas to modern architectural masterpieces, we
-            elevate every project with innovation and quality.
+            At Ideal Factory, we specialize in precision-crafted joinery and
+            high-performance uPVC windows and doors. Partnering with Schüco,
+            Germany&apos;s leader in energy-efficient uPVC systems, we bring
+            German precision and UAE-tailored design to your home. Our solutions
+            offer superior thermal insulation, durability, and noise reduction,
+            ensuring luxury custom joinery and state-of-the-art window systems
+            designed for the UAE&apos;s climate.
+            <br />
+            <br />
+            Transform your villa with innovative craftsmanship, elegant
+            aesthetics, and seamless service from Ideal Factory. Experience the
+            perfect blend of efficiency, durability, and design
+            excellence—contact us today for a free consultation!
           </p>
           <p className="m-b30"></p>
           <Link
             href="/about-us"
-            className="btn shadow-primary btn-primary w-100 btn-quote"
+            className="btn shadow-primary btn-primary w-100 btn-quote-2"
           >
-            REQUEST FOR A QUOTE TODAY
-            {/* <i className="m-l10 fas fa-caret-right" /> */}
+            Reserve Your Expert Design Consultation
           </Link>
         </motion.div>
       </div>

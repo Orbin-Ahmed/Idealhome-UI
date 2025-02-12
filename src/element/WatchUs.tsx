@@ -6,28 +6,28 @@ import IMAGES from "../component/theme";
 
 const projectData = [
   {
-    name: "CONSULTATION & VISION",
+    name: "Consultation",
     number: "1",
     description:
-      "We start by understanding your unique needs angwision. Our experts work closely with you to design tailored solutions that align with your style and functional requirements.",
+      "Understand your style and needs to create tailored solutions.",
   },
   {
-    name: "PRECISION PLANNING",
+    name: "Design & Planning",
     number: "2",
     description:
-      "Using advanced tools and Schuco's cutting-edge technology, we create detailed plans and 3D renderings to bring your dream project to life before construction begins.",
+      "Visualize your space with advanced 3D designs and Schüco technology.",
   },
   {
-    name: "CRAFTSMANSHIP & INSTALLATION",
+    name: "Craftsmanship",
     number: "3",
     description:
-      "Our skilled team combines German-engineered precision with expert craftsmanship to deliver flawless installation of UPVC doors, windows, or bespoke joinery.",
+      "Deliver precision-crafted joinery and uPVC installations with premium materials.",
   },
   {
-    name: "SEE THE TRANSFORMATION",
+    name: "Transformation",
     number: "4",
     description:
-      "Watch our video to see how we turn your vision into reality. step by step, and discover the Ideal Factory difference.",
+      "Turn your dream home into reality with elegance and functionality.",
   },
 ];
 
@@ -72,8 +72,8 @@ const WatchUs: React.FC<Props> = ({ setOpen }) => {
           <div className="col-lg-6 inner-content">
             <div className="section-head style-1">
               <h2 className="title">
-                WATCH US HOW WE{" "}
-                <span className="text-primary">CREATE YOUR DREAM</span>
+                How We Bring Your{" "}
+                <span className="text-primary">Vision to Life</span>
               </h2>
               <div className="dz-separator style-1 text-primary"></div>
             </div>

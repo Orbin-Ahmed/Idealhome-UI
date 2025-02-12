@@ -7,13 +7,13 @@ const carddata = [
     image: IMAGES.ServicePic1,
     title: "UPVC Solution",
     description:
-      "Experience the perfect blend of innovation and durability with our high-performance UPVC doors and windows. Designed to withstand harsh climates, they offer superior energy efficiency and timeless elegance.",
+      "High-performance uPVC windows and doors, engineered with Schüco’s German precision for durability, energy efficiency, and timeless design tailored to the UAE climate.",
   },
   {
     image: IMAGES.ServicePic2,
     title: "Bespoke Joinery",
     description:
-      "elevate your interiors with our custom luxury joinery. crafted with precision and attention to detail, our bespoke designs bring sophistication and functionality to every space, from abu dhabi's luxury villas to modern architectural projects.",
+      "Custom-crafted luxury joinery, including kitchen cabinets, wardrobes, doors, and decorative wooden elements, designed to elevate your home with sophistication and functionality.",
   },
 ];
 
