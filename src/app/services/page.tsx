@@ -97,11 +97,11 @@ const Services = () => {
         </section>
 
         {/* Window and door premiumness  section */}
-        <section className="content-inner section-title style-2 pb-0">
+        {/* <section className="content-inner section-title style-2 pb-0">
           <div className="container">
-            <div className="row">
-              {/* uPVC Window Solutions (Left) */}
-              <div className="col-md-6">
+            <div className="row"> */}
+        {/* uPVC Window Solutions (Left) */}
+        {/* <div className="col-md-6">
                 <div className="section-head">
                   <h2 className="title">
                     Premium <span className="text-primary">uPVC Window</span>{" "}
@@ -140,10 +140,10 @@ const Services = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              {/* uPVC Hinged Doors (Right) */}
-              <div className="col-md-6">
+        {/* uPVC Hinged Doors (Right) */}
+        {/* <div className="col-md-6">
                 <div className="section-head">
                   <h2 className="title">
                     Luxury{" "}
@@ -181,10 +181,10 @@ const Services = () => {
                     </p>
                   </div>
                 </div>
-              </div>
-            </div>
+              </div> */}
+        {/* </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Product section  */}
         <section className="content-inner line-img">
