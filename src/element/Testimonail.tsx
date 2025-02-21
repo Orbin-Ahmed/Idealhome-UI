@@ -15,38 +15,59 @@ interface TestimonialData {
 const sliderData: TestimonialData[] = [
   {
     image: IMAGES.Testimonial1,
-    name: "Fatima A.",
-    position: "Al Reem Island Villa Owner",
+    name: "Ahmed Al Zaabi",
+    position: "Villa Owner – Mohamed Bin Zayed City, Abu Dhabi",
     testimonial:
-      "Living in Al Reem Island, I was looking for exceptional quality for my new home. Ideal Factory's bespoke joinery UAE service delivered beyond expectations. Their custom joinery solutions transformed my apartment with stunning wardrobes and kitchen cabinets that perfectly utilize our space.",
+      "The quality of Keystone uPVC Windows and Doors is exceptional. The craftsmanship and durability exceeded my expectations, giving my villa an elegant and refined look. I highly recommend their products to anyone looking for premium uPVC windows and doors.",
   },
   {
     image: IMAGES.Testimonial2,
-    name: "Abdullah M.",
-    position: "Yas Island Villa Owner",
+    name: "Ahmed Al Mazrouei",
+    position: "Villa Owner - Al Bahia City, Abu Dhabi",
     testimonial:
-      "As a homeowner in Yas Island, I chose Keystone UPVC for their premium uPVC windows and doors. The difference in our home's temperature control is remarkable, and the quality is outstanding. Their energy-efficient uPVC solutions have significantly reduced our cooling costs.",
+      "What stood out to me was their outstanding service. From consultation to installation, their team was professional, knowledgeable, and detail-oriented. The superior insulation has significantly reduced dust inside my home.",
   },
   {
     image: IMAGES.Testimonial3,
-    name: "Mariam K.",
-    position: "Al Raha Gardens Homeowner",
+    name: "Abdulla Al Maainah",
+    position: "Villa Owner - Shakboot City, Abu Dhabi",
     testimonial:
-      "Finding the best joinery company in UAE was crucial for our Al Raha Gardens villa renovation. Ideal Factory's bespoke joinery UAE team created magnificent custom-fitted wardrobes that perfectly matched our home's aesthetic. The quality and service were exceptional.",
+      "Keystone uPVC Windows not only delivered top-quality products but also provided excellent after-sales service. Their follow-ups ensured everything was working perfectly, and their responsiveness made me confident in my investment.",
   },
   {
     image: IMAGES.Testimonial2,
-    name: "Omar S.",
-    position: "Saadiyat Island Villa Owner",
+    name: "Ali Saeed Salem",
+    position: "Villa Owner -  Mohamed Bin Zayed City, Abu Dhabi",
     testimonial:
-      "When renovating our Saadiyat Island villa, we installed premium uPVC windows and doors from Keystone UPVC. The sound insulation is impressive, and their attention to detail during installation was remarkable. A worthwhile investment for any luxury home.",
+      "The beauty of Keystone's uPVC windows and doors has transformed my villa. Their designs complement my home perfectly, adding sophistication and style. I'm truly impressed with the elegance and finish of their products.",
   },
   {
     image: IMAGES.Testimonial2,
-    name: "Layla H.",
-    position: "Al Bateen Villa Owner",
+    name: "Saleh, Ahmed, and Mohamed Mubarak Aljneibi",
+    position: "Villas Owners - Al Shuwamikh City, Abu Dhabi",
     testimonial:
-      "The custom joinery solutions from Ideal Factory transformed our Al Bateen villa completely. Their team's expertise in bespoke joinery UAE showed in every detail, from the walk-in closets to the kitchen cabinetry. They truly deserve their reputation as the best joinery company in UAE.",
+      "As three brothers building adjacent villas, we carefully considered all options before choosing Keystone uPVC Windows and Doors over aluminum—and we couldn’t be happier with our decision. We chose Keystone uPVC Windows for their durability and insulation. Their designs complement our homes perfectly, adding sophistication and style.",
+  },
+  {
+    image: IMAGES.Testimonial2,
+    name: "Yusuf Al Suwaidi",
+    position: "Villa Owner - Nad Alshiba, Dubai",
+    testimonial:
+      "Keystone uPVC Windows impressed me with their quick response and professionalism. The Schüco premium products they provided showcase excellent craftsmanship, durability, and efficiency. The whole process was smooth and hassle-free.",
+  },
+  {
+    image: IMAGES.Testimonial2,
+    name: "Huda Saeed Abdullah",
+    position: "Villa Owner - Khalifa City, Abu Dhabi",
+    testimonial:
+      "I wanted windows and doors that would enhance my villa's elegance without compromising on quality. Keystone uPVC Windows delivered exactly that—beautiful, high-performance products that provide excellent insulation and durability.",
+  },
+  {
+    image: IMAGES.Testimonial2,
+    name: "Umm Ahmed Al Rumaithi",
+    position: "Villa Owner, Khalifa City, Abu Dhabi",
+    testimonial:
+      "Replacing my aluminum windows and doors with Schüco uPVC from Keystone was the best decision I made. The thermal insulation keeps my villa cool even in peak summer, and the sand insulation has significantly reduced dust inside my home. On top of that, the transformation gave my  villa an astonishing modern look.",
   },
 ];
 
