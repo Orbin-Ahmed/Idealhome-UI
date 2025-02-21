@@ -37,13 +37,43 @@ const HomeFooter = () => {
               <div className="footer-logo logo-dark">
                 <Image src={IMAGES.logo} alt="logo" className="w-auto" />
               </div>
-              <p className="text">
-                Sed laoreet orci id pretium sodales. Nunc ac est dolor. Donec
-                placerat dolor et mi elementum, in suscipit libero tincidunt. Ut
-                at tempor ex, vel auctor tortor. Sed finibus vitae mi et
-                imperdiet.
-              </p>
-              <div className="ft-subscribe">
+              <div className="mail-text">
+                <h4>
+                  Upgrade Your Villa with Premium uPVC Windows & Hinged Doors
+                  Today!
+                </h4>{" "}
+                <p>
+                  🏡 Experience a perfect blend of luxury, security, and energy
+                  efficiency with Keystone uPVC Windows.
+                </p>
+                <h4 className="mail-text">
+                  📞 <span className="text-primary">Call us at</span>{" "}
+                  <b>xxx xxxxx</b>
+                </h4>
+                <h5 className="mail-text">
+                  📍{" "}
+                  <Link
+                    target="_blank"
+                    href="https://maps.app.goo.gl/ockyuupeE6zuiy56A"
+                  >
+                    Visit Our Factory Showroom
+                  </Link>
+                </h5>
+                <p>
+                  <motion.button
+                    name="submit"
+                    type="submit"
+                    className="btn btn-primary"
+                    initial={{ opacity: 0, x: "-60%" }}
+                    whileInView={{ opacity: 1, x: "0%" }}
+                    transition={{ duration: 1 }}
+                  >
+                    Schedule a Free Consultation Reserve Now
+                  </motion.button>
+                </p>
+              </div>
+
+              {/* <div className="ft-subscribe">
                 <form className="dzSubscribe" ref={form} onSubmit={sendEmail}>
                   <div className="dzSubscribeMsg"></div>
                   <div className="input-group">
@@ -67,7 +97,11 @@ const HomeFooter = () => {
                     </motion.button>
                   </div>
                 </form>
-              </div>
+              </div> */}
+
+              <h4 className="mail-text">
+                <span className="text-primary">EMAIL:</span> INFO@GMAIL.COM
+              </h4>
               <ul className="footer-link">
                 <li>
                   <Link href="#" scroll={false}>
@@ -80,9 +114,6 @@ const HomeFooter = () => {
                   </Link>
                 </li>
               </ul>
-              <h4 className="mail-text">
-                <span className="text-primary">EMAIL:</span> INFO@GMAIL.COM
-              </h4>
             </div>
           </div>
         </div>
