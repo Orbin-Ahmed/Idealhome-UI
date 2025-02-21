@@ -11,6 +11,12 @@ import MainSlider4 from '../assets/images/main-slider/pic4.jpg'
 import MainSlider5 from '../assets/images/main-slider/pic5.jpg'
 import MainSlider6 from '../assets/images/main-slider/pic6.jpg'
 
+import Upvc1 from '../assets/images/about/upvc-1.jpg'
+import Upvc2 from '../assets/images/about/upvc-2.jpg'
+import Upvc3 from '../assets/images/about/upvc-3.jpg'
+import Upvc4 from '../assets/images/about/upvc-4.jpg'
+import Upvc5 from '../assets/images/about/upvc-5.jpg'
+import Upvc6 from '../assets/images/about/upvc-6.jpg'
 
 import AboutPic1 from '../assets/images/about/pic1.jpg'
 import AboutImage1 from '../assets/images/about/pic1-1.jpg'
@@ -147,6 +153,8 @@ import FilterPic6 from '../assets/images/filter/pic6.jpg'
 import FilterPic7 from '../assets/images/filter/pic7.jpg'
 import FilterPic8 from '../assets/images/filter/pic8.jpg'
 
+
+import UpvcVideoThumb from '../assets/images/video/v1.jpg'
 
 const IMAGES = {
     logo : logo,
@@ -285,6 +293,15 @@ const IMAGES = {
     TeamPic10 : TeamPic10,
     TeamPic11 : TeamPic11,
     TeamPic12 : TeamPic12,
+
+    Upvc1 : Upvc1,
+    Upvc2 : Upvc2,
+    Upvc3 : Upvc3,
+    Upvc4 : Upvc4,
+    Upvc5 : Upvc5,
+    Upvc6 : Upvc6,
+
+    UpvcVideoThumb : UpvcVideoThumb,
     
 }
 export default IMAGES;

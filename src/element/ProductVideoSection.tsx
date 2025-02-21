@@ -19,9 +19,14 @@ const ProductVideoSection = () => {
     <div className="container">
       <div className="row align-items-center">
         {/* Video 1  */}
-        <div className="col-lg-6 m-b30">
+        <div className="col-lg-4 m-b30">
           <div className="video-bx content-media style-1">
-            <Image src={IMAGES.VideoePic1} alt="" />
+            <Image
+              src={IMAGES.UpvcVideoThumb}
+              width={500}
+              height={500}
+              alt=""
+            />
             <motion.div
               className="video-btn aos-item"
               initial={{ opacity: 0, y: "-10%" }}
@@ -47,36 +52,37 @@ const ProductVideoSection = () => {
             onClose={() => setOpenV1(false)}
           />
         </div>
-        <div className="col-lg-6 m-b30">
-          {/* <div className="section-head style-1">
-            <h2 className="title">
-              DISTINCTIVE INTERIOR{" "}
-              <span className="text-primary">FOR SPECIAL IDEAS</span>
-            </h2>
-            <div className="dz-separator style-1 text-primary"></div>
-          </div>
-          <p className="m-b30">
-            Fusce accumsan felis sed purus sollicitudin posuere. Vivamus id
-            pharetra augue. Phasellus molestie ornare lacus mattis iaculis.
-            Nulla dui dui, convallis et venenatis id, condimentum ut justo.
-          </p>
-          {progressData.map((item, i) => (
-            <div className="progress-bx style-1 m-b40" key={i}>
-              <div className="progress-info">
-                <h6 className="title">{item.name}</h6>
-                <h4 className="progress-value">{item.percent}</h4>
-              </div>
-              <div className="progress">
-                <div
-                  className="progress-bar"
-                  style={{ width: item.percent }}
-                ></div>
-              </div>
-            </div>
-          ))} */}
 
+        {/* Content Here  */}
+        <div className="col-lg-4 m-b30">
+          <h3>
+            Premium uPVC Windows & Hinged Doors for Luxury Villas in the UAE
+          </h3>
+          <p>
+            At Keystone uPVC Windows, a brand of Ideal Factory, we provide
+            high-quality, German-engineered Schüco uPVC windows and doors
+            designed specifically for luxury villas across the UAE. Our
+            solutions deliver exceptional durability, energy efficiency, noise
+            reduction, and security, ensuring a comfortable and stylish living
+            experience.
+          </p>
+          <Link
+            href="about-us"
+            className="btn shadow-primary btn-primary w-100 btn-quote"
+          >
+            Reserve Your Expert Design Consultation{" "}
+          </Link>
+        </div>
+
+        {/* video 2  */}
+        <div className="col-lg-4 m-b30">
           <div className="video-bx content-media style-1">
-            <Image src={IMAGES.VideoePic1} alt="" />
+            <Image
+              src={IMAGES.UpvcVideoThumb}
+              width={500}
+              height={500}
+              alt=""
+            />
             <motion.div
               className="video-btn aos-item"
               initial={{ opacity: 0, y: "-10%" }}
