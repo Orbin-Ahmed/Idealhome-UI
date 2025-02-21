@@ -12,7 +12,7 @@ const progressData = [
   { name: "INTERIOR DESIGN", percent: "95%" },
 ];
 
-const ProgressSection = () => {
+const ProductVideoSection = () => {
   const [isOpenV1, setOpenV1] = useState<boolean>(false);
   const [isOpenV2, setOpenV2] = useState<boolean>(false);
   return (
@@ -20,17 +20,35 @@ const ProgressSection = () => {
       <div className="row align-items-center">
         {/* Video 1  */}
         <div className="col-lg-6 m-b30">
-          <div
-            className="dz-media-1 aos-item"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-          >
-            <Image src={IMAGES.AboutImage1} alt="" />
+          <div className="video-bx content-media style-1">
+            <Image src={IMAGES.VideoePic1} alt="" />
+            <motion.div
+              className="video-btn aos-item"
+              initial={{ opacity: 0, y: "-10%" }}
+              whileInView={{ opacity: 1, y: "0%" }}
+              transition={{ duration: 1 }}
+            >
+              <Link
+                href="#"
+                scroll={false}
+                className="popup-youtube"
+                onClick={() => {
+                  setOpenV1(true);
+                }}
+              >
+                <i className="flaticon-play" />
+              </Link>
+            </motion.div>
           </div>
+          <ModalVideo
+            channel="youtube"
+            isOpen={isOpenV1}
+            videoId="9cp-HugtbHo"
+            onClose={() => setOpenV1(false)}
+          />
         </div>
         <div className="col-lg-6 m-b30">
-          <div className="section-head style-1">
+          {/* <div className="section-head style-1">
             <h2 className="title">
               DISTINCTIVE INTERIOR{" "}
               <span className="text-primary">FOR SPECIAL IDEAS</span>
@@ -55,11 +73,38 @@ const ProgressSection = () => {
                 ></div>
               </div>
             </div>
-          ))}
+          ))} */}
+
+          <div className="video-bx content-media style-1">
+            <Image src={IMAGES.VideoePic1} alt="" />
+            <motion.div
+              className="video-btn aos-item"
+              initial={{ opacity: 0, y: "-10%" }}
+              whileInView={{ opacity: 1, y: "0%" }}
+              transition={{ duration: 1 }}
+            >
+              <Link
+                href="#"
+                scroll={false}
+                className="popup-youtube"
+                onClick={() => {
+                  setOpenV2(true);
+                }}
+              >
+                <i className="flaticon-play" />
+              </Link>
+            </motion.div>
+          </div>
+          <ModalVideo
+            channel="youtube"
+            isOpen={isOpenV2}
+            videoId="gAtnGVS4UZk"
+            onClose={() => setOpenV2(false)}
+          />
         </div>
       </div>
     </div>
   );
 };
 
-export default ProgressSection;
+export default ProductVideoSection;
