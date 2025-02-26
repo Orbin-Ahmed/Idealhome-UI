@@ -49,7 +49,7 @@ const WatchUs: React.FC<Props> = ({ setOpen }) => {
         <div className="row">
           <div className="col-lg-6">
             <div className="video-bx content-media style-1">
-              <Image src={IMAGES.VideoePic1} alt="" />
+              <Image src={IMAGES.homeVideoThumbnail} alt="" />
               <motion.div
                 className="video-btn aos-item"
                 initial={{ opacity: 0, y: "-10%" }}

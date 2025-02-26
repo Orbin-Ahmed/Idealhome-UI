@@ -7,7 +7,7 @@ const carddata = [
     image: IMAGES.ServicePic1,
     title: "UPVC Solution",
     description:
-      "High-performance uPVC windows and doors, engineered with Schüco’s German precision for durability, energy efficiency, and timeless design tailored to the UAE climate.",
+      "High-performance uPVC windows and doors, engineered with Schüco's German precision for durability, energy efficiency, and timeless design tailored to the UAE climate.",
   },
   {
     image: IMAGES.ServicePic2,
@@ -19,20 +19,25 @@ const carddata = [
 
 const ServiceBlog = () => {
   return (
-    <div className="row justify-content-center">
+    <div className="row justify-content-center media-query">
       {carddata.map((item, index) => (
         <div className="col-lg-4 col-md-6 aos-item" key={index}>
           <div className="icon-bx-wraper style-1 m-b30 flip-bx" data-name="1.">
             <div
-              className="front overlay-black-middle"
-              style={{ backgroundImage: `url(${item.image.src})` }}
+              className="front overlay-black-middle hover-image"
+              style={{
+                backgroundImage: `url(${item.image.src})`,
+                opacity: 0.99,
+              }}
             >
               <div className="inner">
                 <div>
                   <div className="sep-tl"></div>
                   <div className="sep-br"></div>
                   <h4 className="title m-b10">{item.title}</h4>
-                  <h6 className="sub-title text-primary">WE DESIGN IDEAS</h6>
+                  <h6 className="sub-title text-primary fw-bold">
+                    WE DESIGN IDEAS
+                  </h6>
                 </div>
               </div>
             </div>
@@ -41,17 +46,17 @@ const ServiceBlog = () => {
                 <div>
                   <div className="sep-tl"></div>
                   <div className="sep-br"></div>
-                  <div className="icon-lg">
+                  <div className="icon-lg service-icon">
                     <span className="icon-cell text-primary">
                       <i className="flaticon-blueprint-1" />
                     </span>
                   </div>
-                  <h4 className="title m-b15">
+                  <h4 className="title m-b15 service-title">
                     <Link href="/services-details" className="text-white">
                       {item.title}
                     </Link>
                   </h4>
-                  <p className="text-sm">{item.description}</p>
+                  <p className="text-sm service-text">{item.description}</p>
                 </div>
               </div>
             </div>

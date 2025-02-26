@@ -28,7 +28,77 @@
     color: white;
   }
 
-@media (max-width: 768px) {
+  @media only screen and (max-width: 1600px) {
+    .silder-three .silder-content .title {
+      font-size: 42px; 
+    }
+    .btn-quote {
+      font-size: 22px!important;
+    }
+    .service-content {
+      width: 880px;
+    }
+  }
+  
+  @media only screen and (max-width: 1460px) {
+    .service-content {
+      width: 750px;
+    }
+    .flip-bx .front, .flip-bx .back {
+      min-height: 275px;
+    }
+    .service-icon {
+      display: none;
+    }
+    .service-title {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    .service-text {
+      font-size: 10px!important;
+    }
+  }
+
+  @media only screen and (max-width: 1320px) {
+    .silder-three .silder-content {
+      left: 5%;
+      top: 50%;
+      width: 500px;
+   }
+   .media-query {
+    justify-content: space-evenly!important;
+   }
+  }
+
+  @media only screen and (max-width: 1215px) {
+     .service-content {
+      width: 100%;
+      top: 80%;
+    }
+    
+    .silder-three .silder-content {
+      left: 11.5%;
+      right: 0;
+      top: 36%;
+      width: 60%;
+   }
+  }
+
+  @media only screen and (max-width: 975px) {
+    .service-content {
+     width: 80%;
+     top: 80%;
+     right: 8.5%;
+   }
+ }
+
+  @media (min-width: 1024px) {
+    .logo-resize {
+      width: 90px;
+    }
+  }
+
+  @media (max-width: 768px) {
     .silder-content, .service-content {
       position: static;
       transform: none;
@@ -39,4 +109,16 @@
     .content-wrapper {
       display: block;
     }
+    
+    .logo-resize {
+      width: 60px;
+    }
   }
+
+  @media (min-width: 600px) {
+    .logo-resize {
+      width: 80px;
+    }
+  }
+
+  

@@ -46,13 +46,12 @@ const AboutUs = () => {
             </h4>
           </div>
           <p className="m-b15">
-            At Ideal Factory, we specialize in precision-crafted joinery and
-            high-performance uPVC windows and doors. Partnering with Schüco,
-            Germany&apos;s leader in energy-efficient uPVC systems, we bring
-            German precision and UAE-tailored design to your home. Our solutions
-            offer superior thermal insulation, durability, and noise reduction,
-            ensuring luxury custom joinery and state-of-the-art window systems
-            designed for the UAE&apos;s climate.
+            At Ideal Factory, we specialize Seamless Excellence from Design to
+            Handover - Crafting Premium Interior Joinery and Installing
+            High-Performance uPVC Doors and Windows with Superior Quality and
+            Precision. Our solutions offer superior thermal insulation,
+            durability, and noise reduction, ensuring luxury custom joinery and
+            state-of-the-art window systems designed for the UAE&apos;s climate.
             <br />
             <br />
             Transform your villa with innovative craftsmanship, elegant

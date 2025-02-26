@@ -52,7 +52,7 @@ const Index3HomeSlider = () => {
               <div className="d-flex justify-content-between">
                 <div className="silder-content">
                   <div className="inner-content">
-                    <h1 className="title">
+                    <h1 className="title hero-1-header">
                       {/* <span className="text-primary">Ideal Factory</span>{" "} */}
                       Enhance Your Dream Villa with Premium Interiors and uPVC
                       Solutions
@@ -61,17 +61,16 @@ const Index3HomeSlider = () => {
                       {/* Outdated interiors? Looking to transform your space?{" "} */}
                       <br />
                       <span>
-                        Transform your new villa with German-engineered Schüco
-                        uPVC windows, Doors & bespoke joinery. Energy-efficient,
-                        durable, and tailored for UAE's climate. Free
-                        consultation!
+                        Transform Your Villa into a Sanctuary of Comfort, Style,
+                        and Timeless Elegance - Designed for the Modern Emirati
+                        Homeowner.
                       </span>
                     </p>
                     <Link
                       href="about-us"
                       className="btn shadow-primary btn-primary w-100 btn-quote"
                     >
-                      Reserve Your Expert Design Consultation{" "}
+                      Reserve Your Free Expert Design Consultation{" "}
                     </Link>
                   </div>
                 </div>

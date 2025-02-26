@@ -76,14 +76,18 @@ const Header = () => {
         >
           <div className="main-bar clearfix ">
             <div className="container-fluid clearfix">
-              <div className="logo-header mostion logo-dark">
+              <div className="logo-header mostion logo-dark logo-resize">
                 <Link href="#" scroll={false}>
                   <Image
                     src={IMAGES.logo4white}
                     className="logo-main logo-dark"
                     alt=""
                   />
-                  <Image src={IMAGES.logo4} className="logo-show-fix" alt="" />
+                  <Image
+                    src={IMAGES.logo4}
+                    className="logo-show-fix logo-resize"
+                    alt=""
+                  />
                 </Link>
               </div>
               <button
