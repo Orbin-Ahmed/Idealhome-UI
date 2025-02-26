@@ -113,12 +113,37 @@
     .logo-resize {
       width: 60px;
     }
+
+    .silder-three .silder-content {
+      left: 20%;
+      top: 30%;
+   }
+   .silder-three .silder-content .title {
+    font-size: 32px; 
+    }
+  .btn-quote {
+    font-size: 14px!important;
+  }
   }
 
   @media (min-width: 600px) {
     .logo-resize {
       width: 80px;
     }
+  }
+
+  @media (max-width: 500px) {
+    .silder-three .silder-content {
+      width: 90%;
+      top: 30%;
+      left: 10%;
+   }
+   .silder-three .silder-content .title {
+    font-size: 32px; 
+    }
+  .btn-quote {
+    font-size: 14px!important;
+  }
   }
 
   

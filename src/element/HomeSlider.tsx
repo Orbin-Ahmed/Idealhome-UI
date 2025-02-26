@@ -46,6 +46,7 @@ const Index3HomeSlider = () => {
         >
           {swiperDataBlog.map((data, i) => (
             <SwiperSlide key={i}>
+              {/* <div className="silder-img overlay-black-middle"> */}
               <div className="silder-img overlay-black-middle">
                 <Image src={data.image} data-swiper-parallax="30%" alt="" />
               </div>

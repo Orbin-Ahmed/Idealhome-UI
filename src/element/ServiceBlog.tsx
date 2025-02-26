@@ -24,10 +24,10 @@ const ServiceBlog = () => {
         <div className="col-lg-4 col-md-6 aos-item" key={index}>
           <div className="icon-bx-wraper style-1 m-b30 flip-bx" data-name="1.">
             <div
-              className="front overlay-black-middle hover-image"
+              // className="front overlay-black-middle hover-image"
+              className="front hover-image"
               style={{
                 backgroundImage: `url(${item.image.src})`,
-                opacity: 0.99,
               }}
             >
               <div className="inner">
