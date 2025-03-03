@@ -21,10 +21,12 @@ interface ImageBlog {
 }
 
 const galleryBlogData: ImageBlog[] = [
+  { singleimage: IMAGES.work3Pic12 },
   { double: "doubleimage", image1: IMAGES.work3Pic2, image2: IMAGES.work3Pic3 },
   { singleimage: IMAGES.work3Pic1 },
   { double: "doubleimage", image1: IMAGES.work3Pic4, image2: IMAGES.work3Pic6 },
   { singleimage: IMAGES.work3Pic5 },
+  { singleimage: IMAGES.work3Pic13 },
   { double: "doubleimage", image1: IMAGES.work3Pic7, image2: IMAGES.work3Pic8 },
   { singleimage: IMAGES.work3Pic9 },
   {

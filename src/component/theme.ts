@@ -156,17 +156,19 @@ import FilterPic8 from '../assets/images/filter/pic8.jpg'
 
 import UpvcVideoThumb from '../assets/images/video/v1.jpg'
 
-import work3Pic1 from '../assets/images/work/work-1/work_1.jpg'
-import work3Pic2 from '../assets/images/work/work-1/work_2.jpg'
-import work3Pic3 from '../assets/images/work/work-1/work_3.jpg'
-import work3Pic4 from '../assets/images/work/work-1/work_4.jpg'
-import work3Pic5 from '../assets/images/work/work-1/work_5.jpg'
-import work3Pic6 from '../assets/images/work/work-1/work_6.jpg'
-import work3Pic7 from '../assets/images/work/work-1/work_7.jpg'
-import work3Pic8 from '../assets/images/work/work-1/work_8.jpg'
-import work3Pic9 from '../assets/images/work/work-1/work_9.jpg'
-import work3Pic10 from '../assets/images/work/work-1/work_10.jpg'
-import work3Pic11 from '../assets/images/work/work-1/work_11.jpg'
+import work3Pic1 from '../assets/images/work/work-1/work_1.png'
+import work3Pic2 from '../assets/images/work/work-1/work_2.png'
+import work3Pic3 from '../assets/images/work/work-1/work_3.png'
+import work3Pic4 from '../assets/images/work/work-1/work_4.png'
+import work3Pic5 from '../assets/images/work/work-1/work_5.png'
+import work3Pic6 from '../assets/images/work/work-1/work_6.png'
+import work3Pic7 from '../assets/images/work/work-1/work_7.png'
+import work3Pic8 from '../assets/images/work/work-1/work_8.png'
+import work3Pic9 from '../assets/images/work/work-1/work_9.png'
+import work3Pic10 from '../assets/images/work/work-1/work_10.png'
+import work3Pic11 from '../assets/images/work/work-1/work_11.png'
+import work3Pic12 from '../assets/images/work/work-1/work_12.png'
+import work3Pic13 from '../assets/images/work/work-1/work_13.png'
 
 import homeVideoThumbnail from '../assets/images/work/work-1/home_thumbnail.jpg'
 
@@ -328,6 +330,8 @@ const IMAGES = {
     work3Pic9: work3Pic9,
     work3Pic10: work3Pic10,
     work3Pic11: work3Pic11,
+    work3Pic12: work3Pic12,
+    work3Pic13: work3Pic13,
 
     homeVideoThumbnail: homeVideoThumbnail,
     
