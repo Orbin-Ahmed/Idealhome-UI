@@ -148,9 +148,9 @@ const Testimonail = ({ buttn1, buttn2 }: navButton) => {
                   </div>
 
                   {/* User Image */}
-                  <div className="testimonial-pic">
+                  {/* <div className="testimonial-pic">
                     <Image src={item.image} alt={item.name} />
-                  </div>
+                  </div> */}
                 </div>
               </SwiperSlide>
             ))}

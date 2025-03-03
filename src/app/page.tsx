@@ -136,7 +136,7 @@ export default function Home() {
         </section>
 
         {/* <!-- Blog --> */}
-        <section className="content-inner-1 line-img">
+        {/* <section className="content-inner-1 line-img">
           <div className="container">
             <div className="section-head style-1 text-center">
               <h2 className="title">
@@ -148,7 +148,7 @@ export default function Home() {
               <BlogSlider />
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
       <ModalVideo
         channel="youtube"
