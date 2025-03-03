@@ -19,6 +19,7 @@
 @import url("../icons/font-awesome/css/all.min.css");
 @import url("../icons/flaticon/flaticon.css");
 @import url("../icons/themify/themify-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
 :root {
   --primary: #c6a47e;
   --secondary: #212529;
@@ -130,6 +131,10 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem; }
+
+  .caveat-font {
+    font-family: "Caveat", cursive;
+  }
 
 abbr[title],
 abbr[data-bs-original-title] {

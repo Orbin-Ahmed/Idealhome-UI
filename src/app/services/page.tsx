@@ -7,6 +7,7 @@ import ProductVideoSection from "@/element/ProductVideoSection";
 import ProgressSection from "@/element/ProgressSection";
 import UpvcProduct from "@/element/UpvcProduct";
 import Pagebanner from "@/element/Pagebanner";
+import ProductHero from "@/component/ProductHero";
 
 const serviceData = [
   { image: IMAGES.ServicePic1, name: "Interior Design" },
@@ -21,10 +22,11 @@ const Services = () => {
   return (
     <Mainlayout>
       <div className="page-content bg-white">
-        <div
+        <ProductHero />
+        {/* <div
           className="dz-bnr-inr style-1"
           style={{ backgroundImage: `url(${IMAGES.BanerImg2.src})` }}
-        ></div>
+        ></div> */}
         <section
           className="section-full content-inner line-img section-title style-2"
           data-name="our skills"
