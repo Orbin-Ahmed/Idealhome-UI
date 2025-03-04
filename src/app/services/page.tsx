@@ -285,7 +285,23 @@ const Services = () => {
           <Image src={IMAGES.uPVCProduct1} alt="banner" />
         </div>
         {/* Benefit Section 1  */}
-        <div className="mt-5 pt-5">
+        <div className="container text-center mt-5 pt-5">
+          <p className="mb-4 fs-6 fw-bold">
+            Selecting the Ideal Window Solution for Your Home
+          </p>
+          <div className="d-flex flex-column align-items-center justify-content-center">
+            <p className="w-100 fs-3 fw-bold lh-base">
+              1. Opt for uPVC Windows Over Aluminum for Improved Performance and
+              Aesthetics.
+            </p>
+            <p className="mt-4 fs-6 fw-medium lh-base">
+              When selecting windows for your new home, it's important to
+              consider the materials used in their construction. One popular
+              choice is uPVC windows, which offer several advantages over
+              traditional aluminum windows. Here are some reasons why you should
+              choose uPVC windows instead of aluminum:
+            </p>
+          </div>
           <ProductSection_1
             fixedText="uPVC Windows Are…"
             flipFlag={true}
@@ -330,11 +346,10 @@ const Services = () => {
           </p>
           <p className="mb-4 fs-2 fw-bold caveat-font">Not any uPVC</p>
           <div className="d-flex flex-column align-items-center justify-content-center">
-            <p className="w-100 fs-3 fw-extrabold lh-base">
-              1. Choose only the best German brands
-              <br /> making uPVC windows.
+            <p className="w-100 fs-3 fw-bold lh-base">
+              2. Choose only the best German brands making uPVC windows.
             </p>
-            <p className="mt-4 w-75 fs-4 fw-bold lh-base">
+            <p className="mt-4 fs-6 fw-medium lh-base">
               Choosing the best quality German uPVC windows and doors starts
               with understanding the criteria for your selection.
             </p>
