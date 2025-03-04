@@ -35,6 +35,29 @@ const galleryBlogData: ImageBlog[] = [
     image2: IMAGES.work3Pic11,
   },
   { singleimage: IMAGES.work3Pic5 },
+  {
+    double: "doubleimage",
+    image1: IMAGES.work3Pic15,
+    image2: IMAGES.work3Pic16,
+  },
+  { singleimage: IMAGES.work3Pic14 },
+  {
+    double: "doubleimage",
+    image1: IMAGES.work3Pic17,
+    image2: IMAGES.work3Pic19,
+  },
+  { singleimage: IMAGES.work3Pic18 },
+  {
+    double: "doubleimage",
+    image1: IMAGES.work3Pic20,
+    image2: IMAGES.work3Pic22,
+  },
+  { singleimage: IMAGES.work3Pic21 },
+  {
+    double: "doubleimage",
+    image1: IMAGES.work3Pic10,
+    image2: IMAGES.work3Pic23,
+  },
 ];
 
 const PortfolioSlider = ({ prvBtn, nextBtn }: btnType) => {

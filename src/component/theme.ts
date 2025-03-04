@@ -170,6 +170,16 @@ import work3Pic10 from '../assets/images/work/work-1/work_10.png'
 import work3Pic11 from '../assets/images/work/work-1/work_11.png'
 import work3Pic12 from '../assets/images/work/work-1/work_12.png'
 import work3Pic13 from '../assets/images/work/work-1/work_13.png'
+import work3Pic14 from '../assets/images/work/work-1/work_14.jpg'
+import work3Pic15 from '../assets/images/work/work-1/work_15.jpg'
+import work3Pic16 from '../assets/images/work/work-1/work_16.jpg'
+import work3Pic17 from '../assets/images/work/work-1/work_17.jpg'
+import work3Pic18 from '../assets/images/work/work-1/work_18.jpg'
+import work3Pic19 from '../assets/images/work/work-1/work_19.jpg'
+import work3Pic20 from '../assets/images/work/work-1/work_20.jpg'
+import work3Pic21 from '../assets/images/work/work-1/work_21.jpg'
+import work3Pic22 from '../assets/images/work/work-1/work_22.jpg'
+import work3Pic23 from '../assets/images/work/work-1/work_23.jpg'
 
 import uPVCProduct1 from '../assets/images/about/uPVCProduct1.svg'
 
@@ -336,11 +346,20 @@ const IMAGES = {
     work3Pic11: work3Pic11,
     work3Pic12: work3Pic12,
     work3Pic13: work3Pic13,
+    work3Pic14: work3Pic14,
+    work3Pic15: work3Pic15,
+    work3Pic16: work3Pic16,
+    work3Pic17: work3Pic17,
+    work3Pic18: work3Pic18,
+    work3Pic19: work3Pic19,
+    work3Pic20: work3Pic20,
+    work3Pic21: work3Pic21,
+    work3Pic22: work3Pic22,
+    work3Pic23: work3Pic23,
 
     homeVideoThumbnail: homeVideoThumbnail,
 
     uPVCProduct1: uPVCProduct1,
 
-    
 }
 export default IMAGES;

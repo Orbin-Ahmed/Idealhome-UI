@@ -9,6 +9,7 @@ import UpvcProduct from "@/element/UpvcProduct";
 import Pagebanner from "@/element/Pagebanner";
 import ProductHero from "@/component/ProductHero";
 import Image from "next/image";
+import ProductSection_1 from "@/component/ProductSection_1";
 
 const serviceData = [
   { image: IMAGES.ServicePic1, name: "Interior Design" },
@@ -279,8 +280,36 @@ const Services = () => {
             </ul>
           </div>
         </section>
-        <div className="tw-d-flex tw-justify-content-center">
+        <div className="d-flex justify-content-center">
           <Image src={IMAGES.uPVCProduct1} alt="banner" />
+        </div>
+        <div className="mt-5 pt-5">
+          <ProductSection_1
+            fixedText="uPVC Windows Are…"
+            flipFlag={true}
+            title="the Best for Home Insulation"
+            subTitle="Energy efficiency is crucial in today's world. By choosing the right uPVC windows, you can significantly improve your home's insulation, leading to reduced heat transfer and enhanced energy efficiency"
+            caveatText="Enjoy a more comfortable living environment while potentially saving money on energy bills"
+            image="window.png"
+          />
+
+          <ProductSection_1
+            fixedText="uPVC Windows Are…"
+            flipFlag={false}
+            title="Your Noise Reduction Solution"
+            subTitle="uPVC windows offer excellent soundproofing properties, helping to reduce outside noise and create a tranquil indoor environment especially if you live near a busy road or in an area with high levels of noise pollution."
+            caveatText="A peaceful and quiet home is essential for relaxation and well-being"
+            image="window_1.png"
+          />
+
+          <ProductSection_1
+            fixedText="uPVC Windows Are…"
+            flipFlag={true}
+            title="Your Low Maintenance Solution"
+            subTitle="Reducing the time and effort spent on maintaining your windows is a great advantage. uPVC windows offer minimal maintenance requirements compared to aluminum windows, making them a smart and convenient choice for homeowners."
+            caveatText="Easily keep your windows looking new with just a simple wipe down using a damp cloth"
+            image="window_2.png"
+          />
         </div>
         {/* Sweeper Section  */}
         {/* <div className="clients-section-1 line-img bg-gray">

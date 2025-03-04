@@ -19,11 +19,7 @@
 @import url("../icons/font-awesome/css/all.min.css");
 @import url("../icons/flaticon/flaticon.css");
 @import url("../icons/themify/themify-icons.css");
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
 :root {
   --primary: #c6a47e;
