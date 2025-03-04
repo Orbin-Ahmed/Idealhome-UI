@@ -41,7 +41,9 @@ const ProductHero = () => {
                 height="18"
                 className="me-2"
               />
-              <p className="fs-6">Enjoy a Sand and Dust-Free Environment</p>
+              <p className="fs-6 mb-0">
+                Enjoy a Sand and Dust-Free Environment
+              </p>
             </div>
             <div className="d-flex align-items-center">
               <Image
@@ -51,7 +53,7 @@ const ProductHero = () => {
                 height="18"
                 className="me-2"
               />
-              <p className="fs-6">
+              <p className="fs-6 mb-0">
                 Benefit from Superior Thermal and Heat Insulation
               </p>
             </div>
@@ -64,7 +66,7 @@ const ProductHero = () => {
               height="18"
               className="me-2"
             />
-            <p className="fs-6">
+            <p className="fs-6 mb-0">
               Experience Waterproof and Airtight Protection
             </p>
           </div>
@@ -78,7 +80,7 @@ const ProductHero = () => {
               height="18"
               className="me-2"
             />
-            <p className="fs-6">Near to Zero Maintenance</p>
+            <p className="fs-6 mb-0">Near to Zero Maintenance</p>
           </div>
           <div className="d-flex flex-fill align-items-center justify-content-center">
             <Image
@@ -88,7 +90,9 @@ const ProductHero = () => {
               height="18"
               className="me-2"
             />
-            <p className="fs-6">Exceptional Noise Reduction Capabilities</p>
+            <p className="fs-6 mb-0">
+              Exceptional Noise Reduction Capabilities
+            </p>
           </div>
         </div>
       </div>

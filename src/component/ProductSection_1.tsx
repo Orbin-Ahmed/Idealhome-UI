@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 type ProductSection_1Props = {
@@ -32,7 +33,15 @@ const ProductSection_1 = ({
           <p className="fw-bold fs-3">{title}</p>
           <p className="mt-3 fs-6">{subTitle}</p>
           {subTitle2 && <p className="mt-3 fs-6">{subTitle2}</p>}
-          <p className="mt-4 fs-4 fw-bold caveat-font">{caveatText}</p>
+          <p className="mt-4 fs-4 fw-bold caveat-font fst-italic">
+            {caveatText}
+          </p>
+          <Link
+            href="about-us"
+            className="btn shadow-primary btn-primary mt-2 rounded-md"
+          >
+            Reserve Your Expert Design Consultation{" "}
+          </Link>
         </div>
         <div className="col-md-6 text-center">
           <Image

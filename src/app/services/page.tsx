@@ -11,6 +11,7 @@ import ProductHero from "@/component/ProductHero";
 import Image from "next/image";
 import ProductSection_1 from "@/component/ProductSection_1";
 import GridCard from "@/component/GridCard";
+import AccordianCard from "@/component/AccordionCard";
 
 const serviceData = [
   { image: IMAGES.ServicePic1, name: "Interior Design" },
@@ -302,6 +303,12 @@ const Services = () => {
               choose uPVC windows instead of aluminum:
             </p>
           </div>
+          <Image
+            src="down_arrow_group.png"
+            alt="banner"
+            width={320}
+            height={70}
+          />
           <ProductSection_1
             fixedText="uPVC Windows Are…"
             flipFlag={true}
@@ -344,7 +351,9 @@ const Services = () => {
           <p className="mb-4 fs-6 fw-medium">
             Selecting the Ideal Window Solution for Your Home
           </p>
-          <p className="mb-4 fs-2 fw-bold caveat-font">Not any uPVC</p>
+          <p className="mb-4 fs-2 fw-semibold caveat-font fst-italic">
+            Not any uPVC
+          </p>
           <div className="d-flex flex-column align-items-center justify-content-center">
             <p className="w-100 fs-3 fw-bold lh-base">
               2. Choose only the best German brands making uPVC windows.
@@ -377,8 +386,70 @@ const Services = () => {
               image="CT70 4.png"
             />
           </div>
+          <Link
+            href="about-us"
+            className="btn shadow-primary btn-primary btn-quote mt-5"
+          >
+            Reserve Your Expert Design Consultation{" "}
+          </Link>
         </div>
         {/* Benefit Section 2 end */}
+        {/* Benefit Section 3 */}
+        <div className="container text-center mt-5 pt-5">
+          <p className="mb-4 fs-6 fw-bold">
+            Selecting the Ideal Window Solution for Your Home
+          </p>
+          <div className="d-flex flex-column align-items-center justify-content-center">
+            <p className="w-100 fs-3 fw-bold lh-base">
+              3. Know how to evaluate proposals from uPVC windows fabricators
+              offering German brands and how to identify the best brand.
+            </p>
+            <p className="mb-4 fs-2 fw-semibold caveat-font fst-italic">
+              Here You Go....
+            </p>
+          </div>
+          <div>
+            <AccordianCard
+              text="Go only for trusted German brands who offer durable, energy-efficient, and stylish products."
+              points="1"
+            />
+            <AccordianCard
+              text="Make sure that the uPVC window entire system including the profiles, steel, hardware, accessories and EPDM gaskets are designed and manufactured by the same German supplier."
+              points="2"
+            />
+            <AccordianCard
+              text="Make sure that the steel offered for the windows enforcement have the thickness that is appropriate for the size and use of the window or door and it covers the full profile length."
+              points="3"
+            />
+            <AccordianCard
+              text="Make sure that the glass used in the uPVC windows is high-performance, featuring a low U-value to match the thermal and insulation properties of the window system."
+              points="4"
+            />
+            <AccordianCard
+              text="The fabricator must have the capability and flexibility to align with your external and interiors design of your dream home."
+              points="5"
+            />
+            <AccordianCard
+              text="You should always ask for detailed design drawings to confirm that the fabricator has selected the right profile, steel thickness, hardware, and accessories for your uPVC windows and doors. And all these components are made in Germany, only then you can guarantee that you are getting the right value for your money."
+              points="6"
+            />
+            <AccordianCard
+              text="Also make sure that the detailed design drawings include the specifications of the glass stating the U value, thickness, and origin of the glass."
+              points="7"
+            />
+            <AccordianCard
+              text="The fabricator must offer the best workmanship quality through trained professionals using the German machinery for making the highest quality uPVC windows and doors."
+              points="8"
+            />
+          </div>
+          <Link
+            href="about-us"
+            className="btn shadow-primary btn-primary btn-quote mt-5"
+          >
+            Reserve Your Expert Design Consultation{" "}
+          </Link>
+        </div>
+        {/* Benefit Section 3 end */}
         {/* Sweeper Section  */}
         {/* <div className="clients-section-1 line-img bg-gray">
           <div className="container">
