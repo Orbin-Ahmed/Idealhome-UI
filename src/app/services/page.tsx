@@ -10,6 +10,7 @@ import Pagebanner from "@/element/Pagebanner";
 import ProductHero from "@/component/ProductHero";
 import Image from "next/image";
 import ProductSection_1 from "@/component/ProductSection_1";
+import GridCard from "@/component/GridCard";
 
 const serviceData = [
   { image: IMAGES.ServicePic1, name: "Interior Design" },
@@ -280,9 +281,10 @@ const Services = () => {
             </ul>
           </div>
         </section>
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center mx-5">
           <Image src={IMAGES.uPVCProduct1} alt="banner" />
         </div>
+        {/* Benefit Section 1  */}
         <div className="mt-5 pt-5">
           <ProductSection_1
             fixedText="uPVC Windows Are…"
@@ -310,7 +312,58 @@ const Services = () => {
             caveatText="Easily keep your windows looking new with just a simple wipe down using a damp cloth"
             image="window_2.png"
           />
+          <ProductSection_1
+            fixedText="uPVC Windows Are…"
+            flipFlag={false}
+            title="Your Durable Window Solution"
+            subTitle="Durability is an essential factor when choosing windows for your home. uPVC windows are highly durable and long-lasting, making them a reliable and low-maintenance option for homeowners who value longevity and dependability."
+            subTitle2="Benefit from highly durable and long-lasting windows that withstand the test of time. Enjoy resistance to harsh weather conditions and extreme temperatures without warping or deterioration"
+            caveatText="Choose a reliable and low-maintenance window option for your home, offering peace of mind and long-term value"
+            image="window_3.png"
+          />
         </div>
+        {/* Benefit Section 1 end */}
+        {/* Benefit Section 2  */}
+        <div className="container text-center mt-5 pt-5">
+          <p className="mb-4 fs-6 fw-medium">
+            Selecting the Ideal Window Solution for Your Home
+          </p>
+          <p className="mb-4 fs-2 fw-bold caveat-font">Not any uPVC</p>
+          <div className="d-flex flex-column align-items-center justify-content-center">
+            <p className="w-100 fs-3 fw-extrabold lh-base">
+              1. Choose only the best German brands
+              <br /> making uPVC windows.
+            </p>
+            <p className="mt-4 w-75 fs-4 fw-bold lh-base">
+              Choosing the best quality German uPVC windows and doors starts
+              with understanding the criteria for your selection.
+            </p>
+          </div>
+          <div className="row mt-5">
+            <GridCard
+              title="PROFILE"
+              subTitle="Make sure to select windows with profiles extruded in Germany from a special hot country compound and designed with 5 chambers to withstand the extreme weather conditions of the Gulf countries while maintaining its aesthetic nature."
+              boldText="Only the profiles made in Germany have these characteristics."
+              image="CT70 1.png"
+            />
+            <GridCard
+              title="STEEL"
+              subTitle="The strong, corrosion-protected steel profiles in the window frame and vents ensure stability, reliability, and longevity. Also, all the fittings are anchored securely and permanently in the steel reinforcement on all sides."
+              image="CT70 2.png"
+            />
+            <GridCard
+              title="HARDWARE"
+              subTitle="The hardware system must provide the best-in-class security and insulation for the windows. The hardware should give a wide variety of customization options for you, while keeping the windows looking sleek and modern."
+              image="CT70 3.png"
+            />
+            <GridCard
+              title="ACCESSORIES"
+              subTitle="Window accessories should allow you to create individual design accents. You should be able to choose from a wide variety of accessory options to suit your vision, be it clean, linear design, or colorful accents."
+              image="CT70 4.png"
+            />
+          </div>
+        </div>
+        {/* Benefit Section 2 end */}
         {/* Sweeper Section  */}
         {/* <div className="clients-section-1 line-img bg-gray">
           <div className="container">
