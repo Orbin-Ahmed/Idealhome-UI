@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import IMAGES from "../../component/theme";
 import ClientSwiper from "../../element/ClientSwiper";
@@ -12,6 +13,11 @@ import Image from "next/image";
 import ProductSection_1 from "@/component/ProductSection_1";
 import GridCard from "@/component/GridCard";
 import AccordianCard from "@/component/AccordionCard";
+import FourReasons from "@/component/FourReason";
+import ColumnCard from "@/component/ColumnCard";
+import { useState } from "react";
+import Accordion from "react-bootstrap/Accordion";
+import AccordionItem from "@/component/AccordioItem";
 
 const serviceData = [
   { image: IMAGES.ServicePic1, name: "Interior Design" },
@@ -23,6 +29,12 @@ const serviceData = [
 ];
 
 const Services = () => {
+  const [activeKey, setActiveKey] = useState(null);
+
+  const handleChange = (panel: any) => () => {
+    setActiveKey(activeKey === panel ? null : panel);
+  };
+
   return (
     <Mainlayout>
       <div className="page-content bg-white">
@@ -450,6 +462,55 @@ const Services = () => {
           </Link>
         </div>
         {/* Benefit Section 3 end */}
+        {/* Four Reason Section  */}
+        <FourReasons />
+        {/* Four Reason Section End */}
+        {/* Bonus Section  */}
+        <div className="bg-gradient py-5">
+          <div className="container">
+            <div className="text-center">
+              <p className="fw-bold fs-3">
+                Why Choose <span className="text-primary">Keystone uPVC?</span>
+              </p>
+              <p className="fw-medium fs-6 mt-3">
+                When you choose to receive a quote from us, here's what you can
+                expect:
+              </p>
+            </div>
+            <div className="d-flex flex-column mt-4">
+              <div className="mb-4">
+                <ColumnCard
+                  flipFlag={false}
+                  image="Rectangle 16.svg"
+                  description="We will provide you with suitable uPVC windows and doors from the German company Schüco. Schüco offers profiles, reinforcement steel, opening and closing systems, and accessories, ensuring quality, innovation, and durability."
+                />
+              </div>
+              <div className="mb-4">
+                <ColumnCard
+                  flipFlag={true}
+                  image="Rectangle 17.svg"
+                  description="Our engineers will design windows and doors while considering the architectural aspects and interior designs of your dream home. We will present you with detailed plans and several options, giving you the freedom to design your home down to the finest details."
+                />
+              </div>
+              <div className="mb-4">
+                <ColumnCard
+                  flipFlag={false}
+                  image="explain.svg"
+                  description="We will show you all the components of our products, allowing you to see how these elements surpass their German counterparts."
+                />
+              </div>
+              <div className="mb-4">
+                <ColumnCard
+                  flipFlag={true}
+                  image="Rectangle 17 (1).svg"
+                  description="We will take you on a tour of our factory, where you can see the quality standards in the manufacturing of our products and the competence of our teams."
+                />
+              </div>
+            </div>
+            <div className="text-center mt-5">{/* <EstimateButton /> */}</div>
+          </div>
+        </div>
+        {/* Bonus Section end */}
         {/* Sweeper Section  */}
         {/* <div className="clients-section-1 line-img bg-gray">
           <div className="container">
@@ -462,6 +523,7 @@ const Services = () => {
         >
           <ProgressSection />
         </section>
+        {/* Testimonial Section */}
         <section
           className="content-inner bg-gray section-title style-1 line-img"
           data-name="Testimonial"
@@ -495,6 +557,46 @@ const Services = () => {
             buttn2="swiper-button-next3"
           />
         </section>
+        {/* Testimonial Section end */}
+        {/* FAQ Section */}
+        <div className="bg-gradient py-5">
+          <div className="container">
+            <p className="text-center fw-bold fs-2 mb-4">
+              Frequently Asked Questions?
+            </p>
+            <Accordion activeKey={activeKey} alwaysOpen>
+              <AccordionItem
+                title="Do I have to pay for the detailed design drawings?"
+                content="No! You don't have to pay for the detailed design drawings..."
+                panel="panel1"
+                expanded={activeKey}
+                handleChange={handleChange}
+              />
+              <AccordionItem
+                title="How long is the typical lifespan of Schüco uPVC windows and doors?"
+                content="The typical lifespan of Schüco uPVC windows and doors is quite impressive..."
+                panel="panel2"
+                expanded={activeKey}
+                handleChange={handleChange}
+              />
+              <AccordionItem
+                title="How do Schüco uPVC windows and doors contribute to noise reduction?"
+                content="Schüco uPVC windows and doors contribute to noise reduction through their excellent design..."
+                panel="panel3"
+                expanded={activeKey}
+                handleChange={handleChange}
+              />
+              <AccordionItem
+                title="What type of glass is recommended for use with Schüco uPVC windows and doors?"
+                content="We always suggest and provide quotes for high-performance glass..."
+                panel="panel4"
+                expanded={activeKey}
+                handleChange={handleChange}
+              />
+            </Accordion>
+          </div>
+        </div>
+        {/* FAQ Section end */}
       </div>
     </Mainlayout>
   );
