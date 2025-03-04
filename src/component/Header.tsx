@@ -76,17 +76,21 @@ const Header = () => {
         >
           <div className="main-bar clearfix ">
             <div className="container-fluid clearfix">
-              <div className="logo-header mostion logo-dark logo-resize">
+              <div className="logo-header mostion logo-dark logo-resize mt-3">
                 <Link href="#" scroll={false}>
                   <Image
                     src={IMAGES.logo4white}
                     className="logo-main logo-dark"
                     alt=""
+                    width={500}
+                    height={45}
                   />
                   <Image
                     src={IMAGES.logo4}
                     className="logo-show-fix logo-resize"
                     alt=""
+                    width={500}
+                    height={45}
                   />
                 </Link>
               </div>

@@ -17847,9 +17847,9 @@ pre {
   .logo-header a {
     display: table-cell;
     vertical-align: middle; }
-  .logo-header img {
+  /* .logo-header img {
     height: auto;
-    width: 100%; }
+    width: 100%; } */
   .logo-header span {
     font-size: 20px;
     letter-spacing: 20px; }
@@ -18482,7 +18482,7 @@ pre {
     background-color: #212529; }
   @media only screen and (min-width: 991px) {
     .header-transparent .nav > li > a {
-      color: #fff; } }
+      color: #AEAEAE; } }
   .header-transparent .navbar-toggler span {
     background: #fff; }
   .header-transparent .is-fixed .nav > li > a {
