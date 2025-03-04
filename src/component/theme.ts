@@ -154,7 +154,8 @@ import FilterPic7 from '../assets/images/filter/pic7.jpg'
 import FilterPic8 from '../assets/images/filter/pic8.jpg'
 
 
-import UpvcVideoThumb from '../assets/images/video/v1.jpg'
+import UpvcVideoThumb1 from '../assets/images/video/v1.jpg'
+import UpvcVideoThumb2 from '../assets/images/video/v2.jpg'
 
 import work3Pic1 from '../assets/images/work/work-1/work_1.png'
 import work3Pic2 from '../assets/images/work/work-1/work_2.png'
@@ -169,6 +170,8 @@ import work3Pic10 from '../assets/images/work/work-1/work_10.png'
 import work3Pic11 from '../assets/images/work/work-1/work_11.png'
 import work3Pic12 from '../assets/images/work/work-1/work_12.png'
 import work3Pic13 from '../assets/images/work/work-1/work_13.png'
+
+import uPVCProduct1 from '../assets/images/about/uPVCProduct1.svg'
 
 import homeVideoThumbnail from '../assets/images/work/work-1/home_thumbnail.jpg'
 
@@ -317,7 +320,8 @@ const IMAGES = {
     Upvc5 : Upvc5,
     Upvc6 : Upvc6,
 
-    UpvcVideoThumb : UpvcVideoThumb,
+    UpvcVideoThumb1 : UpvcVideoThumb1,
+    UpvcVideoThumb2 : UpvcVideoThumb2,
 
     work3Pic1: work3Pic1,
     work3Pic2: work3Pic2,
@@ -334,6 +338,9 @@ const IMAGES = {
     work3Pic13: work3Pic13,
 
     homeVideoThumbnail: homeVideoThumbnail,
+
+    uPVCProduct1: uPVCProduct1,
+
     
 }
 export default IMAGES;

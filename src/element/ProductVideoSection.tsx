@@ -22,7 +22,7 @@ const ProductVideoSection = () => {
         <div className="col-lg-4 m-b30">
           <div className="video-bx content-media style-1">
             <Image
-              src={IMAGES.UpvcVideoThumb}
+              src={IMAGES.UpvcVideoThumb1}
               width={500}
               height={500}
               alt=""
@@ -78,7 +78,7 @@ const ProductVideoSection = () => {
         <div className="col-lg-4 m-b30">
           <div className="video-bx content-media style-1">
             <Image
-              src={IMAGES.UpvcVideoThumb}
+              src={IMAGES.UpvcVideoThumb2}
               width={500}
               height={500}
               alt=""
