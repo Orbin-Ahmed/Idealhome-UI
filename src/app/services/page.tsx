@@ -517,12 +517,12 @@ const Services = () => {
             <ClientSwiper />
           </div>
         </div> */}
-        <section
+        {/* <section
           className="section-full content-inner line-img section-title style-2"
           data-name="our skills"
         >
           <ProgressSection />
-        </section>
+        </section> */}
         {/* Testimonial Section */}
         <section
           className="content-inner bg-gray section-title style-1 line-img"
@@ -559,7 +559,7 @@ const Services = () => {
         </section>
         {/* Testimonial Section end */}
         {/* FAQ Section */}
-        <div className="bg-gradient py-5">
+        {/* <div className="bg-gradient py-5">
           <div className="container">
             <p className="text-center fw-bold fs-2 mb-4">
               Frequently Asked Questions?
@@ -595,7 +595,7 @@ const Services = () => {
               />
             </Accordion>
           </div>
-        </div>
+        </div> */}
         {/* FAQ Section end */}
       </div>
     </Mainlayout>
