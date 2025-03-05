@@ -11,6 +11,7 @@ import BlogSlider from "@/element/BlogSlider";
 import PortfolioSlider from "@/element/PortfolioSlider";
 import Mainlayout from "@/component/Mainlayout";
 import HomeSlider from "@/element/HomeSlider";
+import ProductVideoSection from "@/element/ProductVideoSection";
 
 export default function Home() {
   const [isOpen, setOpen] = useState<boolean>(false);
@@ -76,8 +77,16 @@ export default function Home() {
         </section>
 
         {/*  Content Box  */}
-        <section className="dz-content-bx style-1 line-img p-t50">
+        {/* <section className="dz-content-bx style-1 line-img p-t50">
           <WatchUs setOpen={setOpen} />
+        </section> */}
+
+        <section
+          className="section-full content-inner line-img section-title style-2"
+          data-name="our skills"
+        >
+          <ProductVideoSection />
+          {/* <ProgressSection /> */}
         </section>
 
         {/* <!-- Team --> */}
