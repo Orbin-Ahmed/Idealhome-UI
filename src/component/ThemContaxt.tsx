@@ -180,8 +180,8 @@ export const MenuList2 = [
     menu: "Products",
     className: "menu-down",
     child: [
-      { children: "Schüco uPVC", to: "/services" },
-      { children: "Bespoke Joinery", to: "/services-details" },
+      { children: "Schüco uPVC", to: "/upvc" },
+      { children: "Bespoke Joinery", to: "/joinery" },
     ],
   },
 
