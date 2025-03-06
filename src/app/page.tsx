@@ -69,7 +69,7 @@ export default function Home() {
             </div>
             <ServiceBlog />
             <div className="text-center mt-4">
-              <Link href="/services" className="btn shadow-primary btn-primary">
+              <Link href="/upvc" className="btn shadow-primary btn-primary">
                 VIEW ALL SERVICES <i className="m-l10 fas fa-caret-right" />
               </Link>
             </div>

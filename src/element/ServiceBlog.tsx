@@ -6,12 +6,15 @@ const carddata = [
   {
     image: IMAGES.ServicePic1,
     title: "UPVC Solution",
+    page: "/upvc",
     description:
       "High-performance uPVC windows and doors, engineered with Schüco's German precision for durability, energy efficiency, and timeless design tailored to the UAE climate.",
   },
+
   {
     image: IMAGES.ServicePic2,
     title: "Bespoke Joinery",
+    page: "/joinery",
     description:
       "Custom-crafted luxury joinery, including kitchen cabinets, wardrobes, doors, and decorative wooden elements, designed to elevate your home with sophistication and functionality.",
   },
@@ -52,7 +55,7 @@ const ServiceBlog = () => {
                     </span>
                   </div>
                   <h4 className="title m-b15 service-title">
-                    <Link href="/services-details" className="text-white">
+                    <Link href={item.page} className="text-white">
                       {item.title}
                     </Link>
                   </h4>
