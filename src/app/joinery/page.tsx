@@ -14,7 +14,7 @@ import GridCard from "@/component/GridCard";
 import ProductSection_1 from "@/component/ProductSection_1";
 import UpvcProduct from "@/element/UpvcProduct";
 import ProductVideoSection from "@/element/ProductVideoSection";
-import ProductHero from "@/component/ProductHero";
+import ProductHero_1 from "@/component/ProductHero_1";
 
 const ServicesDetails = () => {
   return (
@@ -73,7 +73,7 @@ const ServicesDetails = () => {
     // </Mainlayout>
     <Mainlayout>
       <div className="page-content bg-white">
-        <ProductHero />
+        <ProductHero_1 />
         {/* <div
           className="dz-bnr-inr style-1"
           style={{ backgroundImage: `url(${IMAGES.BanerImg2.src})` }}
