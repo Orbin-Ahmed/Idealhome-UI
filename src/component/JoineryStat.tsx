@@ -10,9 +10,9 @@ interface ShapeData {
 
 export const bestLogistics = {
   shape: { src: "/backgrounds/best-logistics-v1-shape1.png" },
-  title: "Expert Flooring \n Installers",
-  text: "There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration",
-  bottomText: "We can help you stand out your business",
+  title: "Expert Interior & Joinery Designer",
+  text: "There are many variations of passages of Interior to choose from",
+  bottomText: "We can help you stand out for your interior solution",
   overlayContent: "We Are Since 2006 ! Over 200 Awards",
   counters: [
     {
@@ -26,7 +26,7 @@ export const bestLogistics = {
       id: 2,
       title: "Our Expert",
       count: 30,
-      text: "Expert Flooring worker",
+      text: "Expert Interior worker",
       isK: false,
     },
   ],
@@ -94,7 +94,9 @@ const JoineryStat: React.FC<BestLogisticsProps> = ({ className = "" }) => {
             <div className="best-logistics-one__content">
               <div className="sec-title">
                 <h2 className="sec-title__title">{title}</h2>
+                <p className="sec-title__text">{text}</p>
               </div>
+
               <ul className="best-logistics-one__content-counter">
                 {counters.map(({ id, title, text, count, isK }) => (
                   <li key={id} className="animated fadeInUp">
