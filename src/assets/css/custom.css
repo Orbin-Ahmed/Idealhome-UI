@@ -817,10 +817,91 @@
 
 .sec-title__title {
   color: var(--ideal-black);
-  font-size: 50px;
+  font-size: 38px;
   line-height: 1.2em;
   font-weight: 700;
   margin-bottom: 27px;
+}
+
+/***
+=============================================
+    Our Material One
+=============================================
+***/
+.our-material-one {
+  position: relative;
+  display: block;
+  background: #ffffff;
+  padding: 0px 0px 120px;
+  z-index: 1;
+}
+
+.our-material-one__content {
+  position: relative;
+  display: block;
+}
+
+.our-material-one__content .sec-title {
+  margin-bottom: 51px;
+}
+
+.our-material-one__img {
+  position: relative;
+  display: block;
+  max-width: 565px;
+  width: 100%;
+}
+
+.our-material-one__img1 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.our-material-one__img1::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 1;
+}
+
+.our-material-one__img:hover .our-material-one__img1::before {
+  -webkit-animation: circle 0.75s;
+  animation: circle 0.75s;
+}
+
+.our-material-one__img1 img {
+  width: 100%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
+}
+
+.our-material-one__img1:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.our-material-one__img2 {
+  position: absolute;
+  right: 50px;
+  bottom: -45px;
+  z-index: 5;
+}
+
+.our-material-one__img2 img {
+  width: 100%;
 }
 
 /* Responsive Styles */
@@ -905,6 +986,10 @@
     margin-top: 180px;
   }
 
+  .our-material-one__content {
+    margin-bottom: 16px;
+  }
+
   .best-logistics-one__content,
   .best-logistics-one__img {
     max-width: 100%;
@@ -969,9 +1054,6 @@
 }
 
 @media only screen and (max-width: 975px) {
-  .about-one .sec-title__title {
-    font-size: 24px;
-  }
   .about-one__content-list li .title h3 {
     font-size: 16px;
   }
@@ -1007,6 +1089,18 @@
 @media (max-width: 768px) {
   .about-one__img2 .video-icon {
     left: 28%;
+  }
+
+  .about-one .sec-title__title {
+    font-size: 24px;
+  }
+
+  .sec-title__title {
+    font-size: 24px;
+  }
+
+  .sec-title__text {
+    font-size: 16px;
   }
 
   .silder-content,

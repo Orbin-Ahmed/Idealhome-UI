@@ -3,6 +3,7 @@ import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import VisibilityCountUp from "./VisibilityCountUp";
 import Link from "next/link";
+import TextSplit from "./TestSplit";
 
 interface ShapeData {
   src: string;
@@ -93,7 +94,9 @@ const JoineryStat: React.FC<BestLogisticsProps> = ({ className = "" }) => {
           <Col xl={6}>
             <div className="best-logistics-one__content">
               <div className="sec-title">
-                <h2 className="sec-title__title">{title}</h2>
+                <h2 className="sec-title__title">
+                  <TextSplit text={title} />
+                </h2>
                 <p className="sec-title__text">{text}</p>
               </div>
 
