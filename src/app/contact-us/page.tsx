@@ -163,8 +163,7 @@ const ContactUs = () => {
                         value="submit"
                         className="btn btn-primary"
                       >
-                        SUBSCRIBE NOW{" "}
-                        <i className="m-l10 fas fa-caret-right"></i>
+                        SUBMIT NOW <i className="m-l10 fas fa-caret-right"></i>
                       </button>
                     </div>
                   </div>
