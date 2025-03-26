@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { GiCarpetBombing, GiCookingPot, GiWoodPile } from "react-icons/gi";
+import { GiCookingPot, GiRolledCloth, GiWoodPile } from "react-icons/gi";
 import TextSplit from "./TestSplit";
 
 interface ServiceItem {
@@ -36,7 +36,7 @@ const JoineryServiceData = {
 interface JoineryServiceProps {}
 
 const iconMapping: Record<number, React.ReactElement> = {
-  1: <GiCarpetBombing size={85} />,
+  1: <GiRolledCloth size={85} />,
   2: <GiCookingPot size={85} />,
   3: <GiWoodPile size={85} />,
 };
