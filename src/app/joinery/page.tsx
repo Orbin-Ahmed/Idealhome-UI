@@ -4,6 +4,7 @@ import JoinerSlider from "@/element/JoinerSlider";
 import YourProject from "@/component/YourProject";
 import JoineryAbout from "@/component/JoineryAbout";
 import JoineryStat from "@/component/JoineryStat";
+import JoineryService from "@/component/JoineryService";
 
 const Joinery = () => {
   return (
@@ -13,6 +14,7 @@ const Joinery = () => {
         <YourProject />
         <JoineryAbout />
         <JoineryStat />
+        <JoineryService />
       </div>
     </Mainlayout>
   );
