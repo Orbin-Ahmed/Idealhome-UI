@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
+import { GiWoodenDoor, GiWood, GiSaw, GiChisel } from "react-icons/gi";
 
 interface ShapeData {
   src: string;
@@ -44,13 +45,21 @@ interface WorkSingleProps {
   work: WorkItem;
 }
 
+// Map each work ID to a corresponding React icon element.
+const iconMapping: Record<number, React.ReactElement> = {
+  1: <GiWoodenDoor size={60} />,
+  2: <GiWood size={60} />,
+  3: <GiSaw size={60} />,
+  4: <GiChisel size={60} />,
+};
+
 const WorkSingle: React.FC<WorkSingleProps> = ({ work }) => {
-  const { id, icon, title } = work;
+  const { id, title } = work;
   return (
     <Col xl={3} lg={3} className="animated fadeInUp">
       <div className="work-one__single text-center">
         <div className={`work-one__single-icon bg${id}`}>
-          <span className={icon}></span>
+          {iconMapping[id] || null}
           <div className="count-box"></div>
         </div>
         <h2>
