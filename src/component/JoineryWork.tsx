@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
-import { GiWoodenDoor, GiWood, GiSaw, GiChisel } from "react-icons/gi";
+import { GiWoodenDoor, GiWoodPile, GiHandSaw, GiChisel } from "react-icons/gi";
 
 interface ShapeData {
   src: string;
@@ -48,8 +48,8 @@ interface WorkSingleProps {
 // Map each work ID to a corresponding React icon element.
 const iconMapping: Record<number, React.ReactElement> = {
   1: <GiWoodenDoor size={60} />,
-  2: <GiWood size={60} />,
-  3: <GiSaw size={60} />,
+  2: <GiWoodPile size={60} />,
+  3: <GiHandSaw size={60} />,
   4: <GiChisel size={60} />,
 };
 
