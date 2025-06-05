@@ -29,6 +29,25 @@ export default function Home() {
         <section className="line-img section-title style-2 pt-5">
           <WhyChooseIdealFactory />
         </section>
+
+        {/* Services  */}
+        <section className="content-inner-1 line-img overflow-hidden">
+          <div className="container">
+            <div className="section-head style-1 text-center">
+              <h2 className="title">
+                Our <span className="text-primary">Products</span>
+              </h2>
+              <div className="dz-separator style-1 text-primary"></div>
+            </div>
+            <ServiceBlog />
+            <div className="text-center mt-4">
+              <Link href="/upvc" className="btn shadow-primary btn-primary">
+                VIEW ALL SERVICES <i className="m-l10 fas fa-caret-right" />
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/*  Our Portfolio  */}
         <section
           className="content-inner-2 bg-gray line-img pb-1 section-title style-1"
@@ -62,24 +81,6 @@ export default function Home() {
           />
         </section>
 
-        {/* Services  */}
-        <section className="content-inner-1 line-img overflow-hidden">
-          <div className="container">
-            <div className="section-head style-1 text-center">
-              <h2 className="title">
-                Our <span className="text-primary">Products</span>
-              </h2>
-              <div className="dz-separator style-1 text-primary"></div>
-            </div>
-            <ServiceBlog />
-            <div className="text-center mt-4">
-              <Link href="/upvc" className="btn shadow-primary btn-primary">
-                VIEW ALL SERVICES <i className="m-l10 fas fa-caret-right" />
-              </Link>
-            </div>
-          </div>
-        </section>
-
         {/*  Content Box  */}
         <section className="dz-content-bx style-1 line-img p-t50">
           <div className="section-head style-1 text-center mb-5">
@@ -91,29 +92,9 @@ export default function Home() {
           <WatchUs setOpen={setOpen} />
         </section>
 
-        {/* <!-- Team --> */}
-        {/* <section
-          className="content-inner section-title style-2 line-img"
-          data-name="Our Team"
-        >
-          <div className="container">
-            <div className="section-head style-1 text-center">
-              <h2 className="title">
-                CREATIVE <span className="text-primary">EXPERTISE</span>
-              </h2>
-              <div className="dz-separator style-1 text-primary"></div>
-            </div>
-            <div className="row">
-              <div className="col-lg-12 m-b30">
-                <TeamSlider />
-              </div>
-            </div>
-          </div>
-        </section> */}
-
         {/* <!-- Testimonials --> */}
         <section
-          className="content-inner bg-gray section-title style-1 line-img"
+          className="content-inner bg-gray section-title style-1 line-img mt-5"
           data-name="Testimonial"
         >
           <div className="container">
@@ -145,21 +126,6 @@ export default function Home() {
             buttn2="swiper-button-next3"
           />
         </section>
-
-        {/* <!-- Blog --> */}
-        {/* <section className="content-inner-1 line-img">
-          <div className="container">
-            <div className="section-head style-1 text-center">
-              <h2 className="title">
-                STAY UPDATED <span className="text-primary">WITH US</span>
-              </h2>
-              <div className="dz-separator style-1 text-primary"></div>
-            </div>
-            <div className="blog-area">
-              <BlogSlider />
-            </div>
-          </div>
-        </section> */}
       </div>
       <ModalVideo
         channel="youtube"
