@@ -69,7 +69,7 @@ const Index3HomeSlider = () => {
                     </p>
                     <Link
                       href="about-us"
-                      className="btn shadow-primary btn-primary w-100 btn-quote"
+                      className="btn shadow-primary btn-primary btn-quote"
                     >
                       See What We Offer{" "}
                     </Link>

@@ -20046,7 +20046,7 @@ ul a.rsswidget:hover {
   .silder-three .silder-content {
     left: 15%;
     top: 50%;
-    width: 500px;
+    width: 630px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -20089,7 +20089,7 @@ ul a.rsswidget:hover {
 }
 @media only screen and (max-width: 1680px) {
   .silder-three .silder-content .title {
-    font-size: 50px;
+    font-size: 42px;
   }
 }
 @media only screen and (max-width: 575px) {

@@ -10,15 +10,15 @@
 }
 
 .btn-quote {
-  font-size: 1.75rem !important;
+  font-size: 1.35rem !important;
   justify-content: center;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   font-family: "Oswald", sans-serif !important;
   line-height: 1.2 !important;
 }
 
 .btn-quote-2 {
-  font-size: 1.5rem !important;
+  font-size: 1.2rem !important;
   justify-content: center;
   font-weight: 600 !important;
   font-family: "Oswald", sans-serif !important;
@@ -1085,7 +1085,7 @@
     font-size: 42px;
   }
   .btn-quote {
-    font-size: 22px !important;
+    font-size: 19px !important;
   }
   .service-content {
     width: 880px;
@@ -1163,7 +1163,7 @@
   .silder-three .silder-content {
     left: 11.5%;
     right: 0;
-    top: 36%;
+    top: 50%;
     width: 60%;
   }
 
@@ -1263,7 +1263,7 @@
 
   .silder-three .silder-content {
     left: 20%;
-    top: 30%;
+    top: 50%;
   }
   .silder-three .silder-content .title {
     font-size: 32px;
@@ -1294,7 +1294,7 @@
 @media (max-width: 500px) {
   .silder-three .silder-content {
     width: 90%;
-    top: 30%;
+    top: 50%;
     left: 10%;
   }
   .silder-three .silder-content .title {
