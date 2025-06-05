@@ -55,29 +55,29 @@ const Index3HomeSlider = () => {
                   <div className="inner-content">
                     <h1 className="title hero-1-header">
                       {/* <span className="text-primary">Ideal Factory</span>{" "} */}
-                      Enhance Your Dream Villa with Premium Interiors and uPVC
-                      Solutions
+                      Seamless Interiors. Premium Exteriors. Designed,
+                      Visualized, Delivered — Within Budget.
                     </h1>
                     <p className="m-b30">
                       {/* Outdated interiors? Looking to transform your space?{" "} */}
                       <br />
-                      <span>
+                      {/* <span>
                         Transform Your Villa into a Sanctuary of Comfort, Style,
                         and Timeless Elegance - Designed for the Modern Emirati
                         Homeowner.
-                      </span>
+                      </span> */}
                     </p>
                     <Link
                       href="about-us"
                       className="btn shadow-primary btn-primary w-100 btn-quote"
                     >
-                      Reserve Your Free Expert Design Consultation{" "}
+                      See What We Offer{" "}
                     </Link>
                   </div>
                 </div>
-                <div className="service-content">
+                {/* <div className="service-content">
                   <ServiceBlog />
-                </div>
+                </div> */}
               </div>
             </SwiperSlide>
           ))}

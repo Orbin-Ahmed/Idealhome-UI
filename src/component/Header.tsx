@@ -108,50 +108,6 @@ const Header = () => {
                 <span></span>
               </button>
 
-              <div className="extra-nav">
-                <div className="extra-cell">
-                  <Link
-                    href="#"
-                    scroll={false}
-                    className="search-link"
-                    id="quik-search-btn"
-                    onClick={() => setSearchBar(true)}
-                  >
-                    <i className="flaticon-loupe" />
-                  </Link>
-                  <Link
-                    href="#"
-                    scroll={false}
-                    data-bs-toggle="modal"
-                    className="btn shadow-primary btn-primary login-btn"
-                    onClick={() => setSubscribeModel(true)}
-                  >
-                    <i className="flaticon-email scale3" />
-                    <span>SUBSCRIBE NOW</span>
-                  </Link>
-                </div>
-              </div>
-
-              <div
-                className={`dz-quik-search ${searchBar ? "On" : ""}`}
-                style={{ display: "block" }}
-              >
-                <form action="#">
-                  <input
-                    name="search"
-                    defaultValue=""
-                    type="text"
-                    className="form-control"
-                    placeholder="Enter Your Keyword ..."
-                  />
-                  <span
-                    id="quik-search-remove"
-                    onClick={() => setSearchBar(false)}
-                  >
-                    <i className="ti-close" />
-                  </span>
-                </form>
-              </div>
               <div className="sidebar-menu">
                 <div
                   className="menu-btn navicon"
@@ -161,7 +117,6 @@ const Header = () => {
                   <span></span>
                   <span></span>
                 </div>
-                <h6 className="phone-no">+971 50 312-2300</h6>
               </div>
               <div
                 className={`header-nav navbar-collapse justify-content-center ${
@@ -174,95 +129,97 @@ const Header = () => {
                     <Image src={IMAGES.logo} alt="" />
                   </Link>
                 </div>
-                {/* Left Menu  */}
-                <ul className="nav navbar-nav navbar-left">
-                  {MenuList.map((item, ind) => {
-                    const { menu, child, className, to } = item;
-                    const isActive = menuactive === menu;
-                    const isOpen = state.activeSubmenu === menu;
+                <div>
+                  {/* Left Menu  */}
+                  <ul className="nav navbar-nav navbar-left">
+                    {MenuList.map((item, ind) => {
+                      const { menu, child, className, to } = item;
+                      const isActive = menuactive === menu;
+                      const isOpen = state.activeSubmenu === menu;
 
-                    if (className === "menu-down") {
-                      return (
-                        <li
-                          className={`sub-menu-down ${
-                            isActive ? "active" : ""
-                          } ${isOpen ? "open" : ""}`}
-                          key={ind}
-                        >
-                          <Link
-                            href="#"
-                            scroll={false}
-                            onClick={(e) => {
-                              e.preventDefault();
-                              menuHandler(menu);
-                            }}
+                      if (className === "menu-down") {
+                        return (
+                          <li
+                            className={`sub-menu-down ${
+                              isActive ? "active" : ""
+                            } ${isOpen ? "open" : ""}`}
+                            key={ind}
                           >
-                            {menu}
-                          </Link>
-                          <ul className="sub-menu">
-                            {child?.map((data, index) => (
-                              <li key={index}>
-                                <Link href={data.to}>{data.children}</Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </li>
-                      );
-                    } else {
-                      return (
-                        <li key={ind}>
-                          <Link href={to || "#"}>{menu}</Link>
-                        </li>
-                      );
-                    }
-                  })}
-                </ul>
-                {/* Left Menu  end */}
-                {/* Right Menu  */}
-                <ul className="nav navbar-nav navbar navbar-right">
-                  {MenuList2.map((item, ind) => {
-                    const { menu, child, className } = item;
-                    if (className === "menu-down") {
-                      return (
-                        <li
-                          className={`sub-menu-down ${
-                            menuactive == item.menu ? "active" : ""
-                          }
+                            <Link
+                              href="#"
+                              scroll={false}
+                              onClick={(e) => {
+                                e.preventDefault();
+                                menuHandler(menu);
+                              }}
+                            >
+                              {menu}
+                            </Link>
+                            <ul className="sub-menu">
+                              {child?.map((data, index) => (
+                                <li key={index}>
+                                  <Link href={data.to}>{data.children}</Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </li>
+                        );
+                      } else {
+                        return (
+                          <li key={ind}>
+                            <Link href={to || "#"}>{menu}</Link>
+                          </li>
+                        );
+                      }
+                    })}
+                  </ul>
+                  {/* Left Menu  end */}
+                  {/* Right Menu  */}
+                  <ul className="nav navbar-nav navbar navbar-right">
+                    {MenuList2.map((item, ind) => {
+                      const { menu, child, className } = item;
+                      if (className === "menu-down") {
+                        return (
+                          <li
+                            className={`sub-menu-down ${
+                              menuactive == item.menu ? "active" : ""
+                            }
                                                     ${
                                                       state.activeSubmenu ===
                                                       item.menu
                                                         ? "open"
                                                         : ""
                                                     }`}
-                          key={ind}
-                        >
-                          <Link
-                            href="#"
-                            scroll={false}
-                            onClick={() => {
-                              menuHandler(item.menu);
-                            }}
+                            key={ind}
                           >
-                            {menu}
-                          </Link>
-                          <ul className="sub-menu">
-                            {child?.map((data, index) => (
-                              <li key={index}>
-                                <Link href={data.to}>{data.children}</Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </li>
-                      );
-                    } else {
-                      return (
-                        <li key={ind}>
-                          <Link href={`${item?.to}`}>{item.menu}</Link>
-                        </li>
-                      );
-                    }
-                  })}
-                </ul>
+                            <Link
+                              href="#"
+                              scroll={false}
+                              onClick={() => {
+                                menuHandler(item.menu);
+                              }}
+                            >
+                              {menu}
+                            </Link>
+                            <ul className="sub-menu">
+                              {child?.map((data, index) => (
+                                <li key={index}>
+                                  <Link href={data.to}>{data.children}</Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </li>
+                        );
+                      } else {
+                        return (
+                          <li key={ind}>
+                            <Link href={`${item?.to}`}>{item.menu}</Link>
+                          </li>
+                        );
+                      }
+                    })}
+                  </ul>
+                </div>
                 {/* Right Menu end*/}
                 <div className="dz-social-icon">
                   <ul>
@@ -285,75 +242,6 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <div
-        className={`modal fade inquiry-modal ${subscribeModel ? "show" : ""}`}
-        style={{ display: subscribeModel ? "block" : "none" }}
-        id="exampleModal"
-        tabIndex={-1}
-        role="dialog"
-        aria-hidden="true"
-      >
-        <div
-          className="modal-dialog modal-dialog-centered"
-          style={{ marginTop: "10%" }}
-        >
-          <div className="inquiry-adv">
-            <Image src={IMAGES.ModalImage} alt="" />
-          </div>
-          <div className="modal-content">
-            <div className="modal-header">
-              <i className="flaticon-email"></i>
-              <h5 className="modal-title" id="exampleModalLongTitle">
-                SUBSCRIBE TO OUR NEWSLATTER
-              </h5>
-              <button
-                type="button"
-                className="btn-close"
-                onClick={() => setSubscribeModel(false)}
-              >
-                &times;
-              </button>
-            </div>
-            <div className="modal-body">
-              <div className="dzSubscribeMsg"></div>
-              <form
-                action="script/mailchamp.php"
-                className="dzSubscribe"
-                method="post"
-              >
-                <div className="form-group mb-3">
-                  <input
-                    type="text"
-                    name="dzName"
-                    required
-                    className="form-control"
-                    placeholder="YOUR NAME"
-                  />
-                </div>
-                <div className="form-group mb-3">
-                  <input
-                    type="email"
-                    name="dzEmail"
-                    required
-                    className="form-control"
-                    placeholder="YOUR EMAIL ADDRESS"
-                  />
-                </div>
-                <div className="form-group text-center">
-                  <button
-                    name="submit"
-                    type="submit"
-                    value="Submit"
-                    className="btn btn-primary"
-                  >
-                    SUBSCRIBE NOW
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
       <div
         className={` fade ${subscribeModel ? "modal-backdrop show" : ""}`}
       ></div>

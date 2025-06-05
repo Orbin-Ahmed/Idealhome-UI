@@ -159,35 +159,42 @@ export const MenuList = [
     to: "/",
   },
   {
-    menu: "Team",
+    menu: "Solutions",
     className: "menu-down",
     child: [
-      { children: "About Us", to: "/about-us" },
-      { children: "Team", to: "/team" },
+      { children: "Joinery", to: "/joinery" },
+      { children: "uPVC Windows & Doors (Schüco)", to: "/upvc" },
+      { children: "Bundled Packages", to: "/team" },
     ],
   },
   {
-    menu: "Portfolio",
+    menu: "Free 3D Design",
     className: "menu-down",
     child: [
-      { children: "Portfolio", to: "/portfolio" },
-      { children: "Portfolio Details", to: "/portfolio-details" },
+      { children: "Book a Design Session", to: "/portfolio" },
+      { children: "Design Gallery", to: "/portfolio-details" },
     ],
   },
 ];
 export const MenuList2 = [
   {
-    menu: "Products",
+    menu: "How It Works",
     className: "menu-down",
     child: [
-      { children: "Schüco uPVC", to: "/upvc" },
-      { children: "Bespoke Joinery", to: "/joinery" },
+      { children: "Our Process", to: "/upvc" },
+      { children: "What Sets Us Apart", to: "/joinery" },
     ],
   },
 
   {
-    menu: "Blog",
-    to: "/blog-details",
+    menu: "Why Ideal Factory",
+    className: "menu-down",
+    child: [
+      { children: "About Us", to: "/about-us" },
+      { children: "Testimonials", to: "/about-us" },
+      { children: "Our Craftsmanship", to: "/about-us" },
+      { children: "FAQ", to: "/about-us" },
+    ],
   },
   { menu: "Contact Us", to: "/contact-us" },
 ];
