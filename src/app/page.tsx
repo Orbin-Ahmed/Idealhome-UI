@@ -12,6 +12,7 @@ import PortfolioSlider from "@/element/PortfolioSlider";
 import Mainlayout from "@/component/Mainlayout";
 import HomeSlider from "@/element/HomeSlider";
 import ProductVideoSection from "@/element/ProductVideoSection";
+import WhyChooseIdealFactory from "@/component/WhyChooseIdealFactory";
 
 export default function Home() {
   const [isOpen, setOpen] = useState<boolean>(false);
@@ -24,6 +25,9 @@ export default function Home() {
           data-name="About Us"
         >
           <AboutUs />
+        </section>
+        <section className="line-img section-title style-2 pt-5">
+          <WhyChooseIdealFactory />
         </section>
         {/*  Our Portfolio  */}
         <section

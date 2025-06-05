@@ -36,13 +36,15 @@ const AboutUs = () => {
           className="col-lg-6 m-b30"
         >
           <h4 className="title">
-            Bespoke Joinery and Premium uPVC Solutions for Your Dream Home
+            Premium Joinery & uPVC with Free Professional 3D Design
           </h4>
           <div className="year-exp shadow m-b30">
-            <h2 className="year text-primary">20+</h2>
+            {/* <h2 className="year text-primary">20+</h2> */}
             <h4 className="text">
-              YEARS OF <span className="text-primary">EXPERIENCE</span> |
-              <span> Partnered with Schúco, Germany's Innovation Leader</span>
+              {/* YEARS OF <span className="text-primary">EXPERIENCE</span> |
+              <span> Partnered with Schúco, Germany's Innovation Leader</span> */}
+              Transform your villa with elegant joinery and German uPVC windows
+              — all in one seamless, hassle-free package.
             </h4>
           </div>
           <p className="m-b15">
@@ -54,10 +56,8 @@ const AboutUs = () => {
             state-of-the-art window systems designed for the UAE&apos;s climate.
             <br />
             <br />
-            Transform your villa with innovative craftsmanship, elegant
-            aesthetics, and seamless service from Ideal Factory. Experience the
-            perfect blend of efficiency, durability, and design
-            excellence—contact us today for a free consultation!
+            Experience the perfect blend of efficiency, durability, and design
+            excellence contact us today for a free consultation!
           </p>
           <p className="m-b30"></p>
           <Link
