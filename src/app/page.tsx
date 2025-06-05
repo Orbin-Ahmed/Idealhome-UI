@@ -67,7 +67,7 @@ export default function Home() {
           <div className="container">
             <div className="section-head style-1 text-center">
               <h2 className="title">
-                WHAT <span className="text-primary">WE PROVIDE</span>
+                Our <span className="text-primary">Products</span>
               </h2>
               <div className="dz-separator style-1 text-primary"></div>
             </div>
@@ -81,16 +81,14 @@ export default function Home() {
         </section>
 
         {/*  Content Box  */}
-        {/* <section className="dz-content-bx style-1 line-img p-t50">
+        <section className="dz-content-bx style-1 line-img p-t50">
+          <div className="section-head style-1 text-center mb-5">
+            <h2 className="title">
+              Our <span className="text-primary">Process</span>
+            </h2>
+            <div className="dz-separator style-1 text-primary mb-5"></div>
+          </div>
           <WatchUs setOpen={setOpen} />
-        </section> */}
-
-        <section
-          className="section-full content-inner line-img section-title style-2"
-          data-name="our skills"
-        >
-          <ProductVideoSection />
-          {/* <ProgressSection /> */}
         </section>
 
         {/* <!-- Team --> */}

@@ -4,19 +4,39 @@ import IMAGES from "../component/theme";
 
 const carddata = [
   {
-    image: IMAGES.ServicePic1,
-    title: "UPVC Solution",
+    image: "https://placehold.co/1200x1600",
+    title: "CLOSETS",
     page: "/upvc",
     description:
       "High-performance uPVC windows and doors, engineered with Schüco's German precision for durability, energy efficiency, and timeless design tailored to the UAE climate.",
   },
-
   {
-    image: IMAGES.ServicePic2,
-    title: "Bespoke Joinery",
-    page: "/joinery",
+    image: "https://placehold.co/1200x1600",
+    title: "KITCHEN SOLUTIONS",
+    page: "/upvc",
     description:
-      "Custom-crafted luxury joinery, including kitchen cabinets, wardrobes, doors, and decorative wooden elements, designed to elevate your home with sophistication and functionality.",
+      "High-performance uPVC windows and doors, engineered with Schüco's German precision for durability, energy efficiency, and timeless design tailored to the UAE climate.",
+  },
+  {
+    image: "https://placehold.co/1200x1600",
+    title: "WALL CLADDING",
+    page: "/upvc",
+    description:
+      "High-performance uPVC windows and doors, engineered with Schüco's German precision for durability, energy efficiency, and timeless design tailored to the UAE climate.",
+  },
+  {
+    image: "https://placehold.co/1200x1600",
+    title: "DOORS",
+    page: "/upvc",
+    description:
+      "High-performance uPVC windows and doors, engineered with Schüco's German precision for durability, energy efficiency, and timeless design tailored to the UAE climate.",
+  },
+  {
+    image: "https://placehold.co/1200x1600",
+    title: "uPVC Windows & Doors",
+    page: "/upvc",
+    description:
+      "High-performance uPVC windows and doors, engineered with Schüco's German precision for durability, energy efficiency, and timeless design tailored to the UAE climate.",
   },
 ];
 
@@ -30,7 +50,7 @@ const ServiceBlog = () => {
               className="front overlay-black-middle hover-image"
               // className="front hover-image"
               style={{
-                backgroundImage: `url(${item.image.src})`,
+                backgroundImage: `url(${item.image})`,
               }}
             >
               <div className="inner">
@@ -38,9 +58,9 @@ const ServiceBlog = () => {
                   <div className="sep-tl"></div>
                   <div className="sep-br"></div>
                   <h4 className="title m-b10">{item.title}</h4>
-                  <h6 className="sub-title text-primary fw-bold">
+                  {/* <h6 className="sub-title text-primary fw-bold">
                     WE DESIGN IDEAS
-                  </h6>
+                  </h6> */}
                 </div>
               </div>
             </div>

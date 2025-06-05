@@ -6,28 +6,34 @@ import IMAGES from "../component/theme";
 
 const projectData = [
   {
-    name: "Consultation",
+    name: "Free Design",
     number: "1",
     description:
-      "Understand your style and needs to create tailored solutions.",
+      "Simply share your villa’s architectural drawings, and receive a free design delivered in 60 minutes.",
   },
   {
-    name: "Design & Planning",
+    name: "Tailored Design & Quotation",
     number: "2",
     description:
-      "Visualize your space with advanced 3D designs and Schüco technology.",
+      "We present materials for you to choose from, then provide a bundle-priced quotation designed to maximize your savings.",
   },
   {
-    name: "Craftsmanship",
+    name: "Production at Our Factory",
     number: "3",
     description:
-      "Deliver precision-crafted joinery and uPVC installations with premium materials.",
+      "After your approval, we proceed to the fabrication stage, ensuring all pieces are on time.",
   },
   {
-    name: "Transformation",
+    name: "Professional Installation",
     number: "4",
     description:
-      "Turn your dream home into reality with elegance and functionality.",
+      "Your order is delivered as scheduled, with installation performed by our skilled team.",
+  },
+  {
+    name: "Quality Assurance",
+    number: "5",
+    description:
+      "We ensure everything meets your expectations and maintain our guarantee of quality.",
   },
 ];
 
@@ -72,10 +78,8 @@ const WatchUs: React.FC<Props> = ({ setOpen }) => {
           <div className="col-lg-6 inner-content">
             <div className="section-head style-1">
               <h2 className="title">
-                How We Bring Your{" "}
-                <span className="text-primary">Vision to Life</span>
+                <span className="text-primary">Design to Installations</span>
               </h2>
-              <div className="dz-separator style-1 text-primary"></div>
             </div>
             <div className="row">
               {projectData.map((item, i) => (
