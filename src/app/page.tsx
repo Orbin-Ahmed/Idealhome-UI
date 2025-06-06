@@ -18,12 +18,32 @@ export default function Home() {
       <div className="page-content bg-white">
         <HomeSlider />
         <section
-          className="content-inner line-img section-title style-2"
-          data-name="About Us"
+          className="py-5"
+          style={{
+            backgroundColor: "#f8f9fa",
+            borderTop: "1px solid #e0e0e0",
+            borderBottom: "1px solid #e0e0e0",
+          }}
         >
-          <AboutUs />
+          <div className="container text-center">
+            <h4
+              className="text"
+              style={{
+                fontSize: "24px",
+                fontWeight: "500",
+                color: "var(--primary-dark)",
+                maxWidth: "800px",
+                margin: "0 auto",
+                lineHeight: "1.6",
+              }}
+            >
+              Transform your villa with elegant joinery and German uPVC windows
+              — all in one seamless, hassle-free package.
+            </h4>
+          </div>
         </section>
-        <section className="line-img section-title style-2 pt-5">
+
+        <section className="line-img section-title style-2">
           <WhyChooseIdealFactory />
         </section>
 
@@ -37,45 +57,7 @@ export default function Home() {
               <div className="dz-separator style-1 text-primary"></div>
             </div>
             <ServiceBlog />
-            {/* <div className="text-center mt-4">
-              <Link href="/upvc" className="btn shadow-primary btn-primary">
-                VIEW ALL SERVICES <i className="m-l10 fas fa-caret-right" />
-              </Link>
-            </div> */}
           </div>
-        </section>
-
-        {/*  Our Portfolio  */}
-        <section
-          className="content-inner-2 bg-gray line-img pb-1 section-title style-1"
-          data-name="Portfolio"
-        >
-          <div className="container">
-            <div className="row align-items-center section-head-bx">
-              <div className="col-md-8">
-                <div className="section-head style-1">
-                  <h2 className="title">
-                    SEE OUR <span className="text-primary">LATEST WORK</span>
-                  </h2>
-                  <div className="dz-separator style-1 text-primary"></div>
-                </div>
-              </div>
-              <div className="col-md-4 text-end">
-                <div className="portfolio-pagination d-inline-block mb-5">
-                  <div className="btn-prev swiper-button-prev2 pe-3 c-pointer">
-                    <i className="las la-long-arrow-alt-left"></i>PREV
-                  </div>
-                  <div className="btn-next swiper-button-next2 ps-3 c-pointer">
-                    NEXT<i className="las la-long-arrow-alt-right"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <PortfolioSlider
-            prvBtn="swiper-button-prev2"
-            nextBtn="swiper-button-next2"
-          />
         </section>
 
         {/*  Content Box  */}

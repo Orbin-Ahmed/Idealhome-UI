@@ -44,8 +44,6 @@ const AboutUs = () => {
           <div className="year-exp shadow m-b30">
             {/* <h2 className="year text-primary">20+</h2> */}
             <h4 className="text">
-              {/* YEARS OF <span className="text-primary">EXPERIENCE</span> |
-              <span> Partnered with Schúco, Germany's Innovation Leader</span> */}
               Transform your villa with elegant joinery and German uPVC windows
               — all in one seamless, hassle-free package.
             </h4>
