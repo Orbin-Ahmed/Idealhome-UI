@@ -201,7 +201,7 @@ const ContactUSComponent: React.FC<ContactUsProps> = () => {
       </section>
 
       {/* Map Section */}
-      <section className="content-inner-1 line-img">
+      {/* <section className="content-inner-1 line-img">
         <div className="container">
           <div className="section-head style-1 text-center">
             <h2 className="title">
@@ -211,7 +211,7 @@ const ContactUSComponent: React.FC<ContactUsProps> = () => {
           </div>
           <Image src={IMAGES.MapImage} alt="" />
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

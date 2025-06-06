@@ -5,13 +5,10 @@ import ModalVideo from "react-modal-video";
 import AboutUs from "@/element/AboutUs";
 import ServiceBlog from "@/element/ServiceBlog";
 import WatchUs from "@/element/WatchUs";
-import TeamSlider from "@/element/TeamSlider";
 import Testimonail from "@/element/Testimonail";
-import BlogSlider from "@/element/BlogSlider";
 import PortfolioSlider from "@/element/PortfolioSlider";
 import Mainlayout from "@/component/Mainlayout";
 import HomeSlider from "@/element/HomeSlider";
-import ProductVideoSection from "@/element/ProductVideoSection";
 import WhyChooseIdealFactory from "@/component/WhyChooseIdealFactory";
 
 export default function Home() {
@@ -40,11 +37,11 @@ export default function Home() {
               <div className="dz-separator style-1 text-primary"></div>
             </div>
             <ServiceBlog />
-            <div className="text-center mt-4">
+            {/* <div className="text-center mt-4">
               <Link href="/upvc" className="btn shadow-primary btn-primary">
                 VIEW ALL SERVICES <i className="m-l10 fas fa-caret-right" />
               </Link>
-            </div>
+            </div> */}
           </div>
         </section>
 

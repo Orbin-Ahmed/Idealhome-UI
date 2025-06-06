@@ -1,12 +1,15 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import IMAGES from "../component/theme";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Request3DDesignModal from "@/component/Request3DDesignModal";
 
 const AboutUs = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div className="container">
       <div className="section-head style-1 text-center">
@@ -60,14 +63,18 @@ const AboutUs = () => {
             excellence contact us today for a free consultation!
           </p>
           <p className="m-b30"></p>
-          <Link
-            href="/about-us"
+          <button
+            onClick={() => setShowModal(true)}
             className="btn shadow-primary btn-primary w-100 btn-quote-2"
           >
             Reserve Your Expert Design Consultation
-          </Link>
+          </button>
         </motion.div>
       </div>
+      <Request3DDesignModal
+        show={showModal}
+        handleClose={() => setShowModal(false)}
+      />
     </div>
   );
 };

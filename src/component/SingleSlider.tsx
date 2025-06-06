@@ -11,7 +11,7 @@ interface SingleSliderProps {
 
 const SingleSlider: React.FC<SingleSliderProps> = ({ slide }) => {
   const { bg, text, title } = slide;
-  const imageSrc = `/backgrounds/${bg}`;
+  const imageSrc = `${bg}`;
 
   return (
     <div className="position-relative vh-100 w-100">
@@ -37,8 +37,8 @@ const SingleSlider: React.FC<SingleSliderProps> = ({ slide }) => {
               />
               <div className="main-slider-one__btn mt-3">
                 <Link
-                  href="/about-us"
-                  className="btn shadow-primary btn-primary btn-quote-2 rounded-pill project-btn"
+                  href="#service"
+                  className="btn shadow-primary btn-primary btn-quote-2 rounded-pill project-btn m-0"
                 >
                   Our Solution
                 </Link>

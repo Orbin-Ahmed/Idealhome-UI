@@ -54,7 +54,6 @@ const Index3HomeSlider = () => {
                 <div className="silder-content">
                   <div className="inner-content">
                     <h1 className="title hero-1-header">
-                      {/* <span className="text-primary">Ideal Factory</span>{" "} */}
                       Seamless Interiors. Premium Exteriors. Designed,
                       Visualized, Delivered — Within Budget.
                     </h1>

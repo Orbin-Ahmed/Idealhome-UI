@@ -2,7 +2,14 @@
 import Link from "next/link";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { GiCookingPot, GiRolledCloth, GiWoodPile } from "react-icons/gi";
+import {
+  GiCookingPot,
+  GiRolledCloth,
+  GiWoodPile,
+  GiDoor,
+  GiClothes,
+  GiBrickWall,
+} from "react-icons/gi";
 import TextSplit from "./TestSplit";
 
 interface ServiceItem {
@@ -13,22 +20,27 @@ interface ServiceItem {
 
 const JoineryServiceData = {
   title: "Services We Provide",
-  text: "Our design services starts and ends with a best in class experience \n strategy that builds brands.",
+  text: "Our design services start and end with a best-in-class experience strategy that builds beautiful, functional spaces.",
   services: [
     {
       id: 1,
-      title: "Carpet Removal",
-      text: "Fusce dapibus, tellus ac cursus co \n mmodo,tortor mauris condimen \n tum nibh, ut fermentum",
+      title: "CLOSETS",
+      text: "Maximize your space with fully customized closets and wardrobe systems. Designed to match your lifestyle and aesthetic preferences, with precision fittings and luxury finishes.",
     },
     {
       id: 2,
-      title: "Kitchen Strip Outs",
-      text: "Fusce dapibus, tellus ac cursus co \n mmodo,tortor mauris condimen \n tum nibh, ut fermentum",
+      title: "KITCHEN SOLUTIONS",
+      text: "Transform your kitchen into a culinary showcase with bespoke cabinetry, integrated storage, and premium materials. Functionality and beauty, perfectly balanced.",
     },
     {
       id: 3,
-      title: "Timber Floor Removal",
-      text: "Fusce dapibus, tellus ac cursus co \n mmodo,tortor mauris condimen \n tum nibh, ut fermentum",
+      title: "WALL CLADDING",
+      text: "Enhance your interiors with elegant wall cladding. Choose from a variety of textures and finishes to create feature walls and refined living spaces.",
+    },
+    {
+      id: 4,
+      title: "DOORS",
+      text: "Premium interior and exterior doors crafted to complement your space. Engineered for durability, soundproofing, and visual appeal.",
     },
   ],
 };
@@ -36,9 +48,10 @@ const JoineryServiceData = {
 interface JoineryServiceProps {}
 
 const iconMapping: Record<number, React.ReactElement> = {
-  1: <GiRolledCloth size={85} />,
-  2: <GiCookingPot size={85} />,
-  3: <GiWoodPile size={85} />,
+  1: <GiClothes size={65} color="var(--primary)" />,
+  2: <GiCookingPot size={65} color="var(--primary)" />,
+  3: <GiBrickWall size={65} color="var(--primary)" />,
+  4: <GiDoor size={65} color="var(--primary)" />,
 };
 
 const JoineryServiceSingle: React.FC<{ service: ServiceItem }> = ({
@@ -46,15 +59,23 @@ const JoineryServiceSingle: React.FC<{ service: ServiceItem }> = ({
 }) => {
   const { id, title, text } = service;
   return (
-    <Col xl={4} lg={4} className="animated fadeInLeft">
-      <div className="services-one__single text-center">
-        <div className={`services-one__single-icon bg${id}`}>
+    <Col xl={6} lg={6} md={6} sm={12} className="animated fadeInUp mb-4">
+      <div className="services-one__single text-center h-100 d-flex flex-column justify-content-between p-4 rounded shadow-sm bg-white">
+        <div className="services-one__single-icon mb-3">
           {iconMapping[id] || null}
         </div>
-        <h2>
-          <Link href="/services-single-1">{title}</Link>
+        <h2 style={{ fontSize: "20px", color: "var(--primary-dark)" }}>
+          <Link
+            href="/services-single-1"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            {title}
+          </Link>
         </h2>
-        <div className="text">
+        <div
+          className="text"
+          style={{ fontSize: "15px", color: "var(--secondary)" }}
+        >
           <TextSplit text={text} as="p" />
         </div>
       </div>
@@ -64,15 +85,33 @@ const JoineryServiceSingle: React.FC<{ service: ServiceItem }> = ({
 
 const JoineryService: React.FC<JoineryServiceProps> = () => {
   return (
-    <section className="services-one clearfix">
+    <section
+      className="services-one clearfix py-5"
+      style={{ background: "#f8f9fa" }}
+      id="service"
+    >
       <Container>
-        <div className="sec-title">
-          <h2 className="sec-title__title">{JoineryServiceData.title}</h2>
-          <p className="sec-title__text">{JoineryServiceData.text}</p>
+        <div className="sec-title text-center mb-5">
+          <h2
+            className="sec-title__title"
+            style={{ color: "var(--primary-dark)" }}
+          >
+            {JoineryServiceData.title}
+          </h2>
+          <p
+            className="sec-title__text"
+            style={{
+              maxWidth: "700px",
+              margin: "0 auto",
+              color: "var(--secondary)",
+            }}
+          >
+            {JoineryServiceData.text}
+          </p>
         </div>
 
         <Row>
-          {JoineryServiceData.services.slice(0, 3).map((service) => (
+          {JoineryServiceData.services.map((service) => (
             <JoineryServiceSingle service={service} key={service.id} />
           ))}
         </Row>

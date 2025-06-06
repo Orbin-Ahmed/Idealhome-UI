@@ -1,7 +1,10 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import Request3DDesignModal from "./Request3DDesignModal";
 
 const WhyChooseIdealFactory = () => {
+  const [showModal, setShowModal] = useState(false);
+
   const sections = [
     {
       title: "Immediate 3D Designs, No Upfront Commitment",
@@ -82,14 +85,18 @@ const WhyChooseIdealFactory = () => {
             </div>
           ))}
           <div className="text-center">
-            <Link
-              href="/about-us"
+            <button
+              onClick={() => setShowModal(true)}
               className="btn shadow-primary btn-primary btn-quote-2"
             >
               Request Free 3D Design
-            </Link>
+            </button>
           </div>
         </div>
+        <Request3DDesignModal
+          show={showModal}
+          handleClose={() => setShowModal(false)}
+        />
 
         {/* Additional Paragraph Below */}
         <div className="mt-5">
@@ -145,7 +152,7 @@ const WhyChooseIdealFactory = () => {
             </div>
             <div className="text-center">
               <Link
-                href="/about-us"
+                href="/contact-us"
                 className="btn shadow-primary btn-primary btn-quote-2"
               >
                 Book Free Interiors Design Consultation

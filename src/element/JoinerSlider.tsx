@@ -16,27 +16,27 @@ export interface Slide {
 const mainSlider: Slide[] = [
   {
     id: 1,
-    bg: "work_1.png",
+    bg: "https://placehold.co/1920x700",
     text: "A Complete Solution for Your Joinery Vision.",
-    title: "Welcome to Our Ideal Home Joinery Solutions",
+    title: "Luxury Joinery Made Easy — 3D Preview, Fair Price, Flawless Finish",
   },
   {
     id: 2,
-    bg: "work_2.png",
+    bg: "https://placehold.co/1920x700",
     text: "A Complete Solution for Your Joinery Vision.",
-    title: "Welcome to Our Ideal Home Joinery Solutions",
+    title: "Luxury Joinery Made Easy — 3D Preview, Fair Price, Flawless Finish",
   },
   {
     id: 3,
-    bg: "work_3.png",
+    bg: "https://placehold.co/1920x700",
     text: "A Complete Solution for Your Joinery Vision.",
-    title: "Welcome to Our Ideal Home Joinery Solutions",
+    title: "Luxury Joinery Made Easy — 3D Preview, Fair Price, Flawless Finish",
   },
   {
     id: 4,
-    bg: "work_4.png",
+    bg: "https://placehold.co/1920x700",
     text: "A Complete Solution for Your Joinery Vision.",
-    title: "Welcome to Our Ideal Home Joinery Solutions",
+    title: "Luxury Joinery Made Easy — 3D Preview, Fair Price, Flawless Finish",
   },
 ];
 

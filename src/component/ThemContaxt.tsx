@@ -164,7 +164,7 @@ export const MenuList = [
     child: [
       { children: "Joinery", to: "/joinery" },
       { children: "uPVC Windows & Doors (Schüco)", to: "/upvc" },
-      { children: "Bundled Packages", to: "/team" },
+      { children: "Bundled Packages", to: "/bundled-packages" },
     ],
   },
   {

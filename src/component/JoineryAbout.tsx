@@ -20,9 +20,10 @@ const aboutData = {
   image2: { src: "/backgrounds/about-v1-img2.jpg" },
   videoId: "p25gICT63ek",
   tagline: "Why Choose Us",
-  title: "About Ideal Home Solutions Interior company",
-  text: "Slando is a full-service landscape company. Our established systems allow us to deliver industry-leading landscape \n solutions to commercial and residential clients.",
-  text2: "Additional text for about two variant if needed",
+  title: "Premium Joinery Solutions",
+  text: "We use premium materials - from solid hardwoods and high-grade MDF to Erupean malmine, laminates, veneer, premuim coutner tops, and accessories for cabinets - selecting each element to achieve a rich, cohesive look.",
+  text2:
+    "The finish options are virtually limitless, whether you prefer classic walnut wood tones, modern glossy lacquer, or eco-friendly textured laminates. \n We also incorporate quality hardware (soft-close hinges, elegant handles, LED lighting) to add that extra touch of luxury and convenience. \n Each installation is built to furniture-grade standards and rigorously quality-checked, giving you joinery that not only looks stunning but is durable enough to last for decades without warping or wear.",
   lists: [
     {
       id: 1,
@@ -50,7 +51,7 @@ interface AboutOneProps {
 
 const JoineryAbout: React.FC<AboutOneProps> = ({
   className = "",
-  aboutTwo = false,
+  aboutTwo = true,
   listCount,
 }) => {
   const [isOpen, setOpen] = useState<boolean>(false);
@@ -99,7 +100,9 @@ const JoineryAbout: React.FC<AboutOneProps> = ({
               <div className="about-one__content">
                 <div className="sec-title">
                   {tagline && (
-                    <span className="sec-title__tagline">{tagline}</span>
+                    <span className="sec-title__tagline text-primary">
+                      {tagline}
+                    </span>
                   )}
                   <h2 className="sec-title__title">{title}</h2>
                 </div>
