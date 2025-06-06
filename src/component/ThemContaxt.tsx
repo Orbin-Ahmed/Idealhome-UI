@@ -196,5 +196,4 @@ export const MenuList2 = [
       { children: "FAQ", to: "/about-us" },
     ],
   },
-  { menu: "Contact Us", to: "/contact-us" },
 ];

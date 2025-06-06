@@ -32,8 +32,8 @@ const WhyChooseIdealFactory = () => {
       style={{ backgroundColor: "var(--rgba-primary-1)" }}
     >
       <div className="container">
-        <div className="section-head style-1 text-end mb-5">
-          <h2 className="title">
+        <div className="section-head style-1 text-start mb-5">
+          <h2 className="title" style={{ fontSize: "38px" }}>
             Why Choose <span className="text-primary">IDEAL FACTORY?</span>
           </h2>
         </div>
@@ -68,7 +68,7 @@ const WhyChooseIdealFactory = () => {
                   {section.title}
                 </h5>
 
-                <p style={{ color: "var(--secondary)", fontSize: "15px" }}>
+                <p style={{ color: "var(--secondary)", fontSize: "17px" }}>
                   {section.content}
                 </p>
 
@@ -84,19 +84,7 @@ const WhyChooseIdealFactory = () => {
               </div>
             </div>
           ))}
-          <div className="text-center">
-            <button
-              onClick={() => setShowModal(true)}
-              className="btn shadow-primary btn-primary btn-quote-2"
-            >
-              Request Free 3D Design
-            </button>
-          </div>
         </div>
-        <Request3DDesignModal
-          show={showModal}
-          handleClose={() => setShowModal(false)}
-        />
 
         {/* Additional Paragraph Below */}
         <div className="mt-5">
@@ -108,12 +96,25 @@ const WhyChooseIdealFactory = () => {
               border: "1px solid var(--rgba-primary-3)",
             }}
           >
+            <div
+              className="rounded-circle d-inline-flex align-items-center justify-content-center mb-2"
+              style={{
+                width: "50px",
+                height: "50px",
+                backgroundColor: "var(--primary)",
+                color: "#fff",
+                fontSize: "20px",
+                fontWeight: "bold",
+              }}
+            >
+              4
+            </div>
             <div className="mb-4">
               <h4 style={{ color: "var(--primary-dark)", fontWeight: "600" }}>
                 All-in-One Villa Design Package
               </h4>
-              <p style={{ fontSize: "17px", color: "var(--secondary)" }}>
-                <strong>Choose Ideal Factory’s all-in-one package</strong> for
+              <p style={{ fontSize: "19px", color: "var(--secondary)" }}>
+                <strong>Choose Ideal Factory's all-in-one package</strong> for
                 premium joinery and Schüco uPVC windows — with fewer decisions,
                 greater savings, and full villa design included.
               </p>
@@ -122,7 +123,7 @@ const WhyChooseIdealFactory = () => {
             <ul
               className="ps-3"
               style={{
-                fontSize: "16px",
+                fontSize: "17px",
                 color: "var(--secondary)",
                 lineHeight: "1.8",
               }}
@@ -142,7 +143,7 @@ const WhyChooseIdealFactory = () => {
             <div className="mt-4">
               <p
                 style={{
-                  fontSize: "17px",
+                  fontSize: "18px",
                   color: "var(--primary-dark)",
                   fontWeight: "600",
                 }}
@@ -155,7 +156,7 @@ const WhyChooseIdealFactory = () => {
                 href="/contact-us"
                 className="btn shadow-primary btn-primary btn-quote-2"
               >
-                Book Free Interiors Design Consultation
+                Book Free Interiors Design Session
               </Link>
             </div>
           </div>

@@ -56,9 +56,6 @@ const Header = () => {
       });
     });
     MenuList2.map((item) => {
-      if (item?.to === pathName) {
-        setMenuactive(item.menu);
-      }
       item.child?.map((data) => {
         if (data?.to === pathName) {
           setMenuactive(item.menu);
@@ -208,12 +205,6 @@ const Header = () => {
                                 </li>
                               ))}
                             </ul>
-                          </li>
-                        );
-                      } else {
-                        return (
-                          <li key={ind}>
-                            <Link href={`${item?.to}`}>{item.menu}</Link>
                           </li>
                         );
                       }
