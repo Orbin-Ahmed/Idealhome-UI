@@ -12,9 +12,9 @@ const HomeFooter = () => {
       style={{ backgroundColor: "#f8f9fa" }}
     >
       <div className="container pb-5">
-        <div className="row gy-4 align-items-start">
+        <div className="row gy-4 align-items-center">
           {/* Left Column */}
-          <div className="col-md-4 text-md-start text-center">
+          <div className="col-md-4 text-md-start text-center ">
             <Image
               src={IMAGES.logo}
               alt="Ideal Home Logo"
@@ -22,11 +22,6 @@ const HomeFooter = () => {
               height={50}
               className="mb-3"
             />
-            <p style={{ fontSize: "15px", color: "#666" }}>
-              We craft premium uPVC windows, doors, and bespoke joinery to
-              elevate your villa living experience. Luxury, efficiency, and
-              timeless design — built just for you.
-            </p>
           </div>
 
           {/* Center Column */}
@@ -34,7 +29,8 @@ const HomeFooter = () => {
             <h5 className="mb-3" style={{ color: "var(--primary-dark)" }}>
               Contact Us
             </h5>
-            <p style={{ fontSize: "15px", color: "#666" }}>📞 +971-xxx-xxxx</p>
+            <p style={{ fontSize: "15px", color: "#666" }}>☎️ 02-xxxxxx</p>
+            <p style={{ fontSize: "15px", color: "#666" }}>📞 050-xxxx</p>
             <p style={{ fontSize: "15px", color: "#666" }}>
               📍{" "}
               <Link
@@ -52,7 +48,7 @@ const HomeFooter = () => {
 
           {/* Right Column */}
           <div className="col-md-4 text-md-start text-center">
-            <h5 className="mb-3" style={{ color: "var(--primary-dark)" }}>
+            {/* <h5 className="mb-3" style={{ color: "var(--primary-dark)" }}>
               Quick Links
             </h5>
             <ul
@@ -69,28 +65,28 @@ const HomeFooter = () => {
                   Terms & Conditions
                 </Link>
               </li>
-            </ul>
+            </ul> */}
 
             {/* Social */}
             <h5 className="mb-3" style={{ color: "var(--primary-dark)" }}>
               Follow Us
             </h5>
             <ul className="list-inline mb-0">
-              <li className="list-inline-item me-3">
+              {/* <li className="list-inline-item me-3">
                 <Link href="#" scroll={false}>
                   <i className="fab fa-facebook-f fs-5"></i>
                 </Link>
-              </li>
+              </li> */}
               <li className="list-inline-item me-3">
                 <Link href="#" scroll={false}>
                   <i className="fab fa-instagram fs-5"></i>
                 </Link>
               </li>
-              <li className="list-inline-item me-3">
+              {/* <li className="list-inline-item me-3">
                 <Link href="#" scroll={false}>
                   <i className="fab fa-twitter fs-5"></i>
                 </Link>
-              </li>
+              </li> */}
               <li className="list-inline-item me-3">
                 <Link href="#" scroll={false}>
                   <i className="fab fa-youtube fs-5"></i>

@@ -19,7 +19,7 @@ interface ServiceItem {
 }
 
 const JoineryServiceData = {
-  title: "Services We Provide",
+  title: "Our Products",
   text: "Our design services start and end with a best-in-class experience strategy that builds beautiful, functional spaces.",
   services: [
     {
@@ -61,9 +61,9 @@ const JoineryServiceSingle: React.FC<{ service: ServiceItem }> = ({
   return (
     <Col xl={6} lg={6} md={6} sm={12} className="animated fadeInUp mb-4">
       <div className="services-one__single text-center h-100 d-flex flex-column justify-content-between p-4 rounded shadow-sm bg-white">
-        <div className="services-one__single-icon mb-3">
+        {/* <div className="services-one__single-icon mb-3">
           {iconMapping[id] || null}
-        </div>
+        </div> */}
         <h2 style={{ fontSize: "20px", color: "var(--primary-dark)" }}>
           <Link
             href="/services-single-1"
@@ -72,12 +72,12 @@ const JoineryServiceSingle: React.FC<{ service: ServiceItem }> = ({
             {title}
           </Link>
         </h2>
-        <div
+        {/* <div
           className="text"
           style={{ fontSize: "15px", color: "var(--secondary)" }}
         >
           <TextSplit text={text} as="p" />
-        </div>
+        </div> */}
       </div>
     </Col>
   );
@@ -98,7 +98,7 @@ const JoineryService: React.FC<JoineryServiceProps> = () => {
           >
             {JoineryServiceData.title}
           </h2>
-          <p
+          {/* <p
             className="sec-title__text"
             style={{
               maxWidth: "700px",
@@ -107,7 +107,7 @@ const JoineryService: React.FC<JoineryServiceProps> = () => {
             }}
           >
             {JoineryServiceData.text}
-          </p>
+          </p> */}
         </div>
 
         <Row>

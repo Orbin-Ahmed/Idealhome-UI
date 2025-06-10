@@ -16,7 +16,7 @@ export const yourProject = [
     id: 1,
     title: "Unleash the Luxury Within Your Home",
     text: "Ideal Factory's Premium Joinery Solutions bring bespoke craftsmanship to every corner of your interior - custom kitchens, walk-in closets, dressing rooms, built-in libraries, TV units, interior doors and more.",
-    image: "https://placehold.co/600x400",
+    // image: "https://placehold.co/600x400",
   },
   {
     id: 2,
@@ -36,16 +36,15 @@ const YourProject: React.FC = () => {
           <div className="your-project-one__wrapper">
             {yourProject.map(({ id, title, text, image }: ProjectItem) => (
               <div key={id} className="your-project-card mb-4">
+                <div className="your-project-card__content">
+                  <TextSplit text={title} as="h2" />
+                  <TextSplit text={text} as="p" />
+                </div>
                 {image && (
                   <div className="your-project-card__image">
                     <img src={image} alt={title} />
                   </div>
                 )}
-
-                <div className="your-project-card__content">
-                  <TextSplit text={title} as="h2" />
-                  <TextSplit text={text} as="p" />
-                </div>
               </div>
             ))}
           </div>

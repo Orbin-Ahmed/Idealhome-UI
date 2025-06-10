@@ -23,7 +23,9 @@ const aboutData = {
   title: "Premium Joinery Solutions",
   text: "We use premium materials - from solid hardwoods and high-grade MDF to Erupean malmine, laminates, veneer, premuim coutner tops, and accessories for cabinets - selecting each element to achieve a rich, cohesive look.",
   text2:
-    "The finish options are virtually limitless, whether you prefer classic walnut wood tones, modern glossy lacquer, or eco-friendly textured laminates. \n We also incorporate quality hardware (soft-close hinges, elegant handles, LED lighting) to add that extra touch of luxury and convenience. \n Each installation is built to furniture-grade standards and rigorously quality-checked, giving you joinery that not only looks stunning but is durable enough to last for decades without warping or wear.",
+    "The finish options are virtually limitless, whether you prefer classic walnut wood tones, modern glossy lacquer, or eco-friendly textured laminates. \n We also incorporate quality hardware (soft-close hinges, elegant handles, LED lighting) to add that extra touch of luxury and convenience.",
+  text3:
+    "Each installation is built to furniture-grade standards and rigorously quality-checked, giving you joinery that not only looks stunning but is durable enough to last for decades without warping or wear.",
   lists: [
     {
       id: 1,
@@ -67,6 +69,7 @@ const JoineryAbout: React.FC<AboutOneProps> = ({
     text,
     lists,
     text2,
+    text3,
   } = aboutData;
 
   return (
@@ -74,7 +77,7 @@ const JoineryAbout: React.FC<AboutOneProps> = ({
       <section className={`about-one ${className}`}>
         <Container>
           <Row>
-            <Col xl={6}>
+            {/* <Col xl={6}>
               <div className="about-one__img">
                 <div className="shape1 animated zoom-fade">
                   <Image src={shape1.src} alt="Shape" />
@@ -95,8 +98,8 @@ const JoineryAbout: React.FC<AboutOneProps> = ({
                   <Image src={image2.src} alt="Image Two" />
                 </div>
               </div>
-            </Col>
-            <Col xl={6}>
+            </Col> */}
+            <Col xl={12}>
               <div className="about-one__content">
                 <div className="sec-title">
                   {tagline && (
@@ -118,9 +121,12 @@ const JoineryAbout: React.FC<AboutOneProps> = ({
                     <div className="about-two__content-text2">
                       <p>{text2}</p>
                     </div>
+                    <div className="about-two__content-text2">
+                      <p>{text3}</p>
+                    </div>
                   </>
                 )}
-                <ul className="about-one__content-list">
+                {/* <ul className="about-one__content-list">
                   {lists.slice(0, count).map(({ id, icon, title }) => (
                     <li key={id}>
                       <img src={icon} />
@@ -129,7 +135,7 @@ const JoineryAbout: React.FC<AboutOneProps> = ({
                       </div>
                     </li>
                   ))}
-                </ul>
+                </ul> */}
               </div>
             </Col>
           </Row>
