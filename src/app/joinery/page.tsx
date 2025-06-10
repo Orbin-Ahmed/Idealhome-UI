@@ -17,7 +17,7 @@ const Joinery = () => {
         <JoineryService />
         <JoineryMaterial />
         {/* <!-- Contact US Form --> */}
-        <ContactUSComponent />
+        {/* <ContactUSComponent /> */}
       </div>
     </Mainlayout>
   );
