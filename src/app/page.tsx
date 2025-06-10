@@ -8,15 +8,16 @@ import WatchUs from "@/element/WatchUs";
 import Testimonail from "@/element/Testimonail";
 import PortfolioSlider from "@/element/PortfolioSlider";
 import Mainlayout from "@/component/Mainlayout";
-import HomeSlider from "@/element/HomeSlider";
+
 import WhyChooseIdealFactory from "@/component/WhyChooseIdealFactory";
+import HomeSliderV1 from "@/element/HomeSliderV1";
 
 export default function Home() {
   const [isOpen, setOpen] = useState<boolean>(false);
   return (
     <Mainlayout>
       <div className="page-content bg-white">
-        <HomeSlider />
+        <HomeSliderV1 />
         <section
           className="py-5"
           style={{

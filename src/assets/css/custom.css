@@ -1218,3 +1218,14 @@
     font-size: 14px !important;
   }
 }
+
+/* Make pagination bullets gray */
+.swiper-pagination-bullet {
+  background-color: #ccc !important; /* light gray */
+  opacity: 1 !important;
+}
+
+/* Make active bullet darker gray */
+.swiper-pagination-bullet-active {
+  background-color: #555 !important; /* dark gray */
+}
