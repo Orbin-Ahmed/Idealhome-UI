@@ -19,7 +19,9 @@ const kitchenGalleryItems = [
     type: "description" as const,
     title: "Warm Taupe and White U-Shaped Kitchen",
     description:
-      "This wraparound layout blends warm taupe tones with bright white finishes, offering an inviting, practical space that surrounds you with storage, prep areas, and effortless flow. *View it in 3D.*",
+      "This wraparound layout blends warm taupe tones with bright white finishes, offering an inviting, practical space that surrounds you with storage, prep areas, and effortless flow. *View it in 3D.",
+    ctaText: "View it in 3D ",
+    ctaLink: "/",
   },
   {
     type: "image" as const,

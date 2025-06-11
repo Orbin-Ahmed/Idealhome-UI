@@ -132,7 +132,6 @@ const CustomImagePos: React.FC<KitchenGalleryProps> = ({ items }) => {
                         style={{
                           fontSize: "14px",
                           color: "var(--primary)",
-                          textDecoration: "underline",
                           fontWeight: "500",
                         }}
                       >
