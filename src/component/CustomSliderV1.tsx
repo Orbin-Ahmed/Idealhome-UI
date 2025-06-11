@@ -8,15 +8,17 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-const images = [
-  "https://placehold.co/800x800?text=Wordrobe",
-  "https://placehold.co/800x800?text=Kitchen",
-  "https://placehold.co/800x800?text=Bedroom",
-  "https://placehold.co/800x800?text=Living Room",
-  "https://placehold.co/800x800?text=Majlis",
-];
+interface JoinerSliderV1Props {
+  images: string[];
+  subText: string;
+  title: React.ReactNode;
+}
 
-const HeroSection = () => {
+const CustomSliderV1: React.FC<JoinerSliderV1Props> = ({
+  images,
+  subText,
+  title,
+}) => {
   return (
     <section
       style={{
@@ -38,7 +40,7 @@ const HeroSection = () => {
                   letterSpacing: "1px",
                 }}
               >
-                A Complete Solution for Your Joinery Vision.
+                {subText}
               </p>
               <h1
                 style={{
@@ -49,8 +51,7 @@ const HeroSection = () => {
                   lineHeight: "1.3",
                 }}
               >
-                Luxury Joinery Made Easy — <br />
-                3D Preview, Fair Price, Flawless Finish
+                {title}
               </h1>
               <Link
                 href="#service"
@@ -110,4 +111,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default CustomSliderV1;
