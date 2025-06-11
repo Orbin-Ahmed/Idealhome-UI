@@ -9,9 +9,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const images = [
-  "https://placehold.co/800x800?text=Image+1",
-  "https://placehold.co/800x800?text=Image+2",
-  "https://placehold.co/800x800?text=Image+3",
+  "https://placehold.co/800x800?text=Wordrobe",
+  "https://placehold.co/800x800?text=Kitchen",
+  "https://placehold.co/800x800?text=Bedroom",
+  "https://placehold.co/800x800?text=Living Room",
+  "https://placehold.co/800x800?text=Majlis",
 ];
 
 const HeroSection = () => {
@@ -68,7 +70,7 @@ const HeroSection = () => {
           <div className="col-lg-6 d-flex justify-content-center align-items-center p-5">
             <div
               style={{
-                maxWidth: "450px", // smaller width
+                maxWidth: "450px",
                 width: "100%",
                 boxShadow: "0 10px 25px rgba(0, 0, 0, 0.1)",
                 borderRadius: "12px",
