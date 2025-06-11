@@ -21,7 +21,7 @@ const WhyChooseIdealFactory = () => {
       title: "German-engineered uPVC Windows & Doors - Powered by Schüco",
       content:
         "We Design. We Build. We Deliver — On Time. Bundled Solutions – Simplicity, Savings & Free Design.",
-      link: { text: "Learn more", href: "/keystone-upvc" },
+      link: { text: "Learn more", href: "/upvc" },
     },
   ];
 

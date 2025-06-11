@@ -6,28 +6,28 @@ const carddata = [
   {
     image: "https://placehold.co/1200x1600",
     title: "CLOSETS",
-    page: "/upvc",
+    page: "/closet",
     description:
       "High-performance uPVC windows and doors, engineered with Schüco's German precision for durability, energy efficiency, and timeless design tailored to the UAE climate.",
   },
   {
     image: "https://placehold.co/1200x1600",
     title: "KITCHEN SOLUTIONS",
-    page: "/upvc",
+    page: "/kitchen-solution",
     description:
       "High-performance uPVC windows and doors, engineered with Schüco's German precision for durability, energy efficiency, and timeless design tailored to the UAE climate.",
   },
   {
     image: "https://placehold.co/1200x1600",
     title: "WALL CLADDING",
-    page: "/upvc",
+    page: "/wall-cladding",
     description:
       "High-performance uPVC windows and doors, engineered with Schüco's German precision for durability, energy efficiency, and timeless design tailored to the UAE climate.",
   },
   {
     image: "https://placehold.co/1200x1600",
     title: "DOORS",
-    page: "/upvc",
+    page: "/door",
     description:
       "High-performance uPVC windows and doors, engineered with Schüco's German precision for durability, energy efficiency, and timeless design tailored to the UAE climate.",
   },
