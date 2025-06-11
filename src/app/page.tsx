@@ -1,12 +1,9 @@
 "use client";
-import Link from "next/link";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
-import AboutUs from "@/element/AboutUs";
 import ServiceBlog from "@/element/ServiceBlog";
 import WatchUs from "@/element/WatchUs";
 import Testimonail from "@/element/Testimonail";
-import PortfolioSlider from "@/element/PortfolioSlider";
 import Mainlayout from "@/component/Mainlayout";
 
 import WhyChooseIdealFactory from "@/component/WhyChooseIdealFactory";
@@ -36,7 +33,7 @@ export default function Home() {
                 marginBottom: "20px",
               }}
             >
-              Welcome to Ideal Factory – Premium Joinery & uPVC with Free
+              Welcome to Ideal Factory - Premium Joinery & uPVC with Free
               Professional 3D Design
             </h2>
 
