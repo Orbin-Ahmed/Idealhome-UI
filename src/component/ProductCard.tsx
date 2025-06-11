@@ -1,19 +1,25 @@
 "use client";
 
-import React, { useState } from "react";
+import Link from "next/link";
+import React from "react";
 
 interface ProductCardProps {
   title: string;
   image: string;
+  link: string;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ title, image }) => {
-  const [showModal, setShowModal] = useState(false);
-
+const ProductCard: React.FC<ProductCardProps> = ({ title, image, link }) => {
   return (
-    <>
+    <Link
+      href={link}
+      style={{
+        textDecoration: "none",
+        color: "inherit",
+        display: "block",
+      }}
+    >
       <div
-        onClick={() => setShowModal(true)}
         style={{
           border: "1px solid #ccc",
           borderRadius: "8px",
@@ -23,7 +29,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ title, image }) => {
           flexDirection: "column",
           justifyContent: "space-between",
           transition: "transform 0.2s ease",
-          cursor: "pointer", // make it clear it's clickable
+          cursor: "pointer",
         }}
         className="hover-scale"
       >
@@ -58,42 +64,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ title, image }) => {
         </div>
       </div>
 
-      {/* Fullscreen Modal */}
-      {showModal && (
-        <div
-          onClick={() => setShowModal(false)}
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "100vw",
-            height: "100vh",
-            backgroundColor: "rgba(0, 0, 0, 0.8)",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            zIndex: 9999,
-          }}
-        >
-          <img
-            src={image}
-            alt={title}
-            style={{
-              maxWidth: "90%",
-              maxHeight: "90%",
-              objectFit: "contain",
-            }}
-          />
-        </div>
-      )}
-
+      {/* Hover effect */}
       <style jsx>{`
         .hover-scale:hover {
           transform: scale(1.03);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
       `}</style>
-    </>
+    </Link>
   );
 };
 

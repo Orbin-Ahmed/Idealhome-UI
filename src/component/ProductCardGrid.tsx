@@ -26,7 +26,11 @@ const ProductCardGrid: React.FC<ProductCardGridProps> = ({ products }) => {
         <Row className="mt-4">
           {products.map((product, index) => (
             <Col key={index} xl={4} lg={4} md={6} sm={12} className="mb-4">
-              <ProductCard title={product.title} image={product.image} />
+              <ProductCard
+                title={product.title}
+                image={product.image}
+                link={product.link}
+              />
             </Col>
           ))}
         </Row>
