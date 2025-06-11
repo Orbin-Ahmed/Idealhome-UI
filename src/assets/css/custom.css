@@ -99,19 +99,23 @@
   object-fit: cover;
 }
 
+.product {
+  cursor: pointer;
+}
+
 .your-project-card__content {
   padding: 24px;
 }
 
 .your-project-card__content h2 {
-  font-size: 22px;
+  font-size: 28px;
   line-height: 32px;
   margin-bottom: 12px;
   color: var(--primary-dark);
 }
 
 .your-project-card__content p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   color: var(--secondary);
 }

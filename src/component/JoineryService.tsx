@@ -48,7 +48,13 @@ const JoineryServiceSingle: React.FC<{ service: ServiceItem }> = ({
 }) => {
   const { title, image } = service;
   return (
-    <Col xl={6} lg={6} md={6} sm={12} className="animated fadeInUp mb-4">
+    <Col
+      xl={3}
+      lg={3}
+      md={6}
+      sm={12}
+      className="animated fadeInUp mb-4 product"
+    >
       <div
         className="services-one__single text-center h-100 d-flex flex-column"
         style={{
