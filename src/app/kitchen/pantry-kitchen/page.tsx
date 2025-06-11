@@ -49,9 +49,9 @@ const products = [
     link: "/kitchen/u-shaped-kitchen",
   },
   {
-    title: "Pantry Kitchen",
-    image: "https://placehold.co/600x400?text=Pantry+Kitchen",
-    link: "/kitchen/pantry-kitchen",
+    title: "Double Gally Kitchen",
+    image: "https://placehold.co/600x400?text=Double+Gally+Kitchen",
+    link: "/kitchen/double-gally-kitchen",
   },
 ];
 
