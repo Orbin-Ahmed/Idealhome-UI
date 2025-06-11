@@ -53,7 +53,7 @@ const HeroSection = () => {
                 3D Preview, Fair Price, Flawless Finish
               </h1>
               <Link
-                href="/about-us"
+                href="#service"
                 className="btn btn-primary px-4 py-3"
                 style={{
                   fontSize: "16px",

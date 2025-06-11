@@ -42,7 +42,7 @@ const carddata = [
 
 const ServiceBlog = () => {
   return (
-    <div className="row justify-content-center media-query">
+    <div className="row justify-content-center media-query" id="service">
       {carddata.map((item, index) => (
         <div className="col-lg-4 col-md-6 aos-item mb-4" key={index}>
           <div className="icon-bx-wraper style-1 m-b30 flip-bx" data-name="1.">
@@ -57,8 +57,6 @@ const ServiceBlog = () => {
                 <div>
                   <div className="sep-tl"></div>
                   <div className="sep-br"></div>
-                  {/* You can optionally remove this h4 if you don't want title overlay */}
-                  {/* <h4 className="title m-b10">{item.title}</h4> */}
                 </div>
               </div>
             </div>
@@ -80,7 +78,6 @@ const ServiceBlog = () => {
             </div>
           </div>
 
-          {/* Here is the title BELOW the card */}
           <div className="text-center mt-2">
             <h5 className="mb-0">
               <Link

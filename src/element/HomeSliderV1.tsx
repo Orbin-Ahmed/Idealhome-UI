@@ -51,7 +51,7 @@ const HeroSection = () => {
                 Within Budget.
               </h1>
               <Link
-                href="/about-us"
+                href="#service"
                 className="btn btn-primary px-4 py-3"
                 style={{
                   fontSize: "16px",
