@@ -9,14 +9,10 @@ const Joinery = () => {
   return (
     <Mainlayout>
       <div className="page-content bg-white" style={{ overflow: "hidden" }}>
-        {/* <JoinerSlider /> */}
         <JoinerSliderV1 />
         <YourProject />
         <JoineryAbout />
         <JoineryService />
-        {/* <JoineryMaterial /> */}
-        {/* <!-- Contact US Form --> */}
-        {/* <ContactUSComponent /> */}
       </div>
     </Mainlayout>
   );
