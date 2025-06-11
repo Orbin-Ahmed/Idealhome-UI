@@ -18,22 +18,22 @@ const kitchens = [
   {
     title: "Kitchen with Island",
     image: "https://placehold.co/600x400?text=Kitchen+with+Island",
-    link: "/kitchen-with-island",
+    link: "/kitchen/kitchen-with-island",
   },
   {
     title: "Double Gally Kitchen",
     image: "https://placehold.co/600x400?text=Double+Gally+Kitchen",
-    link: "/double-gally-kitchen",
+    link: "/kitchen/double-gally-kitchen",
   },
   {
     title: "U-Shaped Kitchen",
     image: "https://placehold.co/600x400?text=U-Shaped+Kitchen",
-    link: "/u-shaped-kitchen",
+    link: "/kitchen/u-shaped-kitchen",
   },
   {
     title: "Pantry Kitchen",
     image: "https://placehold.co/600x400?text=Pantry+Kitchen",
-    link: "/pantry-kitchen",
+    link: "/kitchen/pantry-kitchen",
   },
 ];
 

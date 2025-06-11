@@ -30,7 +30,7 @@ const WhatYouWillLoveSection = () => {
       text: "Clean, integrated design that hides appliances without losing access.",
     },
     {
-      title: "See It Before It’s Built",
+      title: "See It Before It's Built",
       text: "Free 3D design lets you explore and refine your kitchen before you commit.",
     },
   ];
