@@ -36,7 +36,7 @@ const HeroSection = () => {
                   letterSpacing: "1px",
                 }}
               >
-                Seamless Interiors. Premium Exteriors.
+                A Complete Solution for Your Joinery Vision.
               </p>
               <h1
                 style={{
@@ -47,8 +47,8 @@ const HeroSection = () => {
                   lineHeight: "1.3",
                 }}
               >
-                Designed, Visualized, Delivered — <br />
-                Within Budget.
+                Luxury Joinery Made Easy — <br />
+                3D Preview, Fair Price, Flawless Finish
               </h1>
               <Link
                 href="/about-us"
@@ -68,7 +68,7 @@ const HeroSection = () => {
           <div className="col-lg-6 d-flex justify-content-center align-items-center p-5">
             <div
               style={{
-                maxWidth: "450px",
+                maxWidth: "450px", // smaller width
                 width: "100%",
                 boxShadow: "0 10px 25px rgba(0, 0, 0, 0.1)",
                 borderRadius: "12px",

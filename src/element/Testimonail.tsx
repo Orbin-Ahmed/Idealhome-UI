@@ -82,12 +82,12 @@ const Testimonail = ({ buttn1, buttn2 }: navButton) => {
       <div className="row">
         <div className="col-lg-12 m-b20">
           <Swiper
-            speed={5000}
+            speed={9000}
             slidesPerView={3}
             spaceBetween={30}
             loop={true}
             autoplay={{
-              delay: 3000,
+              delay: 5000,
             }}
             className="swiper-container testimonial-swiper"
             modules={[Autoplay, Navigation]}

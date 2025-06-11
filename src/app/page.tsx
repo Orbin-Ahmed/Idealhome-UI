@@ -27,12 +27,26 @@ export default function Home() {
           }}
         >
           <div className="container text-center">
+            {/* Main Headline */}
+            <h2
+              style={{
+                fontSize: "32px",
+                fontWeight: "700",
+                color: "var(--primary-dark)",
+                marginBottom: "20px",
+              }}
+            >
+              Welcome to Ideal Factory – Premium Joinery & uPVC with Free
+              Professional 3D Design
+            </h2>
+
+            {/* Sub Headline */}
             <h4
               className="text"
               style={{
-                fontSize: "24px",
-                fontWeight: "500",
-                color: "var(--primary-dark)",
+                fontSize: "20px",
+                fontWeight: "400",
+                color: "#555",
                 maxWidth: "800px",
                 margin: "0 auto",
                 lineHeight: "1.6",
