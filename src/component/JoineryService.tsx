@@ -9,6 +9,7 @@ interface ServiceItem {
   title: string;
   text: string;
   image: string;
+  page: string; // add page here
 }
 
 const JoineryServiceData = {
@@ -19,24 +20,28 @@ const JoineryServiceData = {
       title: "CLOSETS",
       text: "Maximize your space with fully customized closets and wardrobe systems.",
       image: "https://placehold.co/600x600?text=Closets",
+      page: "/closets", // page link here
     },
     {
       id: 2,
       title: "KITCHEN SOLUTIONS",
       text: "Transform your kitchen into a culinary showcase with bespoke cabinetry.",
       image: "https://placehold.co/600x600?text=Kitchen",
+      page: "/kitchen-solution",
     },
     {
       id: 3,
       title: "WALL CLADDING",
       text: "Enhance your interiors with elegant wall cladding.",
       image: "https://placehold.co/600x600?text=Wall+Cladding",
+      page: "/wall-cladding",
     },
     {
       id: 4,
       title: "DOORS",
       text: "Premium interior and exterior doors crafted to complement your space.",
       image: "https://placehold.co/600x600?text=Doors",
+      page: "/doors",
     },
   ],
 };
@@ -46,7 +51,7 @@ interface JoineryServiceProps {}
 const JoineryServiceSingle: React.FC<{ service: ServiceItem }> = ({
   service,
 }) => {
-  const { title, image } = service;
+  const { title, image, page } = service;
   return (
     <Col
       xl={3}
@@ -55,48 +60,46 @@ const JoineryServiceSingle: React.FC<{ service: ServiceItem }> = ({
       sm={12}
       className="animated fadeInUp mb-4 product"
     >
-      <div
-        className="services-one__single text-center h-100 d-flex flex-column"
-        style={{
-          overflow: "hidden",
-        }}
-      >
-        {/* Image */}
-        <div>
-          <img
-            src={image}
-            alt={title}
-            style={{
-              width: "100%",
-              height: "auto",
-              objectFit: "cover",
-              display: "block",
-            }}
-          />
-        </div>
-
-        {/* Title */}
+      <Link href={page} style={{ textDecoration: "none" }}>
         <div
+          className="services-one__single text-center h-100 d-flex flex-column"
           style={{
-            padding: "10px 0 0 0",
+            overflow: "hidden",
+            cursor: "pointer",
           }}
         >
-          <h2
+          {/* Image */}
+          <div>
+            <img
+              src={image}
+              alt={title}
+              style={{
+                width: "100%",
+                height: "auto",
+                objectFit: "cover",
+                display: "block",
+              }}
+            />
+          </div>
+
+          {/* Title */}
+          <div
             style={{
-              fontSize: "20px",
-              color: "var(--primary-dark)",
-              marginBottom: 0,
+              padding: "10px 0 0 0",
             }}
           >
-            <Link
-              href="/services-single-1"
-              style={{ textDecoration: "none", color: "inherit" }}
+            <h2
+              style={{
+                fontSize: "20px",
+                color: "var(--primary-dark)",
+                marginBottom: 0,
+              }}
             >
               {title}
-            </Link>
-          </h2>
+            </h2>
+          </div>
         </div>
-      </div>
+      </Link>
     </Col>
   );
 };

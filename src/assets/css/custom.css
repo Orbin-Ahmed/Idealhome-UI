@@ -99,10 +99,6 @@
   object-fit: cover;
 }
 
-.product {
-  cursor: pointer;
-}
-
 .your-project-card__content {
   padding: 24px;
 }
