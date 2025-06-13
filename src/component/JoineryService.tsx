@@ -31,17 +31,10 @@ const JoineryServiceData = {
     },
     {
       id: 3,
-      title: "WALL CLADDING",
-      text: "Enhance your interiors with elegant wall cladding.",
-      image: "https://placehold.co/600x600?text=Wall+Cladding",
-      page: "/wall-cladding",
-    },
-    {
-      id: 4,
       title: "DOORS",
       text: "Premium interior and exterior doors crafted to complement your space.",
       image: "https://placehold.co/600x600?text=Doors",
-      page: "/doors",
+      page: "/upvc",
     },
   ],
 };
