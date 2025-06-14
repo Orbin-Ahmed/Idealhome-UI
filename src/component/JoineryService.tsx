@@ -34,7 +34,7 @@ const JoineryServiceData = {
       title: "DOORS",
       text: "Premium interior and exterior doors crafted to complement your space.",
       image: "https://placehold.co/600x600?text=Doors",
-      page: "/upvc",
+      page: "/door",
     },
   ],
 };
