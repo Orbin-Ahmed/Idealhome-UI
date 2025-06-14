@@ -1,9 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Mainlayout from "../../component/Mainlayout";
-import YourProject from "@/component/YourProject";
-import JoineryAbout from "@/component/JoineryAbout";
-import JoineryService from "@/component/JoineryService";
 import CustomSliderV1 from "@/component/CustomSliderV1";
 import WhatYouWillLoveSection from "@/component/WhatYouWillLoveSection";
 import CollectionsSection from "@/component/CollectionsSection";

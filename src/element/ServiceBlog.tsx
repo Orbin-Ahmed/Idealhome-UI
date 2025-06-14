@@ -13,7 +13,7 @@ const carddata = [
   {
     image: "https://placehold.co/1200x1600",
     title: "KITCHEN SOLUTIONS",
-    page: "/kitchen-solution",
+    page: "/kitchen",
     description:
       "High-performance uPVC windows and doors, engineered with Schüco's German precision for durability, energy efficiency, and timeless design tailored to the UAE climate.",
   },
