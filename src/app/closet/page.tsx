@@ -55,17 +55,17 @@ const closets = [
   {
     title: "Walk-In Closets",
     image: "https://placehold.co/600x400?text=Kitchen+with+Island",
-    link: "/kitchen/walk-in-closet",
+    link: "/closet/walk-in-closet",
   },
   {
     title: "Reach-In Closets",
     image: "https://placehold.co/600x400?text=Double+Gally+Kitchen",
-    link: "/kitchen/reach-in-closet",
+    link: "/closet/reach-in-closet",
   },
   {
     title: "Smart Storage Solutions",
     image: "https://placehold.co/600x400?text=U-Shaped+Kitchen",
-    link: "/kitchen/smart-storage-solution",
+    link: "/closet/smart-storage-solution",
   },
 ];
 

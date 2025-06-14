@@ -121,6 +121,7 @@ const Joinery = () => {
             </h4>
           </div>
         </section>
+
         <CustomImagePos items={kitchenGalleryItems} />
 
         <div className="text-center my-4">
