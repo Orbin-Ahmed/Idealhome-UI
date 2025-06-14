@@ -14,12 +14,18 @@ interface CollectionsSectionProps {
   sectionTitle: string;
   sectionSubtitle: string;
   kitchens: Item[];
+  ctaAction?: () => void;
+  ctaText: string;
+  screenSize?: number;
 }
 
 const CollectionsSection: React.FC<CollectionsSectionProps> = ({
   sectionTitle,
   sectionSubtitle,
   kitchens,
+  ctaText,
+  ctaAction,
+  screenSize = 3,
 }) => {
   return (
     <section
@@ -58,7 +64,14 @@ const CollectionsSection: React.FC<CollectionsSectionProps> = ({
         {/* Kitchen Cards */}
         <Row className="mt-4">
           {kitchens.map((kitchen, index) => (
-            <Col xl={3} lg={3} md={6} sm={12} className="mb-4" key={index}>
+            <Col
+              xl={screenSize}
+              lg={screenSize}
+              md={6}
+              sm={12}
+              className="mb-4"
+              key={index}
+            >
               <Link
                 href={kitchen.link}
                 style={{
@@ -113,6 +126,29 @@ const CollectionsSection: React.FC<CollectionsSectionProps> = ({
             </Col>
           ))}
         </Row>
+        <p
+          style={{
+            fontSize: "18px",
+            fontWeight: 400,
+            marginBottom: "20px",
+          }}
+          className="mt-3"
+        >
+          <strong>See It Before It's Built</strong> — Free 3D design lets you
+          explore and perfect your closet layout before we start production.
+        </p>
+
+        {ctaText && ctaAction && (
+          <div className="text-center mt-4">
+            <button
+              onClick={ctaAction}
+              className="btn shadow-primary btn-primary rounded-sm btn-quote"
+              style={{ minWidth: "220px" }}
+            >
+              {ctaText}
+            </button>
+          </div>
+        )}
       </Container>
 
       {/* Optional hover effect styling */}

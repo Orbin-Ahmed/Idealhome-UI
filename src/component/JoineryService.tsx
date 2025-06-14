@@ -20,7 +20,7 @@ const JoineryServiceData = {
       title: "CLOSETS",
       text: "Maximize your space with fully customized closets and wardrobe systems.",
       image: "https://placehold.co/600x600?text=Closets",
-      page: "/closets", // page link here
+      page: "/closet",
     },
     {
       id: 2,
@@ -47,8 +47,8 @@ const JoineryServiceSingle: React.FC<{ service: ServiceItem }> = ({
   const { title, image, page } = service;
   return (
     <Col
-      xl={3}
-      lg={3}
+      xl={4}
+      lg={4}
       md={6}
       sm={12}
       className="animated fadeInUp mb-4 product"

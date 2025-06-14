@@ -1,40 +1,24 @@
-"use client";
-
-import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Request3DDesignModal from "./Request3DDesignModal";
 
-const WhatYouWillLoveSection = () => {
-  const [showModal, setShowModal] = useState(false);
+interface FeatureItem {
+  title: string;
+  text: string;
+}
 
-  const features = [
-    {
-      title: "Effortless Functionality",
-      text: "Smartly designed for easier cooking, organizing, and cleaning.",
-    },
-    {
-      title: "Tailored to You",
-      text: "Layouts designed around how you cook, store, and entertain.",
-    },
-    {
-      title: "Style That Lasts",
-      text: "Elegant finishes built to handle everyday use with lasting durability.",
-    },
-    {
-      title: "Everything in Its Place",
-      text: "Smart storage keeps essentials organized, visible, and within reach.",
-    },
-    {
-      title: "Seamless Appliance Fit",
-      text: "Clean, integrated design that hides appliances without losing access.",
-    },
-    {
-      title: "See It Before It's Built",
-      text: "Free 3D design lets you explore and refine your kitchen before you commit.",
-    },
-  ];
+interface DynamicFeatureSectionProps {
+  sectionTitle: string;
+  features: FeatureItem[];
+  ctaText?: string;
+  ctaAction?: () => void;
+}
 
+const DynamicFeatureSection: React.FC<DynamicFeatureSectionProps> = ({
+  sectionTitle,
+  features,
+  ctaText,
+  ctaAction,
+}) => {
   return (
     <section
       className="py-5"
@@ -45,6 +29,7 @@ const WhatYouWillLoveSection = () => {
       }}
     >
       <Container>
+        {/* Section Title */}
         <div className="text-center mb-4">
           <h4
             style={{
@@ -54,10 +39,11 @@ const WhatYouWillLoveSection = () => {
               marginBottom: "30px",
             }}
           >
-            What You'll Love About Your Kitchen
+            {sectionTitle}
           </h4>
         </div>
 
+        {/* Features */}
         <Row className="mb-4">
           {features.map((feature, index) => (
             <Col md={6} key={index} className="mb-3">
@@ -74,22 +60,21 @@ const WhatYouWillLoveSection = () => {
           ))}
         </Row>
 
-        <div className="text-center mt-4">
-          <button
-            onClick={() => setShowModal(true)}
-            className="btn shadow-primary btn-primary rounded-sm btn-quote"
-            style={{ minWidth: "220px" }}
-          >
-            Request Free 3D Design
-          </button>
-        </div>
+        {/* CTA Button */}
+        {ctaText && ctaAction && (
+          <div className="text-center mt-4">
+            <button
+              onClick={ctaAction}
+              className="btn shadow-primary btn-primary rounded-sm btn-quote"
+              style={{ minWidth: "220px" }}
+            >
+              {ctaText}
+            </button>
+          </div>
+        )}
       </Container>
-      <Request3DDesignModal
-        show={showModal}
-        handleClose={() => setShowModal(false)}
-      />
     </section>
   );
 };
 
-export default WhatYouWillLoveSection;
+export default DynamicFeatureSection;

@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Mainlayout from "../../component/Mainlayout";
 import YourProject from "@/component/YourProject";
 import JoineryAbout from "@/component/JoineryAbout";
@@ -6,6 +7,7 @@ import JoineryService from "@/component/JoineryService";
 import CustomSliderV1 from "@/component/CustomSliderV1";
 import WhatYouWillLoveSection from "@/component/WhatYouWillLoveSection";
 import CollectionsSection from "@/component/CollectionsSection";
+import Request3DDesignModal from "@/component/Request3DDesignModal";
 
 const images = [
   "https://placehold.co/800x800?text=Kitchen with Island",
@@ -37,7 +39,36 @@ const kitchens = [
   },
 ];
 
+const features = [
+  {
+    title: "Effortless Functionality",
+    text: "Smartly designed for easier cooking, organizing, and cleaning.",
+  },
+  {
+    title: "Tailored to You",
+    text: "Layouts designed around how you cook, store, and entertain.",
+  },
+  {
+    title: "Style That Lasts",
+    text: "Elegant finishes built to handle everyday use with lasting durability.",
+  },
+  {
+    title: "Everything in Its Place",
+    text: "Smart storage keeps essentials organized, visible, and within reach.",
+  },
+  {
+    title: "Seamless Appliance Fit",
+    text: "Clean, integrated design that hides appliances without losing access.",
+  },
+  {
+    title: "See It Before It's Built",
+    text: "Free 3D design lets you explore and refine your kitchen before you commit.",
+  },
+];
+
 const Joinery = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <Mainlayout>
       <div className="page-content bg-white" style={{ overflow: "hidden" }}>
@@ -92,15 +123,26 @@ const Joinery = () => {
             </h4>
           </div>
         </section>
-        <WhatYouWillLoveSection />
+        <WhatYouWillLoveSection
+          sectionTitle="What You'll Love About Your Kitchen"
+          features={features}
+          ctaText="Request Free 3D Design"
+          ctaAction={() => setShowModal(true)}
+        />
         <div id="service">
           <CollectionsSection
             sectionTitle="Our Kitchen Collections"
             sectionSubtitle="Explore 4 types of layouts — each tailored for different lifestyles, spaces, and cooking needs."
             kitchens={kitchens}
+            ctaText="Request Free 3D Design"
+            ctaAction={() => setShowModal(true)}
           />
         </div>
       </div>
+      <Request3DDesignModal
+        show={showModal}
+        handleClose={() => setShowModal(false)}
+      />
     </Mainlayout>
   );
 };
