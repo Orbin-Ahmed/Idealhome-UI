@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Base nav‐link styling + underline pseudo-element */
+.nav-link {
+  @apply text-white uppercase font-medium relative inline-block px-4 py-2 whitespace-nowrap;
+  padding-bottom: 0.25rem;
+  font-size: 14px;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+/* expand underline on hover or when active */
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Dropdown menu hidden by default, shows on parent hover */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  left: 0;
+  @apply bg-black bg-opacity-95 py-2 rounded shadow-lg;
+}
+.group:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown items */
+.dropdown-item {
+  @apply block px-4 py-2 text-white whitespace-nowrap;
+}
+.dropdown-item:hover {
+  @apply bg-white bg-opacity-10;
+}
+/* Optional: highlight active dropdown item */
+.dropdown-item.active {
+  @apply bg-white bg-opacity-20;
+}
+
+/* container sits full-screen, behind your navbar (which should be z-50) */
+.slider-container {
+  @apply relative w-full h-screen overflow-hidden z-0;
+}
+
+/* each slide covers entire container and will fade via opacity */
+.slider-slide {
+  @apply absolute inset-0 bg-center bg-cover transition-opacity duration-1000;
+}
+
+/* visible vs hidden states */
+.slider-visible {
+  @apply opacity-100;
+}
+.slider-hidden {
+  @apply opacity-0;
+}
+
+/* dark gray overlay to dim the image */
+.slider-overlay {
+  @apply absolute inset-0 bg-gray-800 bg-opacity-50;
+}
