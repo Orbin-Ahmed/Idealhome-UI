@@ -14,14 +14,14 @@ const itemFeatures = [
   {
     title: "KITCHENS",
     subtitle:
-      "With Island, U-shape, L-shape, Double Gally, Kid's, Modern, Classic",
+      "With Island, U-shape, L-shape, Double Gally, Kid's, Modern, Classic ",
     images: ["https://placehold.co/840x400", "https://placehold.co/840x400"],
     textPosition: "right" as const,
   },
   {
     title: "DOORS",
     subtitle:
-      "Interior, Front,  Wood. PVC, uPVC Exterior Doors, Sliding, Glass & Aluminum, Modern, Classic",
+      "Interior, Front, Wood, PVC, uPVC Exterior Doors, Sliding, Glass & Aluminum, Modern, Classic",
     images: ["https://placehold.co/840x400", "https://placehold.co/840x400"],
     textPosition: "left" as const,
   },

@@ -27,7 +27,7 @@ const DesignSection: React.FC = () => {
           confidence.
         </p>
 
-        <p className="mt-10 text-xl font-semibold text-black">
+        <p className="mt-10 text-xl font-semibold text-black text-center">
           <span className="text-brand">See it before we build it</span>, and
           move forward with confidence.
         </p>

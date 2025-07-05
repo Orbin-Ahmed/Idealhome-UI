@@ -6,8 +6,8 @@ import "swiper/css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Next.js with Docker & Tailwind",
-  description: "A Next.js application with Docker and Tailwind CSS",
+  title: "Ideal Home UAE",
+  description: "A Complete Interior Design Solution",
 };
 
 export default function RootLayout({
