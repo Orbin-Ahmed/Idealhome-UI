@@ -17,7 +17,14 @@ export interface NavItem {
 
 const NAV_ITEMS: NavItem[] = [
   { label: "HOME", href: "/" },
-  { label: "ABOUT US", href: "/company" },
+  {
+    label: "ABOUT US",
+    subItems: [
+      { label: "Company", href: "/company" },
+      { label: "OUR PROCESS", href: "/process" },
+    ],
+    href: "/company",
+  },
   {
     label: "ClOSETS",
     subItems: [
@@ -41,21 +48,17 @@ const NAV_ITEMS: NavItem[] = [
   },
   {
     label: "DOORS",
-    subItems: [
-      { label: "Wooden", href: "/doors/wooden" },
-      { label: "uPVC", href: "/doors/upvc" },
-    ],
     href: "/doors",
   },
   {
-    label: "WINDOWS",
+    label: "uPVC WINDOWS",
     subItems: [
       { label: "Casement", href: "/windows/casement" },
       { label: "Sliding", href: "/windows/sliding" },
     ],
     href: "/windows",
   },
-  { label: "FREE", href: "/free-design" },
+  { label: "FREE DESIGN", href: "/free-design" },
 ];
 
 const Navbar: React.FC = () => {

@@ -4,12 +4,19 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import Link from "next/link";
+
+export interface SubtitleItem {
+  label: string;
+  href?: string;
+}
 
 export interface ItemFeatureBlock {
   title: string;
-  subtitle: string;
+  subtitleItems: SubtitleItem[];
   images: string[];
   textPosition: "left" | "right";
+  titleLink?: string;
 }
 
 interface Props {
@@ -39,12 +46,54 @@ const ItemFinishFeatureSection: React.FC<Props> = ({ features }) => {
                     lg:min-h-[400px]
                   "
                 >
-                  <h4 className="text-2xl font-bold text-black flex items-center">
+                  {/* <h4 className="text-2xl font-bold text-black flex items-center">
                     <span className="text-red-600 font-extrabold mr-2">|</span>
                     {block.title}
                   </h4>
                   <p className="mt-4 text-gray-700 text-base">
                     {block.subtitle}
+                  </p> */}
+                  {block.titleLink ? (
+                    <Link href={block.titleLink} className="inline-block">
+                      <h4 className="text-2xl font-bold text-black flex items-center hover:underline">
+                        <span className="text-red-600 font-extrabold mr-2">
+                          |
+                        </span>
+                        {block.title}
+                      </h4>
+                    </Link>
+                  ) : (
+                    <h4 className="text-2xl font-bold text-black flex items-center">
+                      <span className="text-red-600 font-extrabold mr-2">
+                        |
+                      </span>
+                      {block.title}
+                    </h4>
+                  )}
+                  <p className="mt-4 text-gray-700 text-base flex flex-wrap justify-center lg:justify-start gap-x-1 gap-y-2">
+                    {block.subtitleItems.map((item, i) => {
+                      const separator =
+                        i < block.subtitleItems.length - 1 ? "," : "";
+                      if (item.href) {
+                        return (
+                          <Link
+                            key={i}
+                            href={item.href}
+                            className="hover:underline"
+                          >
+                            {item.label}
+                            {separator}
+                          </Link>
+                        );
+                      } else {
+                        return (
+                          <span key={i}>
+                            {item.label}
+                            {separator}
+                          </span>
+                        );
+                      }
+                    })}
                   </p>
                 </div>
               </div>

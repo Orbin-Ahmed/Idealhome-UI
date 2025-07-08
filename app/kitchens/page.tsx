@@ -4,6 +4,7 @@ import Slider from "@/components/Slider";
 import DynamicFeatureSection from "@/components/DynamicFeatureSection";
 import ItemFinishFeatureSection from "@/components/ItemFinishFeatureSection";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const features = [
   {
@@ -35,24 +36,46 @@ const features = [
 const itemFeatures = [
   {
     title: "KITCHEN WITH ISLAND",
-    subtitle:
-      "Step into a space designed just for you — where luxury, organization, and comfort come together",
     images: ["https://placehold.co/600x300", "https://placehold.co/600x300"],
     textPosition: "left" as const,
+    subtitleItems: [
+      { label: "Step into a space designed just for you — where luxury" },
+      { label: "organization" },
+      { label: "and comfort come together" },
+    ],
   },
   {
     title: "U-SHAPED KITCHEN",
-    subtitle:
-      "Our U-shaped kitchens wrap efficiency around you — offering abundant counter space, smart storage, and a streamlined workflow, all in a stylish, immersive design.",
     images: ["https://placehold.co/600x300", "https://placehold.co/600x300"],
     textPosition: "right" as const,
+    subtitleItems: [
+      {
+        label:
+          "Our U-shaped kitchens wrap efficiency around you — offering abundant counter space",
+      },
+      { label: "smart storage" },
+      { label: "and a streamlined workflow" },
+      { label: "all in a stylish" },
+      { label: "immersive design." },
+    ],
   },
   {
     title: "PANTRY KITCHEN",
-    subtitle:
-      "A dedicated pantry zone that keeps everyday essentials out of sight, yet always within reach. Clean lines, smart shelving, and a cohesive finish make it a seamless blend of style and efficiency.",
     images: ["https://placehold.co/600x300", "https://placehold.co/600x300"],
     textPosition: "left" as const,
+    subtitleItems: [
+      {
+        label:
+          "A dedicated pantry zone that keeps everyday essentials out of sight",
+      },
+      { label: "yet always within reach," },
+      { label: "Clean lines" },
+      { label: "smart shelving" },
+      {
+        label:
+          "and a cohesive finish make it a seamless blend of style and efficiency.",
+      },
+    ],
   },
 ];
 
@@ -75,6 +98,7 @@ const KitchenPage: React.FC = () => {
 
         <ItemFinishFeatureSection features={itemFeatures} />
       </div>
+      <Footer />
     </>
   );
 };

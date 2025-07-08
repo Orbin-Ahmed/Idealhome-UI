@@ -5,6 +5,7 @@ import ThreeImageSection from "@/components/ThreeImageSection";
 import Navbar from "@/components/Navbar";
 import Slider from "@/components/Slider";
 import TwoImageSection from "@/components/TwoImageSection";
+import Footer from "@/components/Footer";
 
 const features = [
   {
@@ -130,6 +131,7 @@ const ReachInCloset: React.FC = () => {
         </section>
         <TwoImageSection images={sectionalImages_1} />
       </div>
+      <Footer />
     </>
   );
 };

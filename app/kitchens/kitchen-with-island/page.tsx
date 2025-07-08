@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Slider from "@/components/Slider";
 import CustomImagePos from "@/components/CustomImagePos";
 import ProductCardGrid from "@/components/ProductCardGrid";
+import Footer from "@/components/Footer";
 
 const kitchenGalleryItems = [
   {
@@ -92,8 +93,24 @@ const KitchenWithIsland: React.FC = () => {
             Request Free 3D Design
           </button>
         </div>
+        <section className="py-8 bg-white border-gray-200">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Title */}
+            <h2 className="text-3xl md:text-4xl font-bold text-[#57b7c0] mb-5 text-left">
+              Discover More Kitchen Inspirations
+            </h2>
+
+            {/* Subtitle */}
+            <h4 className="text-lg md:text-xl font-normal text-gray-600 leading-relaxed max-w-6xl">
+              Browse our curated selection of kitchen styles — uniquely crafted
+              to suit your space, reflect your taste, and complement your daily
+              routine.
+            </h4>
+          </div>
+        </section>
         <ProductCardGrid products={products} />
       </div>
+      <Footer />
     </>
   );
 };

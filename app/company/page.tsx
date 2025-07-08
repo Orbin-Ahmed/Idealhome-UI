@@ -1,4 +1,5 @@
 "use client";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ValuesGrid from "@/components/ValuesGrid";
 import Image from "next/image";
@@ -69,6 +70,7 @@ const Company = () => {
           </button>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

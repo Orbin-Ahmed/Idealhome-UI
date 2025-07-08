@@ -4,6 +4,7 @@ import Slider from "@/components/Slider";
 import DynamicFeatureSection from "@/components/DynamicFeatureSection";
 import ItemFinishFeatureSection from "@/components/ItemFinishFeatureSection";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const features = [
   {
@@ -37,22 +38,46 @@ const itemFeatures = [
     title: "WALK-IN CLOSETS",
     subtitle:
       "Step into a space designed just for you — where luxury, organization, and comfort come together",
+    subtitleItems: [
+      { label: "Step into a space designed just for you — where luxury" },
+      { label: "organization" },
+      { label: "and comfort come together" },
+    ],
     images: ["https://placehold.co/840x400", "https://placehold.co/840x400"],
     textPosition: "left" as const,
+    titleLink: "/closets/walk-in-closet",
   },
   {
     title: "REACH-IN CLOSETS",
     subtitle:
       "A stylish, space-saving solution designed to keep your essentials organized, accessible, and tailored to your daily routine",
+    subtitleItems: [
+      {
+        label:
+          "A stylish, space-saving solution designed to keep your essentials organized",
+      },
+      { label: "accessible" },
+      { label: "and tailored to your daily routine" },
+    ],
     images: ["https://placehold.co/840x400", "https://placehold.co/840x400"],
     textPosition: "right" as const,
+    titleLink: "/closets/reach-in-closet",
   },
   {
     title: "SMART STORAGE",
-    subtitle:
-      "Interior, Front,  Wood. PVC, uPVC Exterior Doors, Sliding, Glass & Aluminum, Modern, Classic",
+    subtitleItems: [
+      { label: "Interior" },
+      { label: "Front" },
+      { label: "Wood. PVC" },
+      { label: "uPVC Exterior Doors" },
+      { label: "Sliding" },
+      { label: "Glass & Aluminum" },
+      { label: "Modern" },
+      { label: "Classic" },
+    ],
     images: ["https://placehold.co/840x400", "https://placehold.co/840x400"],
     textPosition: "left" as const,
+    titleLink: "/closets/smart-storage-solution",
   },
 ];
 
@@ -77,6 +102,7 @@ const ClosetPage: React.FC = () => {
 
         <ItemFinishFeatureSection features={itemFeatures} />
       </div>
+      <Footer />
     </>
   );
 };

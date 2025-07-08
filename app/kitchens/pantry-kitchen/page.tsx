@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Slider from "@/components/Slider";
 import CustomImagePos from "@/components/CustomImagePos";
 import ProductCardGrid from "@/components/ProductCardGrid";
+import Footer from "@/components/Footer";
 
 const kitchenGalleryItems = [
   {
@@ -66,13 +67,14 @@ const pantryKitchen: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Title */}
             <h2 className="text-3xl md:text-4xl font-bold text-[#57b7c0] mb-5 text-left">
-              Your Kitchen's Heart, Reimagined
+              Designed for Daily Ease
             </h2>
 
             {/* Subtitle */}
             <h4 className="text-lg md:text-xl font-normal text-gray-600 leading-relaxed max-w-6xl">
-              Our island kitchens combine smart function with elegant design —
-              perfect for cooking, dining, and connecting
+              A dedicated pantry zone that keeps everyday essentials out of
+              sight, yet always within reach. Clean lines, smart shelving, and a
+              cohesive finish make it a seamless blend of style and efficiency.
             </h4>
           </div>
         </section>
@@ -92,8 +94,25 @@ const pantryKitchen: React.FC = () => {
             Request Free 3D Design
           </button>
         </div>
+        <section className="py-8 bg-white border-gray-200">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Title */}
+            <h2 className="text-3xl md:text-4xl font-bold text-[#57b7c0] mb-5 text-left">
+              Explore More Kitchen Inspirations
+            </h2>
+
+            {/* Subtitle */}
+            <h4 className="text-lg md:text-xl font-normal text-gray-600 leading-relaxed max-w-6xl">
+              Dive into our handpicked kitchen designs — each tailored to fit
+              your space, express your style, and enhance how you cook, live,
+              and gather.
+            </h4>
+          </div>
+        </section>
+
         <ProductCardGrid products={products} />
       </div>
+      <Footer />
     </>
   );
 };

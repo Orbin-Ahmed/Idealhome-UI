@@ -9,42 +9,42 @@ import Footer from "@/components/Footer";
 
 const features = [
   {
-    title: "Effortless Organization",
-    text: "Everything has a place — for a clutter-free, easy-to-use wardrobe.",
+    title: "Every storage unit is custom",
+    text: "designed to fit awkward corners, unused walls, and underutilized spaces — maximizing functionality without wasting a square inch.",
   },
   {
-    title: "Designed Around You",
-    text: "Layouts customized to your routine, storage needs, and style.",
+    title: "Say goodbye to mess",
+    text: "Built-in compartments, pull-out trays, and vertical dividers keep everything in its place — from shoes and bags to tools and toys.",
   },
   {
-    title: "A Daily Boutique Experience",
-    text: "Enjoy the feel of a personal showroom with elegant, functional touches.",
+    title: "Seamlessly Blends with Your Interiors",
+    text: "Our solutions come in premium finishes that match your home's décor — modern, classic, or anything in between.",
   },
   {
-    title: "Elevated Comfort & Privacy",
-    text: "Your private dressing space — peaceful, inspiring, and made for you.",
+    title: "Everyday Access, Zero Hassle",
+    text: "everything is built for comfort and convenience in daily use.",
   },
   {
-    title: "Crafted to Match Your Home",
-    text: "Finishes, colors, and details tailored to your interior design theme.",
+    title: "Transform Dead Spaces into Useful Areas",
+    text: "Make the most of hallways, under-stair voids, laundry nooks, or attic corners — turning them into beautiful, functional storage zones.",
   },
   {
-    title: "See It in 3D Before You Commit",
-    text: "Get a free 3D preview of your closet — explore and approve before we build.",
+    title: "Designed in 3D Before You Commit",
+    text: "Visualize your smart storage in high-quality 3D — free of charge",
   },
 ];
 
 const sectionalImages = [
   {
-    src: "https://placehold.co/800x500?text=WIC+Rendered+Image+No.+1",
+    src: "https://placehold.co/800x500?text=SSS+Rendered+Image+No.+1",
     alt: "Image 1 Premium Closet",
   },
   {
-    src: "https://placehold.co/800x500?text=WIC+Rendered+Image+No.+2",
+    src: "https://placehold.co/800x500?text=SSS+Rendered+Image+No.+2",
     alt: "Image 2 Premium Closet",
   },
   {
-    src: "https://placehold.co/800x500?text=WIC+Rendered+Image+No.+3",
+    src: "https://placehold.co/800x500?text=SSS+Rendered+Image+No.+3",
     alt: "Image 3 Premium Closet",
   },
 ];
@@ -60,7 +60,7 @@ const sectionalImages_1 = [
   },
 ];
 
-const WalkInCloset: React.FC = () => {
+const SmartStorageSolution: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
@@ -77,23 +77,18 @@ const WalkInCloset: React.FC = () => {
         <section className="pt-12 pb-4 bg-white border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#57b7c0] mb-6">
-              A Statement of Luxury. A Space That Works for You.
+              Smart Storage, Tailored for Your Life
             </h2>
             <div>
               <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-4">
-                Step into a space designed just for you — where luxury,
-                organization, and comfort come together. Our custom Walk-In
-                Closets are more than storage — they're personal sanctuaries
-                crafted to elevate your everyday routine. With premium finishes,
-                smart layouts, and seamless functionality, your walk-in becomes
-                an extension of your lifestyle and style.
+                We turn underutilized spaces into beautifully crafted,
+                functional storage — tailored to your home and the way you live.
               </p>
+              <h2 className="text-md md:text-lg lg:text-xl font-bold text-black mb-6">
+                See It Before We Build It — in 3D.
+              </h2>
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-                And before anything is built, you'll see it first — in stunning
-                3D.{" "}
-                <strong className="font-semibold">
-                  Fast. Free. Personalized.
-                </strong>
+                Quick. Free. Custom-fit to your space and needs.
               </p>
             </div>
 
@@ -136,4 +131,4 @@ const WalkInCloset: React.FC = () => {
   );
 };
 
-export default WalkInCloset;
+export default SmartStorageSolution;
