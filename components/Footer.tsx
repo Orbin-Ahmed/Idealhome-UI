@@ -26,31 +26,17 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="First Name*"
+                required
                 className="w-full bg-transparent border-b border-white placeholder-gray-400 text-white py-2 focus:outline-none"
               />
               <input
                 type="email"
-                placeholder="Email*"
+                placeholder="Email"
                 className="w-full bg-transparent border-b border-white placeholder-gray-400 text-white py-2 focus:outline-none"
               />
-              <input
-                type="text"
-                placeholder="City*"
-                className="w-full bg-transparent border-b border-white placeholder-gray-400 text-white py-2 focus:outline-none"
-              />
-              <select
-                className="w-full bg-transparent border-b border-white text-white py-2 focus:outline-none"
-                defaultValue=""
-              >
-                <option value="" disabled>
-                  Country*
-                </option>
-                <option>Italy</option>
-                <option>United Arab Emirates</option>
-                <option>Other</option>
-              </select>
               <textarea
                 placeholder="Message*"
+                required
                 className="w-full bg-transparent border-b border-white placeholder-gray-400 text-white py-2 focus:outline-none resize-none h-24"
               />
             </div>
@@ -60,35 +46,21 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="Last Name*"
+                required
                 className="w-full bg-transparent border-b border-white placeholder-gray-400 text-white py-2 focus:outline-none"
               />
               <input
-                type="tel"
-                placeholder="Phone"
+                type="text"
+                placeholder="Phone*"
+                required
                 className="w-full bg-transparent border-b border-white placeholder-gray-400 text-white py-2 focus:outline-none"
               />
-              <select
-                className="w-full bg-transparent border-b border-white text-white py-2 focus:outline-none"
-                defaultValue=""
-              >
-                <option value="" disabled>
-                  State/Province*
-                </option>
-                <option>FC</option>
-                <option>MO</option>
-                <option>BO</option>
-              </select>
-              <select
-                className="w-full bg-transparent border-b border-white text-white py-2 focus:outline-none"
-                defaultValue=""
-              >
-                <option value="" disabled>
-                  Profession*
-                </option>
-                <option>Architect</option>
-                <option>Private</option>
-                <option>Other</option>
-              </select>
+              <input
+                type="text"
+                placeholder="City*"
+                required
+                className="w-full bg-transparent border-b border-white placeholder-gray-400 text-white py-2 focus:outline-none"
+              />
               <button
                 type="submit"
                 className="mt-4 inline-flex items-center justify-center px-6 py-3 bg-white text-black font-semibold rounded hover:opacity-90 transition-opacity"
@@ -110,7 +82,7 @@ const Footer = () => {
                   className="h-4 w-4 accent-white bg-black border-white"
                 />
                 <span>
-                  I have read the <u>Privacy Policy</u>.
+                  I have read the <a href="/privacy-policy">Privacy Policy</a>.
                 </span>
               </label>
               <label className="flex items-center space-x-2">
@@ -127,7 +99,7 @@ const Footer = () => {
 
       {/* Bottom Site Footer */}
       <div className="bg-gray-900 py-12 px-6 md:px-12 lg:px-20">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-gray-300 text-sm">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 text-gray-300 text-sm">
           {/* Column 1 */}
           <div>
             <h4 className="font-semibold text-white mb-2">
@@ -143,27 +115,6 @@ const Footer = () => {
             <p>tel. +39 0547 56144</p>
             <p>fax +39 0547 54094</p>
             <p>info@idealfactory.com</p>
-          </div>
-          {/* Column 3 */}
-          <div>
-            <h4 className="font-semibold text-white mb-2">MAGAZINE</h4>
-            <ul className="space-y-1">
-              <li>
-                <a href="#" className="hover:underline">
-                  Newsletter
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Contributions
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>

@@ -62,11 +62,17 @@ const itemFeatures = [
   // },
 ];
 
+const images = [
+  "https://placehold.co/1920x1080?text=Slide+1",
+  "https://placehold.co/1920x1080?text=Slide+2",
+  "https://placehold.co/1920x1080?text=Slide+3",
+];
+
 export default function Home() {
   return (
     <>
       <Navbar />
-      <Slider />
+      <Slider images={images} />
       <DesignSection />
       <ItemFinishFeatureSection features={itemFeatures} />
       <Footer />

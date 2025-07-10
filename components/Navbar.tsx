@@ -51,14 +51,14 @@ const NAV_ITEMS: NavItem[] = [
     href: "/doors",
   },
   {
-    label: "uPVC WINDOWS",
-    subItems: [
-      { label: "Casement", href: "/windows/casement" },
-      { label: "Sliding", href: "/windows/sliding" },
-    ],
+    label: "WINDOWS",
+    // subItems: [
+    //   { label: "Casement", href: "/windows/casement" },
+    //   { label: "Sliding", href: "/windows/sliding" },
+    // ],
     href: "/windows",
   },
-  { label: "FREE DESIGN", href: "/free-design" },
+  // { label: "FREE DESIGN", href: "/free-design" },
 ];
 
 const Navbar: React.FC = () => {

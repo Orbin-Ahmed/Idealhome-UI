@@ -59,13 +59,18 @@ const sectionalImages_1 = [
     alt: "Image 2 Premium Closet",
   },
 ];
+const images = [
+  "https://placehold.co/1920x1080?text=Slide+1",
+  "https://placehold.co/1920x1080?text=Slide+2",
+  "https://placehold.co/1920x1080?text=Slide+3",
+];
 
 const SmartStorageSolution: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <>
-      <Slider />
+      <Slider images={images} />
       <Navbar />
       <div
         className="

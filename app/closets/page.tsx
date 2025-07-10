@@ -81,6 +81,12 @@ const itemFeatures = [
   },
 ];
 
+const images = [
+  "https://placehold.co/1920x1080?text=Slide+1",
+  "https://placehold.co/1920x1080?text=Slide+2",
+  "https://placehold.co/1920x1080?text=Slide+3",
+];
+
 const ClosetPage: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
 
@@ -90,7 +96,7 @@ const ClosetPage: React.FC = () => {
       <div className="bg-white overflow-hidden">
         {/* Hero Slider */}
 
-        <Slider />
+        <Slider images={images} />
 
         {/* Features */}
         <DynamicFeatureSection

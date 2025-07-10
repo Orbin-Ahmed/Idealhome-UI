@@ -79,6 +79,12 @@ const itemFeatures = [
   },
 ];
 
+const images = [
+  "https://placehold.co/1920x1080?text=Slide+1",
+  "https://placehold.co/1920x1080?text=Slide+2",
+  "https://placehold.co/1920x1080?text=Slide+3",
+];
+
 const KitchenPage: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
 
@@ -87,7 +93,7 @@ const KitchenPage: React.FC = () => {
       <Navbar />
       <div className="bg-white overflow-hidden">
         {/* Hero Slider */}
-        <Slider />
+        <Slider images={images} />
         {/* Features */}
         <DynamicFeatureSection
           sectionTitle="What You'll Love About Your Kitchen"
