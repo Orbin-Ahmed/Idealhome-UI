@@ -54,7 +54,7 @@ const DynamicFeatureSection: React.FC<DynamicFeatureSectionProps> = ({
                 hover:bg-opacity-90
               "
             >
-              {ctaText}
+              <a href="#contact-us">{ctaText}</a>
             </button>
           </div>
         )}

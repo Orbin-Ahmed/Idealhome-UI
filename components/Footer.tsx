@@ -20,7 +20,10 @@ const Footer = () => {
           </div>
 
           {/* Form */}
-          <form className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
+          <form
+            className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6"
+            id="contact-us"
+          >
             {/* Left column */}
             <div className="space-y-4">
               <input

@@ -109,7 +109,7 @@ const SmartStorageSolution: React.FC = () => {
                   hover:opacity-90
                 "
               >
-                Request Free 3D Design
+                <a href="#contact-us">Request Free 3D Design</a>
               </button>
             </div>
           </div>

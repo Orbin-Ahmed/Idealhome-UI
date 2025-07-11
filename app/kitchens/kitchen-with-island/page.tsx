@@ -41,12 +41,12 @@ const products = [
   {
     title: "U-Shaped Kitchen",
     image: "https://placehold.co/600x400?text=U-Shaped+Kitchen",
-    link: "/kitchen/u-shaped-kitchen",
+    link: "/kitchens/u-shaped-kitchen",
   },
   {
     title: "Pantry Kitchen",
     image: "https://placehold.co/600x400?text=Pantry+Kitchen",
-    link: "/kitchen/pantry-kitchen",
+    link: "/kitchens/pantry-kitchen",
   },
 ];
 const images = [
@@ -95,7 +95,7 @@ const KitchenWithIsland: React.FC = () => {
                   hover:opacity-90
                 "
           >
-            Request Free 3D Design
+            <a href="#contact-us">Request Free 3D Design</a>
           </button>
         </div>
         <section className="py-8 bg-white border-gray-200">

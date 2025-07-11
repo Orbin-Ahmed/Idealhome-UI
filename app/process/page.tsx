@@ -102,9 +102,10 @@ const TransformProcessSection = () => (
               >
                 {/* Content Card */}
                 <div
-                  className={`flex-1 ${
-                    index % 2 === 0 ? "lg:text-right" : "lg:text-left"
-                  }`}
+                  // className={`flex-1 ${
+                  //   index % 2 === 0 ? "lg:text-right" : "lg:text-left"
+                  // }`}
+                  className={"flex-1 lg:text-left"}
                 >
                   <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 group">
                     <div
@@ -169,7 +170,7 @@ const TransformProcessSection = () => (
               </p>
 
               <button className="bg-white text-[#57b7c0] px-12 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300 shadow-lg transform hover:scale-105 hover:shadow-xl">
-                🎨 Request Free 3D Design
+                <a href="#contact-us">🎨 Request Free 3D Design</a>
               </button>
 
               <div className="mt-8 flex justify-center items-center gap-4 text-white/80">

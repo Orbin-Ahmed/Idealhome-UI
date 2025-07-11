@@ -116,39 +116,32 @@ const ValuesGrid = () => {
               </p>
 
               {/* Hover effect overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-red-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-red-50 to-transparent opacity-0 transition-opacity duration-300 rounded-2xl pointer-events-none"></div>
             </div>
           ))}
         </div>
 
-        {/* Featured Card - Full Width */}
-        <div className="relative">
-          <div className="bg-gradient-to-r from-[#57b7c0] to-[#57b7c0] rounded-3xl p-12 text-white text-center shadow-2xl transform hover:scale-105 transition-all duration-500">
-            {/* Decorative elements */}
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent rounded-3xl"></div>
-            <div className="absolute -top-2 -right-2 w-8 h-8 bg-white/20 rounded-full"></div>
-            <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-white/20 rounded-full"></div>
+        {/* Featured Card – Full Width */}
+        <div className="relative bg-white rounded-2xl p-8 shadow-lg transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+          {/* Number Badge */}
+          <div className="absolute -top-4 -right-4 w-12 h-12 bg-gradient-to-br from-[#57b7c0] to-[#57b7c0] rounded-full flex items-center justify-center shadow-lg">
+            <span className="text-white font-bold text-lg">
+              {cards[6].number}
+            </span>
+          </div>
 
-            <div className="relative z-10">
-              {/* Number Badge */}
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full mb-6">
-                <span className="text-3xl font-bold">{cards[6].number}</span>
-              </div>
+          <div className="flex items-center h-full">
+            {/* Icon on the left */}
+            <div className="text-6xl mr-8">{cards[6].icon}</div>
 
-              {/* Icon */}
-              <div className="text-6xl mb-6">{cards[6].icon}</div>
-
-              {/* Content */}
-              <h3 className="text-3xl font-bold mb-6">{cards[6].title}</h3>
-
-              <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed">
+            {/* Content */}
+            <div className="flex-1">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                {cards[6].title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
                 {cards[6].description}
               </p>
-
-              {/* CTA Button */}
-              <button className="mt-8 bg-white text-[#57b7c0] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 shadow-lg">
-                Learn More About Our Warranty
-              </button>
             </div>
           </div>
         </div>

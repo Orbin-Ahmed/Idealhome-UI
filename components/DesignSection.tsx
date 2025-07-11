@@ -33,7 +33,7 @@ const DesignSection: React.FC = () => {
         </p>
 
         <div className="flex justify-center">
-          <ButtonLink href="/design-request">Request Free 3D Design</ButtonLink>
+          <ButtonLink href="#contact-us">Request Free 3D Design</ButtonLink>
         </div>
       </div>
     </section>
