@@ -43,6 +43,7 @@ const itemFeatures = [
       { label: "organization" },
       { label: "and comfort come together" },
     ],
+    titleLink: "/kitchens/kitchen-with-island",
   },
   {
     title: "U-SHAPED KITCHEN",
@@ -58,6 +59,7 @@ const itemFeatures = [
       { label: "all in a stylish" },
       { label: "immersive design." },
     ],
+    titleLink: "/kitchens/u-shaped-kitchen",
   },
   {
     title: "PANTRY KITCHEN",
@@ -76,6 +78,7 @@ const itemFeatures = [
           "and a cohesive finish make it a seamless blend of style and efficiency.",
       },
     ],
+    titleLink: "/kitchens/pantry-kitchen",
   },
 ];
 

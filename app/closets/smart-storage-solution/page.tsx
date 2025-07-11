@@ -128,6 +128,10 @@ const SmartStorageSolution: React.FC = () => {
             ctaText="Request Free 3D Design"
             ctaAction={() => setShowModal(true)}
           />
+          <p className="text-center text-lg md:text-xl text-gray-600 leading-relaxed">
+            <strong>Designed in 3D Before You Commit</strong> - Visualize your
+            smart storage in high-quality 3D — free of charge
+          </p>
         </section>
         <TwoImageSection images={sectionalImages_1} />
       </div>
