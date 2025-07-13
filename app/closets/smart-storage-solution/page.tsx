@@ -36,26 +36,26 @@ const features = [
 
 const sectionalImages = [
   {
-    src: "https://placehold.co/800x500?text=SSS+Rendered+Image+No.+1",
+    src: "/images/test2/4.jpg",
     alt: "Image 1 Premium Closet",
   },
   {
-    src: "https://placehold.co/800x500?text=SSS+Rendered+Image+No.+2",
+    src: "/images/test2/4.jpg",
     alt: "Image 2 Premium Closet",
   },
   {
-    src: "https://placehold.co/800x500?text=SSS+Rendered+Image+No.+3",
+    src: "/images/test2/4.jpg",
     alt: "Image 3 Premium Closet",
   },
 ];
 
 const sectionalImages_1 = [
   {
-    src: "https://placehold.co/800x500?text=Image+1+Premium+Closet",
+    src: "/images/test2/5.jpeg",
     alt: "Image 1 Premium Closet",
   },
   {
-    src: "https://placehold.co/800x500?text=Image+2+Premium+Closet",
+    src: "/images/test2/5.jpeg",
     alt: "Image 2 Premium Closet",
   },
 ];

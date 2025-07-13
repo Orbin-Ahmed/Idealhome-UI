@@ -9,11 +9,11 @@ import Footer from "@/components/Footer";
 const kitchenGalleryItems = [
   {
     type: "image" as const,
-    image: "https://placehold.co/800x400?text=Shot+No+1+Kitchen+with+Island",
+    image: "/images/test2/kitchen_2.png",
   },
   {
     type: "image" as const,
-    image: "https://placehold.co/400x400?text=Top+View+Kitchen+1",
+    image: "/images/test2/kitchen_3.png",
   },
   {
     type: "description" as const,
@@ -25,27 +25,27 @@ const kitchenGalleryItems = [
   },
   {
     type: "image" as const,
-    image: "https://placehold.co/800x400?text=Shot+No+2+Kitchen+with+Island",
+    image: "/images/test2/kitchen_2.png",
   },
   {
     type: "image" as const,
-    image: "https://placehold.co/800x400?text=Shot+No+3+Kitchen+with+Island",
+    image: "/images/test2/kitchen_2.png",
   },
   {
     type: "image" as const,
-    image: "https://placehold.co/400x400?text=Top+View+Kitchen+2",
+    image: "/images/test2/kitchen_3.png",
   },
 ];
 
 const products = [
   {
     title: "U-Shaped Kitchen",
-    image: "https://placehold.co/600x400?text=U-Shaped+Kitchen",
+    image: "/images/test2/kitchen.png",
     link: "/kitchens/u-shaped-kitchen",
   },
   {
     title: "Pantry Kitchen",
-    image: "https://placehold.co/600x400?text=Pantry+Kitchen",
+    image: "/images/test2/kitchen_1.png",
     link: "/kitchens/pantry-kitchen",
   },
 ];

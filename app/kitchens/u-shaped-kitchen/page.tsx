@@ -40,12 +40,12 @@ const kitchenGalleryItems = [
 const products = [
   {
     title: "Pantry Kitchen",
-    image: "https://placehold.co/600x400?text=Pantry+Kitchen",
+    image: "/images/test2/kitchen.png",
     link: "/kitchens/pantry-kitchen",
   },
   {
     title: "Kitchen With Island",
-    image: "https://placehold.co/600x400?text=Pantry+Kitchen",
+    image: "/images/test2/kitchen_1.png",
     link: "/kitchens/kitchen-with-island",
   },
 ];

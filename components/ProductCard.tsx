@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -25,10 +26,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ title, image, link }) => {
       "
       >
         {/* Image Section */}
-        <div
-          className="w-full h-[220px] bg-center bg-cover"
-          style={{ backgroundImage: `url(${image})` }}
-        />
+        <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+          <Image src={image} alt={title} fill />
+        </div>
 
         {/* Title */}
         <div className="px-4 py-3 text-center">

@@ -40,7 +40,7 @@ const Company = () => {
 
         <div className="mt-12">
           <Image
-            src="https://placehold.co/800x400/png"
+            src="/images/test2/company.jpg"
             alt="Factory Machinery"
             width={800}
             height={400}
