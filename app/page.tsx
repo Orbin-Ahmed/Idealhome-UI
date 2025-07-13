@@ -17,7 +17,11 @@ const itemFeatures = [
       { label: "Classic" },
       { label: "Luxury" },
     ],
-    images: ["https://placehold.co/840x400", "https://placehold.co/840x400"],
+    images: [
+      "/images/test2/1.jpg",
+      "/images/test2/2.jpg",
+      "/images/test2/3.jpg",
+    ],
     textPosition: "left" as const,
     titleLink: "/closets",
   },
@@ -32,7 +36,11 @@ const itemFeatures = [
       { label: "Modern" },
       { label: "Classic" },
     ],
-    images: ["https://placehold.co/840x400", "https://placehold.co/840x400"],
+    images: [
+      "/images/test2/1.jpg",
+      "/images/test2/2.jpg",
+      "/images/test2/3.jpg",
+    ],
     textPosition: "right" as const,
     titleLink: "/kitchens",
   },
@@ -49,17 +57,14 @@ const itemFeatures = [
       { label: "Modern" },
       { label: "Classic" },
     ],
-    images: ["https://placehold.co/840x400", "https://placehold.co/840x400"],
+    images: [
+      "/images/test2/1.jpg",
+      "/images/test2/2.jpg",
+      "/images/test2/3.jpg",
+    ],
     textPosition: "left" as const,
     titleLink: "/doors",
   },
-  // {
-  //   title: "WINDOWS",
-  //   subtitle:
-  //     "Comfort, Energy Efficient, Design, Schuco quality, Sustainability",
-  //   images: ["https://placehold.co/840x400", "https://placehold.co/840x400"],
-  //   textPosition: "right" as const,
-  // },
 ];
 
 const images = [

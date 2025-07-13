@@ -36,7 +36,11 @@ const features = [
 const itemFeatures = [
   {
     title: "KITCHEN WITH ISLAND",
-    images: ["https://placehold.co/600x300", "https://placehold.co/600x300"],
+    images: [
+      "/images/test2/1.jpg",
+      "/images/test2/2.jpg",
+      "/images/test2/3.jpg",
+    ],
     textPosition: "left" as const,
     subtitleItems: [
       { label: "Step into a space designed just for you — where luxury" },
@@ -47,7 +51,11 @@ const itemFeatures = [
   },
   {
     title: "U-SHAPED KITCHEN",
-    images: ["https://placehold.co/600x300", "https://placehold.co/600x300"],
+    images: [
+      "/images/test2/1.jpg",
+      "/images/test2/2.jpg",
+      "/images/test2/3.jpg",
+    ],
     textPosition: "right" as const,
     subtitleItems: [
       {
@@ -63,7 +71,11 @@ const itemFeatures = [
   },
   {
     title: "PANTRY KITCHEN",
-    images: ["https://placehold.co/600x300", "https://placehold.co/600x300"],
+    images: [
+      "/images/test2/1.jpg",
+      "/images/test2/2.jpg",
+      "/images/test2/3.jpg",
+    ],
     textPosition: "left" as const,
     subtitleItems: [
       {
