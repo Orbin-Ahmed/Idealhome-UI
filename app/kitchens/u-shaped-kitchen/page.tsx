@@ -51,9 +51,11 @@ const products = [
 ];
 
 const images = [
-  "https://placehold.co/1920x1080?text=Slide+1",
-  "https://placehold.co/1920x1080?text=Slide+2",
-  "https://placehold.co/1920x1080?text=Slide+3",
+  "/images/test/1.png",
+  "/images/test/2.png",
+  "/images/test/3.png",
+  "/images/test/4.png",
+  "/images/test/5.png",
 ];
 
 const UShapedKitchen: React.FC = () => {
