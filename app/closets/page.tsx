@@ -44,9 +44,8 @@ const itemFeatures = [
       { label: "and comfort come together" },
     ],
     images: [
-      "/images/test2/1.jpg",
-      "/images/test2/2.jpg",
-      "/images/test2/3.jpg",
+      "/images/closets/walk-in-1.jpg",
+      "/images/closets/walk-in-2.jpg",
     ],
     textPosition: "left" as const,
     titleLink: "/closets/walk-in-closet",
@@ -64,9 +63,8 @@ const itemFeatures = [
       { label: "and tailored to your daily routine" },
     ],
     images: [
-      "/images/test2/1.jpg",
-      "/images/test2/2.jpg",
-      "/images/test2/3.jpg",
+      "/images/closets/wardrobe-1.jpg",
+      "/images/closets/wardrobe-2.jpg",
     ],
     textPosition: "right" as const,
     titleLink: "/closets/reach-in-closet",
@@ -84,9 +82,8 @@ const itemFeatures = [
       { label: "Classic" },
     ],
     images: [
-      "/images/test2/1.jpg",
-      "/images/test2/2.jpg",
-      "/images/test2/3.jpg",
+      "/images/closets/smart-1.jpg",
+      "/images/closets/smart-2.jpg",
     ],
     textPosition: "left" as const,
     titleLink: "/closets/smart-storage-solution",
@@ -94,11 +91,9 @@ const itemFeatures = [
 ];
 
 const images = [
-  "/images/test/1.png",
-  "/images/test/2.png",
-  "/images/test/3.png",
-  "/images/test/4.png",
-  "/images/test/5.png",
+  "/images/closets/slider-1.jpg",
+  "/images/closets/slider-2.jpg",
+  "/images/closets/slider-3.jpg",
 ];
 
 const ClosetPage: React.FC = () => {

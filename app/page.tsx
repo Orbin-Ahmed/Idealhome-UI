@@ -18,9 +18,8 @@ const itemFeatures = [
       { label: "Luxury" },
     ],
     images: [
-      "/images/test2/1.jpg",
-      "/images/test2/2.jpg",
-      "/images/test2/3.jpg",
+      "/images/home/closet-1.jpg",
+      "/images/home/closet-2.jpg",
     ],
     textPosition: "left" as const,
     titleLink: "/closets",
@@ -37,9 +36,8 @@ const itemFeatures = [
       { label: "Classic" },
     ],
     images: [
-      "/images/test2/1.jpg",
-      "/images/test2/2.jpg",
-      "/images/test2/3.jpg",
+      "/images/home/kitchen-1.jpg",
+      "/images/home/kitchen-2.jpg",
     ],
     textPosition: "right" as const,
     titleLink: "/kitchens",
@@ -58,9 +56,8 @@ const itemFeatures = [
       { label: "Classic" },
     ],
     images: [
-      "/images/test2/1.jpg",
-      "/images/test2/2.jpg",
-      "/images/test2/3.jpg",
+      "/images/home/doors-1.jpg",
+      "/images/home/doors-2.jpg",
     ],
     textPosition: "left" as const,
     titleLink: "/doors",
@@ -68,11 +65,9 @@ const itemFeatures = [
 ];
 
 const images = [
-  "/images/test/1.png",
-  "/images/test/2.png",
-  "/images/test/3.png",
-  "/images/test/4.png",
-  "/images/test/5.png",
+  "/images/home/classic-elegant-walk-in-closet-mirrored-cabinet-doors.jpg",
+  "/images/home/luxury-walk-in-closet-sliding-glass-doors-wood-finish.jpg",
+  "/images/home/modern-kitchen-matte-black-beige-cabinets-marble-countertop-island.jpg",
 ];
 
 export default function Home() {

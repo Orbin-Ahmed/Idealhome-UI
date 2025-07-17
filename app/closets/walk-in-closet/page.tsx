@@ -36,36 +36,34 @@ const features = [
 
 const sectionalImages = [
   {
-    src: "/images/test2/4.jpg",
+    src: "/images/closets/walk-in-closet/image-1.jpg",
     alt: "Image 1 Premium Closet",
   },
   {
-    src: "/images/test2/4.jpg",
+    src: "/images/closets/walk-in-closet/image-2.jpg",
     alt: "Image 2 Premium Closet",
   },
   {
-    src: "/images/test2/4.jpg",
+    src: "/images/closets/walk-in-closet/image-3.jpg",
     alt: "Image 3 Premium Closet",
   },
 ];
 
 const sectionalImages_1 = [
   {
-    src: "/images/test2/5.jpeg",
+    src: "/images/closets/walk-in-closet/image-4.jpg",
     alt: "Image 1 Premium Closet",
   },
   {
-    src: "/images/test2/5.jpeg",
+    src: "/images/closets/walk-in-closet/image-5.jpg",
     alt: "Image 2 Premium Closet",
   },
 ];
 
 const images = [
-  "/images/test/1.png",
-  "/images/test/2.png",
-  "/images/test/3.png",
-  "/images/test/4.png",
-  "/images/test/5.png",
+  "/images/closets/walk-in-closet/silder-1.jpg",
+  "/images/closets/walk-in-closet/silder-2.jpg",
+  "/images/closets/walk-in-closet/silder-3.jpg",
 ];
 
 const WalkInCloset: React.FC = () => {
