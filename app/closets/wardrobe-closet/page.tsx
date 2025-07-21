@@ -32,39 +32,37 @@ const features = [
 
 const sectionalImages = [
   {
-    src: "/images/test2/4.jpg",
+    src: "/images/closets/wardrobe-closet/image-1.jpg",
     alt: "Image 1 Premium Closet",
   },
   {
-    src: "/images/test2/4.jpg",
+    src: "/images/closets/wardrobe-closet/image-2.jpg",
     alt: "Image 2 Premium Closet",
   },
   {
-    src: "/images/test2/4.jpg",
+    src: "/images/closets/wardrobe-closet/image-3.jpg",
     alt: "Image 3 Premium Closet",
   },
 ];
 
 const sectionalImages_1 = [
   {
-    src: "/images/test2/5.jpeg",
+    src: "/images/closets/wardrobe-closet/image-4.jpg",
     alt: "Image 1 Premium Closet",
   },
   {
-    src: "/images/test2/5.jpeg",
+    src: "/images/closets/wardrobe-closet/image-5.jpg",
     alt: "Image 2 Premium Closet",
   },
 ];
 
 const images = [
-  "/images/test/1.png",
-  "/images/test/2.png",
-  "/images/test/3.png",
-  "/images/test/4.png",
-  "/images/test/5.png",
+  "/images/closets/wardrobe-closet/slider-1.jpg",
+  "/images/closets/wardrobe-closet/slider-2.jpg",
+  "/images/closets/wardrobe-closet/slider-3.jpg",
 ];
 
-const ReachInCloset: React.FC = () => {
+const WardrobeCloset: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
@@ -81,7 +79,7 @@ const ReachInCloset: React.FC = () => {
         <section className="pt-12 pb-4 bg-white border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#57b7c0] mb-6">
-              Our Reach-in Closets are Designed for Everyday Efficiency.
+              Our Wardrobe Closets are Designed for Everyday Efficiency.
             </h2>
             <div>
               <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-4">
@@ -142,4 +140,4 @@ const ReachInCloset: React.FC = () => {
   );
 };
 
-export default ReachInCloset;
+export default WardrobeCloset;

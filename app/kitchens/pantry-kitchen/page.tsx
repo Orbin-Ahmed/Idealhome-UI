@@ -9,11 +9,11 @@ import Footer from "@/components/Footer";
 const kitchenGalleryItems = [
   {
     type: "image" as const,
-    image: "/images/test2/kitchen_3.png",
+    image: "/images/kitchen/pantry-kitchen/pantry-kitchen-1.jpg",
   },
   {
     type: "image" as const,
-    image: "/images/test2/kitchen_3.png",
+    image: "/images/kitchen/pantry-kitchen/top-view-kitchen-1.jpg",
   },
   {
     type: "description" as const,
@@ -25,37 +25,35 @@ const kitchenGalleryItems = [
   },
   {
     type: "image" as const,
-    image: "/images/test2/kitchen_3.png",
+    image: "/images/kitchen/pantry-kitchen/pantry-kitchen-2.jpg",
   },
   {
     type: "image" as const,
-    image: "/images/test2/kitchen_3.png",
+    image: "/images/kitchen/pantry-kitchen/pantry-kitchen-3.jpg",
   },
   {
     type: "image" as const,
-    image: "/images/test2/kitchen_3.png",
+    image: "/images/kitchen/pantry-kitchen/top-view-kitchen-2.jpg",
   },
 ];
 
 const products = [
   {
     title: "U-Shaped Kitchen",
-    image: "/images/test2/kitchen.png",
+    image: "/images/kitchen/pantry-kitchen/ushaped.jpg",
     link: "/kitchens/u-shaped-kitchen",
   },
   {
     title: "Kitchen With Island",
-    image: "/images/test2/kitchen_1.png",
+    image: "/images/kitchen/pantry-kitchen/kitchen-island.jpg",
     link: "/kitchens/kitchen-with-island",
   },
 ];
 
 const images = [
-  "/images/test/1.png",
-  "/images/test/2.png",
-  "/images/test/3.png",
-  "/images/test/4.png",
-  "/images/test/5.png",
+  "/images/kitchen/pantry-kitchen/slider-1.jpg",
+  "/images/kitchen/pantry-kitchen/slider-2.jpg",
+  "/images/kitchen/pantry-kitchen/slider-3.jpg",
 ];
 
 const pantryKitchen: React.FC = () => {

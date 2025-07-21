@@ -51,7 +51,7 @@ const itemFeatures = [
     titleLink: "/closets/walk-in-closet",
   },
   {
-    title: "REACH-IN CLOSETS",
+    title: "WARDROBE CLOSETS",
     subtitle:
       "A stylish, space-saving solution designed to keep your essentials organized, accessible, and tailored to your daily routine",
     subtitleItems: [
@@ -67,7 +67,7 @@ const itemFeatures = [
       "/images/closets/wardrobe-2.jpg",
     ],
     textPosition: "right" as const,
-    titleLink: "/closets/reach-in-closet",
+    titleLink: "/closets/wardrobe-closet",
   },
   {
     title: "SMART STORAGE",

@@ -37,9 +37,8 @@ const itemFeatures = [
   {
     title: "KITCHEN WITH ISLAND",
     images: [
-      "/images/test2/1.jpg",
-      "/images/test2/2.jpg",
-      "/images/test2/3.jpg",
+      "/images/kitchen/island-1.jpg",
+      "/images/kitchen/island-2.jpg",
     ],
     textPosition: "left" as const,
     subtitleItems: [
@@ -52,9 +51,8 @@ const itemFeatures = [
   {
     title: "U-SHAPED KITCHEN",
     images: [
-      "/images/test2/1.jpg",
-      "/images/test2/2.jpg",
-      "/images/test2/3.jpg",
+      "/images/kitchen/u-shaped-1.jpg",
+      "/images/kitchen/u-shaped-2.jpg",
     ],
     textPosition: "right" as const,
     subtitleItems: [
@@ -72,9 +70,8 @@ const itemFeatures = [
   {
     title: "PANTRY KITCHEN",
     images: [
-      "/images/test2/1.jpg",
-      "/images/test2/2.jpg",
-      "/images/test2/3.jpg",
+      "/images/kitchen/pantry-1.jpg",
+      "/images/kitchen/pantry-2.jpg",
     ],
     textPosition: "left" as const,
     subtitleItems: [
@@ -95,11 +92,9 @@ const itemFeatures = [
 ];
 
 const images = [
-  "/images/test/1.png",
-  "/images/test/2.png",
-  "/images/test/3.png",
-  "/images/test/4.png",
-  "/images/test/5.png",
+  "/images/kitchen/slider-1.jpg",
+  "/images/kitchen/slider-2.jpg",
+  "/images/kitchen/slider-3.jpg",
 ];
 
 const KitchenPage: React.FC = () => {

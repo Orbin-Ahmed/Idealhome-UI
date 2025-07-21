@@ -106,18 +106,17 @@ const Footer = () => {
           {/* Column 1 */}
           <div>
             <h4 className="font-semibold text-white mb-2">
-              IDEAL FACTORY Headquarters
+              IDEAL HOME FURNITURE FACTORY
             </h4>
-            <p>via Ponte Ospedaletto, 1560</p>
-            <p>47020 Longiano FC</p>
-            <p>Italy</p>
+            <p>ICAD-1, Mussafah</p>
+            <p>Abu Dhabi</p>
+            <p>UAE</p>
           </div>
           {/* Column 2 */}
           <div>
             <h4 className="font-semibold text-white mb-2">Contact</h4>
-            <p>tel. +39 0547 56144</p>
-            <p>fax +39 0547 54094</p>
-            <p>info@idealfactory.com</p>
+            <p>tel. +971 (0)264 25445</p>
+            <p>info@idealhomeuae.com</p>
           </div>
         </div>
       </div>
@@ -125,7 +124,7 @@ const Footer = () => {
       {/* Copyright Bar */}
       <div className="bg-black py-4">
         <p className="text-center text-gray-500 text-xs">
-          © {new Date().getFullYear()} Ideal Factory. All rights reserved.
+          © {new Date().getFullYear()} Ideal Home. All rights reserved.
         </p>
       </div>
     </footer>

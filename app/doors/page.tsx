@@ -9,13 +9,13 @@ import EndlessFinishesSection from "@/components/EndlessFinishesSection";
 const itemFeatures = [
   {
     title: "LAMINATED",
-    images: ["https://placehold.co/600x300", "https://placehold.co/600x300"],
+    images: ["/images/doors/laminated-1.jpg", "/images/doors/laminated-2.jpg"],
     textPosition: "left" as const,
     subtitleItems: [{ label: "With European Woods" }],
   },
   {
     title: "STAINED VENEER",
-    images: ["https://placehold.co/600x300", "https://placehold.co/600x300"],
+    images: ["/images/doors/stained-veneer-1.jpg", "/images/doors/stained-veneer-2.jpg"],
     textPosition: "right" as const,
     subtitleItems: [
       {
@@ -25,7 +25,7 @@ const itemFeatures = [
   },
   {
     title: "PAINTED SMOOTH FINISH",
-    images: ["https://placehold.co/600x300", "https://placehold.co/600x300"],
+    images: ["/images/doors/painted-1.jpg", "/images/doors/painted-2.jpg"],
     textPosition: "left" as const,
     subtitleItems: [
       {
@@ -35,7 +35,7 @@ const itemFeatures = [
   },
   {
     title: "SOLID",
-    images: ["https://placehold.co/600x300", "https://placehold.co/600x300"],
+    images: ["/images/doors/solid-1.jpg", "/images/doors/solid-2.jpg"],
     textPosition: "right" as const,
     subtitleItems: [
       {

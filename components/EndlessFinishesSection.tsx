@@ -7,9 +7,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const placeholderImages = Array.from({ length: 6 }).map(
-  (_, i) => `https://placehold.co/800x600?text=Interior+Door+${i + 1}`
-);
+const placeholderImages = [
+  '/images/doors/interior-door-slider-1.jpg',
+];
 
 const EndlessFinishesSection: React.FC = () => {
   return (

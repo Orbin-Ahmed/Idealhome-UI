@@ -29,7 +29,7 @@ const NAV_ITEMS: NavItem[] = [
     label: "ClOSETS",
     subItems: [
       { label: "Walk-In Closets", href: "/closets/walk-in-closet" },
-      { label: "Reach-In Closets", href: "/closets/reach-in-closet" },
+      { label: "Wardrobe Closets", href: "/closets/wardrobe-closet" },
       {
         label: "Smart Storage Solutions",
         href: "/closets/smart-storage-solution",
@@ -50,14 +50,14 @@ const NAV_ITEMS: NavItem[] = [
     label: "DOORS",
     href: "/doors",
   },
-  {
-    label: "WINDOWS",
-    // subItems: [
-    //   { label: "Casement", href: "/windows/casement" },
-    //   { label: "Sliding", href: "/windows/sliding" },
-    // ],
-    href: "/windows",
-  },
+  // {
+  //   label: "WINDOWS",
+  //   // subItems: [
+  //   //   { label: "Casement", href: "/windows/casement" },
+  //   //   { label: "Sliding", href: "/windows/sliding" },
+  //   // ],
+  //   href: "/windows",
+  // },
   // { label: "FREE DESIGN", href: "/free-design" },
 ];
 
