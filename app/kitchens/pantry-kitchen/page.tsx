@@ -13,7 +13,7 @@ const kitchenGalleryItems = [
   },
   {
     type: "image" as const,
-    image: "/images/kitchen/pantry-kitchen/top-view-kitchen-1.jpg",
+    image: "/images/kitchen/pantry-kitchen/top-view-kitchen-2.jpg",
   },
   {
     type: "description" as const,
@@ -33,7 +33,7 @@ const kitchenGalleryItems = [
   },
   {
     type: "image" as const,
-    image: "/images/kitchen/pantry-kitchen/top-view-kitchen-2.jpg",
+    image: "/images/kitchen/pantry-kitchen/top-view-kitchen-1.jpg",
   },
 ];
 
