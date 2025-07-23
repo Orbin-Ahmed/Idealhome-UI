@@ -17,9 +17,9 @@ const kitchenGalleryItems = [
   },
   {
     type: "description" as const,
-    title: "Walnut Matte and Soft Beige Island Kitchen",
+    title: "Cool Grey and Sleek Finish U-Shaped Kitchen",
     description:
-      "Warm walnut tones paired with soft beige cabinetry create a balanced, inviting atmosphere — blending natural elegance with everyday comfort.",
+      "Cool grey tones paired with sleek surfaces create a modern, calming ambiance — combining understated elegance with everyday practicality.",
     ctaText: "View it in 3D ",
     ctaLink: "/",
   },

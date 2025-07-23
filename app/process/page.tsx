@@ -174,11 +174,11 @@ const TransformProcessSection = () => (
               </button>
 
               <div className="mt-8 flex justify-center items-center gap-4 text-white/80">
-                <span className="text-sm">✓ Free Consultation</span>
+                <span className="text-lg">✓ Free Consultation</span>
                 <span className="w-2 h-2 bg-white/50 rounded-full"></span>
-                <span className="text-sm">✓ 3D Visualization</span>
+                <span className="text-lg">✓ 3D Visualization</span>
                 <span className="w-2 h-2 bg-white/50 rounded-full"></span>
-                <span className="text-sm">✓ No Commitment</span>
+                <span className="text-lg">✓ No Commitment</span>
               </div>
             </div>
           </div>

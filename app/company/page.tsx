@@ -50,10 +50,8 @@ const Company = () => {
       </section>
       <ValuesGrid />
       <div className="pt-4 pb-8 bg-white">
-        <p className="bg-white text-black flex items-center justify-center">
-          Avoid Overpaying for Standard Interiors — With Ideal Factory,
-          Experience a Process Where You Approve, Understand, and Control Every
-          Detail, with Factory-Direct Quality.
+        <p className="text-2xl font-semibold text-center text-black px-1 max-w-4xl mx-auto leading-relaxed">
+          Avoid Overpaying for Standard Interiors — With Ideal Factory, Experience a Process Where You Approve, Understand, and Control Every Detail, with Factory-Direct Quality.
         </p>
         <div className="text-center mt-8">
           <button

@@ -9,6 +9,8 @@ import "swiper/css/pagination";
 
 const placeholderImages = [
   '/images/doors/slider-1.jpg',
+  '/images/doors/slider-2.jpg',
+  '/images/doors/slider-3.jpg',
 ];
 
 const WoodenDoorSection: React.FC = () => {

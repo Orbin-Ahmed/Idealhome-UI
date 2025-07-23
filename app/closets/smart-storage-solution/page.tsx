@@ -36,36 +36,34 @@ const features = [
 
 const sectionalImages = [
   {
-    src: "/images/test2/4.jpg",
+    src: "/images/closets/smart-storage-closet/image-1.jpg",
     alt: "Image 1 Premium Closet",
   },
   {
-    src: "/images/test2/4.jpg",
+    src: "/images/closets/smart-storage-closet/image-2.jpg",
     alt: "Image 2 Premium Closet",
   },
   {
-    src: "/images/test2/4.jpg",
+    src: "/images/closets/smart-storage-closet/image-3.jpg",
     alt: "Image 3 Premium Closet",
   },
 ];
 
 const sectionalImages_1 = [
   {
-    src: "/images/test2/5.jpeg",
+    src: "/images/closets/smart-storage-closet/image-4.jpg",
     alt: "Image 1 Premium Closet",
   },
   {
-    src: "/images/test2/5.jpeg",
+    src: "/images/closets/smart-storage-closet/image-5.jpg",
     alt: "Image 2 Premium Closet",
   },
 ];
 
 const images = [
-  "/images/test/1.png",
-  "/images/test/2.png",
-  "/images/test/3.png",
-  "/images/test/4.png",
-  "/images/test/5.png",
+  "/images/closets/smart-storage-closet/slider-1.jpg",
+  "/images/closets/smart-storage-closet/slider-2.jpg",
+  "/images/closets/smart-storage-closet/slider-3.jpg",
 ];
 
 const SmartStorageSolution: React.FC = () => {

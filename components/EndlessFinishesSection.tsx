@@ -9,6 +9,8 @@ import "swiper/css/pagination";
 
 const placeholderImages = [
   '/images/doors/interior-door-slider-1.jpg',
+  '/images/doors/interior-door-slider-2.jpg',
+  '/images/doors/interior-door-slider-3.jpg',
 ];
 
 const EndlessFinishesSection: React.FC = () => {

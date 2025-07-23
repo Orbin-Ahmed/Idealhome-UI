@@ -121,7 +121,7 @@ const WardrobeCloset: React.FC = () => {
         {/* Features */}
         <section className=" bg-white">
           <DynamicFeatureSection
-            sectionTitle="What You'll Love About Your Closet"
+            sectionTitle="What You'll Love About Your Wardrobe"
             features={features}
             ctaText="Request Free 3D Design"
             ctaAction={() => setShowModal(true)}

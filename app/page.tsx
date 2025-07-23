@@ -9,7 +9,7 @@ const itemFeatures = [
     title: "CLOSETS",
     subtitleItems: [
       { label: "Walk-in", href: "/closets/walk-in-closet" },
-      { label: "Reach-in", href: "/closets/reach-in-closet" },
+      { label: "Wardrobe", href: "/closets/wardrobe-closet" },
       { label: "Smart Storage", href: "/closets/smart-storage-solution" },
       { label: "His & Hers" },
       { label: "Kid's" },
@@ -27,11 +27,9 @@ const itemFeatures = [
   {
     title: "KITCHENS",
     subtitleItems: [
-      { label: "With Island", href: "/kitchens/kitchen-with-island" },
+      { label: "Kitchen With Island", href: "/kitchens/kitchen-with-island" },
+      { label: "U-shaped Kitchen", href: "/kitchens/u-shaped-kitchen" },
       { label: "Pantry Kitchen", href: "/kitchens/pantry-kitchen" },
-      { label: "U-shape", href: "/kitchens/u-shaped-kitchen" },
-      { label: "Double Gally" },
-      { label: "Kid's" },
       { label: "Modern" },
       { label: "Classic" },
     ],
