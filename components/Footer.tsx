@@ -246,7 +246,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-white mb-2">Contact</h4>
             <p>tel. +971 (0)264 25445</p>
+            <p>mob. +971 (0)50 312 2300</p>
+            <p>mob. +971 (0)50 138 8555</p>
             <p>info@idealhomeuae.com</p>
+            <p>sales@idealhomeuae.com</p>
           </div>
         </div>
       </div>
