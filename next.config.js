@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  // Enable standalone output for Docker
-  output: "standalone",
+import createNextIntlPlugin from "next-intl/plugin";
 
-  // Optional: Configure image optimization
+const nextConfig = {
+  output: "standalone",
   images: {
     remotePatterns: [
       {
@@ -12,11 +11,9 @@ const nextConfig = {
       },
     ],
   },
-
-  // Optional: Enable experimental features
-  experimental: {
-    // serverComponentsExternalPackages: [],
-  },
+  experimental: {},
 };
 
-module.exports = nextConfig;
+const withNextIntl = createNextIntlPlugin();
+
+export default withNextIntl(nextConfig);

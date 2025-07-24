@@ -1,0 +1,53 @@
+{
+  "HomePage": {
+    "closets": {
+      "title": "CLOSETS",
+      "items": {
+        "walkIn": "Walk-in",
+        "wardrobe": "Wardrobe",
+        "smartStorage": "Smart Storage",
+        "hisHers": "His & Hers",
+        "kids": "Kid's",
+        "modern": "Modern",
+        "classic": "Classic",
+        "luxury": "Luxury"
+      }
+    },
+    "kitchens": {
+      "title": "KITCHENS",
+      "items": {
+        "withIsland": "Kitchen With Island",
+        "uShaped": "U-shaped Kitchen",
+        "pantry": "Pantry Kitchen",
+        "modern": "Modern",
+        "classic": "Classic"
+      }
+    },
+    "doors": {
+      "title": "DOORS",
+      "items": {
+        "interior": "Interior",
+        "front": "Front",
+        "wood": "Wood",
+        "pvc": "PVC",
+        "sliding": "Sliding",
+        "upvcExterior": "uPVC Exterior Doors",
+        "glassAluminum": "Glass & Aluminum",
+        "modern": "Modern",
+        "classic": "Classic"
+      }
+    }
+  },
+  "DesignSection": {
+    "heading": "Design Without Limits",
+    "paragraph1Before": "At ",
+    "paragraph1After": " — transform your villa with elegant closets, kitchens, doors, and windows — your vision becomes the blueprint. We empower homeowners to break free from convention and explore new possibilities in beauty, function, and performance.",
+    "paragraph2": "Imagine a new generation of interior solutions crafted with European-level quality, tailored to elevate every style — from classic elegance to modern minimalism.",
+    "paragraph3": "Visualize your dream space in minutes — with free, rapid 3D previews and no obligation to commit. Design, tweak, and decide with confidence.",
+    "taglineBefore": "",
+    "taglineAfter": ", and move forward with confidence.",
+    "seeItBefore": "See it before we build it",
+    "ctaButton": "Request Free 3D Design",
+    "companyName": "Ideal Factory"
+  }
+}

@@ -1,8 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
+import { useLocale } from "next-intl";
+import { LanguageToggle } from "@/components/LanguageToggle";
 
 export interface SubItem {
   label: string;
@@ -65,6 +67,7 @@ const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
+  const locale = useLocale();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -72,7 +75,13 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const isActive = (href?: string) => (href ? pathname === href : false);
+  const isActive = (href?: string) => {
+    if (!href) return false;
+    const fullHref = `/${locale}${href}`;
+    return pathname === fullHref;
+  };
+
+  const getLocalizedHref = (href: string) => `/${locale}${href}`;
 
   return (
     <nav
@@ -85,7 +94,7 @@ const Navbar: React.FC = () => {
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <Link href="/" passHref>
+            <Link href={getLocalizedHref("/")} passHref>
               <Image
                 src="/images/new_logo.png"
                 alt="Company Logo"
@@ -93,6 +102,11 @@ const Navbar: React.FC = () => {
                 height={128}
               />
             </Link>
+          </div>
+
+          {/* Desktop Language Toggle */}
+          <div className="hidden lg:block">
+            <LanguageToggle />
           </div>
 
           <button
@@ -124,70 +138,77 @@ const Navbar: React.FC = () => {
             </svg>
           </button>
 
-          <ul
+          <div
             className={`
-              absolute top-full w-full bg-black bg-opacity-95
-              transition-all duration-200 justify-end
+              absolute top-full left-0 right-0 bg-black bg-opacity-95
+              transition-all duration-200
               ${
                 mobileOpen
-                  ? "max-h-screen py-4 flex flex-col items-center"
-                  : "max-h-0 overflow-hidden"
+                  ? "max-h-screen opacity-100"
+                  : "max-h-0 opacity-0 overflow-hidden"
               }
-              lg:static lg:max-h-full lg:flex lg:bg-transparent lg:py-0
-              lg:overflow-visible lg:space-x-4
+              lg:static lg:max-h-full lg:opacity-100 lg:bg-transparent
+              lg:overflow-visible lg:flex lg:items-center lg:space-x-4
             `}
           >
-            {NAV_ITEMS.map((item) => (
-              <li
-                key={item.label}
-                className={`relative ${
-                  item.subItems ? "group" : ""
-                } lg:flex-shrink-0`}
-              >
-                {item.subItems ? (
-                  <>
+            {/* Mobile Language Toggle */}
+            <div className="lg:hidden px-4 py-2 border-b border-gray-600">
+              <LanguageToggle />
+            </div>
+
+            <ul className="flex flex-col lg:flex-row lg:space-x-4 py-4 lg:py-0">
+              {NAV_ITEMS.map((item) => (
+                <li
+                  key={item.label}
+                  className={`relative ${
+                    item.subItems ? "group" : ""
+                  } lg:flex-shrink-0`}
+                >
+                  {item.subItems ? (
+                    <>
+                      <Link
+                        href={getLocalizedHref(item.href!)}
+                        className={`nav-link whitespace-nowrap ${
+                          isActive(item.href) ||
+                          item.subItems.some((si) => isActive(si.href))
+                            ? "active"
+                            : ""
+                        }`}
+                      >
+                        {item.label}
+                      </Link>
+
+                      <ul className="dropdown-menu lg:absolute lg:top-full lg:left-0">
+                        {item.subItems.map((sub) => (
+                          <li key={sub.label}>
+                            <Link
+                              href={getLocalizedHref(sub.href)}
+                              className={`dropdown-item whitespace-nowrap ${
+                                isActive(sub.href) ? "active" : ""
+                              }`}
+                              passHref
+                            >
+                              {sub.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </>
+                  ) : (
                     <Link
-                      href={item.href!}
+                      href={getLocalizedHref(item.href!)}
                       className={`nav-link whitespace-nowrap ${
-                        isActive(item.href) ||
-                        item.subItems.some((si) => isActive(si.href))
-                          ? "active"
-                          : ""
+                        isActive(item.href) ? "active" : ""
                       }`}
+                      passHref
                     >
                       {item.label}
                     </Link>
-
-                    <ul className="dropdown-menu lg:absolute lg:top-full lg:left-0">
-                      {item.subItems.map((sub) => (
-                        <li key={sub.label}>
-                          <Link
-                            href={sub.href}
-                            className={`dropdown-item whitespace-nowrap ${
-                              isActive(sub.href) ? "active" : ""
-                            }`}
-                            passHref
-                          >
-                            {sub.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </>
-                ) : (
-                  <Link
-                    href={item.href!}
-                    className={`nav-link whitespace-nowrap ${
-                      isActive(item.href) ? "active" : ""
-                    }`}
-                    passHref
-                  >
-                    {item.label}
-                  </Link>
-                )}
-              </li>
-            ))}
-          </ul>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
