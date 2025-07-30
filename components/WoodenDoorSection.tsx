@@ -6,14 +6,17 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { useTranslations } from "next-intl";
 
 const placeholderImages = [
-  '/images/doors/slider-1.jpg',
-  '/images/doors/slider-2.jpg',
-  '/images/doors/slider-3.jpg',
+  "/images/doors/slider-1.jpg",
+  "/images/doors/slider-2.jpg",
+  "/images/doors/slider-3.jpg",
 ];
 
 const WoodenDoorSection: React.FC = () => {
+  const t = useTranslations("WoodenDoorSection");
+
   return (
     <section className="w-full h-screen bg-white">
       <div className="w-full h-full flex border-t border-b border-gray-200">
@@ -22,10 +25,10 @@ const WoodenDoorSection: React.FC = () => {
           <div className="flex items-center mb-4">
             <span className="w-1 h-8 bg-red-600 mr-3" />
             <h3 className="text-3xl font-semibold uppercase text-gray-900">
-              Our Design, Your Choice
+              {t("leftPanel.title")}
             </h3>
           </div>
-          <p className="text-gray-600 text-lg">See what we offer</p>
+          <p className="text-gray-600 text-lg">{t("leftPanel.subtitle")}</p>
         </div>
 
         {/* Right panel: full-screen slider */}
@@ -40,7 +43,7 @@ const WoodenDoorSection: React.FC = () => {
               <SwiperSlide key={idx}>
                 <img
                   src={src}
-                  alt={`Wooden door ${idx + 1}`}
+                  alt={t("slider.alt", { index: idx + 1 })}
                   className="object-cover w-full h-full"
                 />
               </SwiperSlide>

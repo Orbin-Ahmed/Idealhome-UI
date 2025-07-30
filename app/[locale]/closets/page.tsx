@@ -5,90 +5,7 @@ import DynamicFeatureSection from "@/components/DynamicFeatureSection";
 import ItemFinishFeatureSection from "@/components/ItemFinishFeatureSection";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
-const features = [
-  {
-    title: "Tailored to Fit Your Space",
-    text: "Built to your room dimensions — whether reach-in or walk-in — for a perfect, seamless fit.",
-  },
-  {
-    title: "Smart, Organized Interiors",
-    text: "Custom configurations for hanging, shelving, drawers, and accessories — everything in its place, always within reach.",
-  },
-  {
-    title: "Elegant Designs That Match Your Style",
-    text: "From sleek modern to classic luxury, your closet's look is fully personalized to suit your taste and home theme.",
-  },
-  {
-    title: "Premium Quality Materials",
-    text: "Durable, moisture-resistant boards and top-grade finishes ensure your closet stays beautiful for years.",
-  },
-  {
-    title: "Smooth & Silent Operation",
-    text: "Soft-close drawers, smooth sliders, and well-crafted doors for everyday ease and comfort.",
-  },
-  {
-    title: "3D Design Preview Before We Build",
-    text: "Visualize your entire closet in 3D — fast, free, and editable — so you know exactly what you’re getting.",
-  },
-];
-
-const itemFeatures = [
-  {
-    title: "WALK-IN CLOSETS",
-    subtitle:
-      "Step into a space designed just for you — where luxury, organization, and comfort come together",
-    subtitleItems: [
-      { label: "Step into a space designed just for you — where luxury" },
-      { label: "organization" },
-      { label: "and comfort come together" },
-    ],
-    images: [
-      "/images/closets/walk-in-1.jpg",
-      "/images/closets/walk-in-2.jpg",
-    ],
-    textPosition: "left" as const,
-    titleLink: "/closets/walk-in-closet",
-  },
-  {
-    title: "WARDROBE CLOSETS",
-    subtitle:
-      "A stylish, space-saving solution designed to keep your essentials organized, accessible, and tailored to your daily routine",
-    subtitleItems: [
-      {
-        label:
-          "A stylish, space-saving solution designed to keep your essentials organized",
-      },
-      { label: "accessible" },
-      { label: "and tailored to your daily routine" },
-    ],
-    images: [
-      "/images/closets/wardrobe-1.jpg",
-      "/images/closets/wardrobe-2.jpg",
-    ],
-    textPosition: "right" as const,
-    titleLink: "/closets/wardrobe-closet",
-  },
-  {
-    title: "SMART STORAGE",
-    subtitleItems: [
-      { label: "Interior" },
-      { label: "Front" },
-      { label: "Wood. PVC" },
-      { label: "uPVC Exterior Doors" },
-      { label: "Sliding" },
-      { label: "Glass & Aluminum" },
-      { label: "Modern" },
-      { label: "Classic" },
-    ],
-    images: [
-      "/images/closets/smart-1.jpg",
-      "/images/closets/smart-2.jpg",
-    ],
-    textPosition: "left" as const,
-    titleLink: "/closets/smart-storage-solution",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const images = [
   "/images/closets/slider-1.jpg",
@@ -99,19 +16,94 @@ const images = [
 const ClosetPage: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
 
+  // Translations
+  const t = useTranslations("Closet");
+  const b = useTranslations("Button");
+
+  // Features (localized, same structure)
+  const features = [
+    {
+      title: t("features.1.title"),
+      text: t("features.1.text"),
+    },
+    {
+      title: t("features.2.title"),
+      text: t("features.2.text"),
+    },
+    {
+      title: t("features.3.title"),
+      text: t("features.3.text"),
+    },
+    {
+      title: t("features.4.title"),
+      text: t("features.4.text"),
+    },
+    {
+      title: t("features.5.title"),
+      text: t("features.5.text"),
+    },
+    {
+      title: t("features.6.title"),
+      text: t("features.6.text"),
+    },
+  ];
+
+  // Item features (localized, same structure & links)
+  const itemFeatures = [
+    {
+      title: t("items.1.title"),
+      subtitle: t("items.1.subtitle"),
+      subtitleItems: [
+        { label: t("items.1.subtitleItems.part1") },
+        { label: t("items.1.subtitleItems.part2") },
+        { label: t("items.1.subtitleItems.part3") },
+      ],
+      images: ["/images/closets/walk-in-1.jpg", "/images/closets/walk-in-2.jpg"],
+      textPosition: "left" as const,
+      titleLink: "/closets/walk-in-closet",
+    },
+    {
+      title: t("items.2.title"),
+      subtitle: t("items.2.subtitle"),
+      subtitleItems: [
+        { label: t("items.2.subtitleItems.part1") },
+        { label: t("items.2.subtitleItems.part2") },
+        { label: t("items.2.subtitleItems.part3") },
+      ],
+      images: ["/images/closets/wardrobe-1.jpg", "/images/closets/wardrobe-2.jpg"],
+      textPosition: "right" as const,
+      titleLink: "/closets/wardrobe-closet",
+    },
+    {
+      title: t("items.3.title"),
+      subtitleItems: [
+        { label: t("items.3.subtitleItems.part1") },
+        { label: t("items.3.subtitleItems.part2") },
+        { label: t("items.3.subtitleItems.part3") },
+        { label: t("items.3.subtitleItems.part4") },
+        { label: t("items.3.subtitleItems.part5") },
+        { label: t("items.3.subtitleItems.part6") },
+        { label: t("items.3.subtitleItems.part7") },
+        { label: t("items.3.subtitleItems.part8") },
+      ],
+      images: ["/images/closets/smart-1.jpg", "/images/closets/smart-2.jpg"],
+      textPosition: "left" as const,
+      titleLink: "/closets/smart-storage-solution",
+    },
+  ];
+
   return (
     <>
       <Navbar />
       <div className="bg-white overflow-hidden">
         {/* Hero Slider */}
-
         <Slider images={images} />
 
         {/* Features */}
         <DynamicFeatureSection
-          sectionTitle="What You'll Love About Your Closet"
+          sectionTitle={t("sectionTitle")}
           features={features}
-          ctaText="Request Free 3D Design"
+          ctaText={b("ctaButton")}
           ctaAction={() => setShowModal(true)}
         />
 

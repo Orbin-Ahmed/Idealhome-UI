@@ -4,6 +4,7 @@ import ButtonLink from "./ButtonLink";
 
 const DesignSection: React.FC = () => {
   const t = useTranslations("DesignSection");
+  const b = useTranslations("Button");
 
   return (
     <section className="bg-white py-20">
@@ -33,7 +34,7 @@ const DesignSection: React.FC = () => {
         </p>
 
         <div className="flex justify-center">
-          <ButtonLink href="#contact-us">{t("ctaButton")}</ButtonLink>
+          <ButtonLink href="#contact-us">{b("ctaButton")}</ButtonLink>
         </div>
       </div>
     </section>

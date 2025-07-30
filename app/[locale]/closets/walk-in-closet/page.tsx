@@ -6,33 +6,7 @@ import Navbar from "@/components/Navbar";
 import Slider from "@/components/Slider";
 import TwoImageSection from "@/components/TwoImageSection";
 import Footer from "@/components/Footer";
-
-const features = [
-  {
-    title: "Effortless Organization",
-    text: "Everything has a place — for a clutter-free, easy-to-use wardrobe.",
-  },
-  {
-    title: "Designed Around You",
-    text: "Layouts customized to your routine, storage needs, and style.",
-  },
-  {
-    title: "A Daily Boutique Experience",
-    text: "Enjoy the feel of a personal showroom with elegant, functional touches.",
-  },
-  {
-    title: "Elevated Comfort & Privacy",
-    text: "Your private dressing space — peaceful, inspiring, and made for you.",
-  },
-  {
-    title: "Crafted to Match Your Home",
-    text: "Finishes, colors, and details tailored to your interior design theme.",
-  },
-  {
-    title: "See It in 3D Before You Commit",
-    text: "Get a free 3D preview of your closet — explore and approve before we build.",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const sectionalImages = [
   {
@@ -69,6 +43,38 @@ const images = [
 const WalkInCloset: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
 
+  // Translations
+  const t = useTranslations("WalkInCloset");
+  const b = useTranslations("Button");
+
+  // Features (localized, same structure)
+  const features = [
+    {
+      title: t("features.1.title"),
+      text: t("features.1.text"),
+    },
+    {
+      title: t("features.2.title"),
+      text: t("features.2.text"),
+    },
+    {
+      title: t("features.3.title"),
+      text: t("features.3.text"),
+    },
+    {
+      title: t("features.4.title"),
+      text: t("features.4.text"),
+    },
+    {
+      title: t("features.5.title"),
+      text: t("features.5.text"),
+    },
+    {
+      title: t("features.6.title"),
+      text: t("features.6.text"),
+    },
+  ];
+
   return (
     <>
       <Slider images={images} />
@@ -83,23 +89,15 @@ const WalkInCloset: React.FC = () => {
         <section className="pt-12 pb-4 bg-white border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#57b7c0] mb-6">
-              A Statement of Luxury. A Space That Works for You.
+              {t("hero.title")}
             </h2>
             <div>
               <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-4">
-                Step into a space designed just for you — where luxury,
-                organization, and comfort come together. Our custom Walk-In
-                Closets are more than storage — they're personal sanctuaries
-                crafted to elevate your everyday routine. With premium finishes,
-                smart layouts, and seamless functionality, your walk-in becomes
-                an extension of your lifestyle and style.
+                {t("hero.p1")}
               </p>
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-                And before anything is built, you'll see it first — in stunning
-                3D.{" "}
-                <strong className="font-semibold">
-                  Fast. Free. Personalized.
-                </strong>
+                {t("hero.p2Lead")}{" "}
+                <strong className="font-semibold">{t("hero.p2Strong")}</strong>
               </p>
             </div>
 
@@ -115,7 +113,7 @@ const WalkInCloset: React.FC = () => {
                   hover:opacity-90
                 "
               >
-                <a href="#contact-us">Request Free 3D Design</a>
+                <a href="#contact-us">{b("ctaButton")}</a>
               </button>
             </div>
           </div>
@@ -129,16 +127,16 @@ const WalkInCloset: React.FC = () => {
         {/* Features */}
         <section className=" bg-white">
           <DynamicFeatureSection
-            sectionTitle="What You'll Love About Your Closet"
+            sectionTitle={t("sectionTitle")}
             features={features}
-            ctaText="Request Free 3D Design"
+            ctaText={b("ctaButton")}
             ctaAction={() => setShowModal(true)}
           />
           <p className="text-center text-lg md:text-xl text-gray-600 leading-relaxed">
-            <strong>See It in 3D Before You Commit</strong> - Get a free 3D
-            preview of your closet — explore and approve before we build.
+            <strong>{t("bottomNote.strong")}</strong> - {t("bottomNote.tail")}
           </p>
         </section>
+
         <TwoImageSection images={sectionalImages_1} />
       </div>
       <Footer />

@@ -6,33 +6,7 @@ import Navbar from "@/components/Navbar";
 import Slider from "@/components/Slider";
 import TwoImageSection from "@/components/TwoImageSection";
 import Footer from "@/components/Footer";
-
-const features = [
-  {
-    title: "Every storage unit is custom",
-    text: "designed to fit awkward corners, unused walls, and underutilized spaces — maximizing functionality without wasting a square inch.",
-  },
-  {
-    title: "Say goodbye to mess",
-    text: "Built-in compartments, pull-out trays, and vertical dividers keep everything in its place — from shoes and bags to tools and toys.",
-  },
-  {
-    title: "Seamlessly Blends with Your Interiors",
-    text: "Our solutions come in premium finishes that match your home's décor — modern, classic, or anything in between.",
-  },
-  {
-    title: "Everyday Access, Zero Hassle",
-    text: "everything is built for comfort and convenience in daily use.",
-  },
-  {
-    title: "Transform Dead Spaces into Useful Areas",
-    text: "Make the most of hallways, under-stair voids, laundry nooks, or attic corners — turning them into beautiful, functional storage zones.",
-  },
-  {
-    title: "Designed in 3D Before You Commit",
-    text: "Visualize your smart storage in high-quality 3D — free of charge",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const sectionalImages = [
   {
@@ -69,6 +43,38 @@ const images = [
 const SmartStorageSolution: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
 
+  // Translations
+  const t = useTranslations("SmartStorage");
+  const b = useTranslations("Button");
+
+  // Features (localized, same structure)
+  const features = [
+    {
+      title: t("features.1.title"),
+      text: t("features.1.text"),
+    },
+    {
+      title: t("features.2.title"),
+      text: t("features.2.text"),
+    },
+    {
+      title: t("features.3.title"),
+      text: t("features.3.text"),
+    },
+    {
+      title: t("features.4.title"),
+      text: t("features.4.text"),
+    },
+    {
+      title: t("features.5.title"),
+      text: t("features.5.text"),
+    },
+    {
+      title: t("features.6.title"),
+      text: t("features.6.text"),
+    },
+  ];
+
   return (
     <>
       <Slider images={images} />
@@ -83,18 +89,17 @@ const SmartStorageSolution: React.FC = () => {
         <section className="pt-12 pb-4 bg-white border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#57b7c0] mb-6">
-              Smart Storage, Tailored for Your Life
+              {t("hero.title")}
             </h2>
             <div>
               <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-4">
-                We turn underutilized spaces into beautifully crafted,
-                functional storage — tailored to your home and the way you live.
+                {t("hero.p1")}
               </p>
               <h2 className="text-md md:text-lg lg:text-xl font-bold text-black mb-6">
-                See It Before We Build It — in 3D.
+                {t("hero.subheading")}
               </h2>
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-                Quick. Free. Custom-fit to your space and needs.
+                {t("hero.p2")}
               </p>
             </div>
 
@@ -110,7 +115,7 @@ const SmartStorageSolution: React.FC = () => {
                   hover:opacity-90
                 "
               >
-                <a href="#contact-us">Request Free 3D Design</a>
+                <a href="#contact-us">{b("ctaButton")}</a>
               </button>
             </div>
           </div>
@@ -124,16 +129,16 @@ const SmartStorageSolution: React.FC = () => {
         {/* Features */}
         <section className=" bg-white">
           <DynamicFeatureSection
-            sectionTitle="What You'll Love About Your Closet"
+            sectionTitle={t("sectionTitle")}
             features={features}
-            ctaText="Request Free 3D Design"
+            ctaText={b("ctaButton")}
             ctaAction={() => setShowModal(true)}
           />
           <p className="text-center text-lg md:text-xl text-gray-600 leading-relaxed">
-            <strong>Designed in 3D Before You Commit</strong> - Visualize your
-            smart storage in high-quality 3D — free of charge
+            <strong>{t("bottomNote.strong")}</strong> - {t("bottomNote.tail")}
           </p>
         </section>
+
         <TwoImageSection images={sectionalImages_1} />
       </div>
       <Footer />

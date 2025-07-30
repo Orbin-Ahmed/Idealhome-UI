@@ -6,14 +6,17 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { useTranslations } from "next-intl";
 
 const placeholderImages = [
-  '/images/doors/interior-door-slider-1.jpg',
-  '/images/doors/interior-door-slider-2.jpg',
-  '/images/doors/interior-door-slider-3.jpg',
+  "/images/doors/interior-door-slider-1.jpg",
+  "/images/doors/interior-door-slider-2.jpg",
+  "/images/doors/interior-door-slider-3.jpg",
 ];
 
 const EndlessFinishesSection: React.FC = () => {
+  const t = useTranslations("EndlessFinishesSection");
+
   return (
     <section className="bg-white py-16 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
@@ -29,7 +32,7 @@ const EndlessFinishesSection: React.FC = () => {
               <SwiperSlide key={idx}>
                 <img
                   src={src}
-                  alt={`Interior door ${idx + 1}`}
+                  alt={t("slider.alt", { index: idx + 1 })}
                   className="object-cover w-full h-full rounded-lg"
                 />
               </SwiperSlide>
@@ -42,15 +45,11 @@ const EndlessFinishesSection: React.FC = () => {
           <div className="flex items-center">
             <span className="w-1 h-8 bg-red-600 mr-3" />
             <h2 className="text-3xl font-semibold text-gray-900">
-              Endless Finishes. Infinite Impressions.
+              {t("right.title")}
             </h2>
           </div>
           <p className="text-gray-700 leading-relaxed">
-            Choose from over 60 finishes — from rich natural woods to refined
-            lacquers — in a variety of sizes, grains, and styles. Whether you
-            want a bold statement piece or a door that blends seamlessly into
-            your walls, our collection offers the versatility and elegance to
-            suit every taste and design detail.
+            {t("right.paragraph")}
           </p>
         </div>
       </div>

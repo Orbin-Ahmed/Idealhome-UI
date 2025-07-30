@@ -1,9 +1,9 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { LanguageToggle } from "@/components/LanguageToggle";
 
 export interface SubItem {
@@ -17,57 +17,12 @@ export interface NavItem {
   subItems?: SubItem[];
 }
 
-const NAV_ITEMS: NavItem[] = [
-  { label: "HOME", href: "/" },
-  {
-    label: "ABOUT US",
-    subItems: [
-      { label: "Company", href: "/company" },
-      { label: "OUR PROCESS", href: "/process" },
-    ],
-    href: "/company",
-  },
-  {
-    label: "ClOSETS",
-    subItems: [
-      { label: "Walk-In Closets", href: "/closets/walk-in-closet" },
-      { label: "Wardrobe Closets", href: "/closets/wardrobe-closet" },
-      {
-        label: "Smart Storage Solutions",
-        href: "/closets/smart-storage-solution",
-      },
-    ],
-    href: "/closets",
-  },
-  {
-    label: "KITCHENS",
-    subItems: [
-      { label: "Kitchen with Island", href: "/kitchens/kitchen-with-island" },
-      { label: "U-Shaped Kitchen", href: "/kitchens/u-shaped-kitchen" },
-      { label: "Pantry Kitchen", href: "/kitchens/pantry-kitchen" },
-    ],
-    href: "/kitchens",
-  },
-  {
-    label: "DOORS",
-    href: "/doors",
-  },
-  // {
-  //   label: "WINDOWS",
-  //   // subItems: [
-  //   //   { label: "Casement", href: "/windows/casement" },
-  //   //   { label: "Sliding", href: "/windows/sliding" },
-  //   // ],
-  //   href: "/windows",
-  // },
-  // { label: "FREE DESIGN", href: "/free-design" },
-];
-
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
   const locale = useLocale();
+  const t = useTranslations("Navbar");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -83,6 +38,45 @@ const Navbar: React.FC = () => {
 
   const getLocalizedHref = (href: string) => `/${locale}${href}`;
 
+  // Build nav items from translations (same structure & routes)
+  const NAV_ITEMS: NavItem[] = useMemo(
+    () => [
+      { label: t("nav.home"), href: "/" },
+      {
+        label: t("nav.about.label"),
+        subItems: [
+          { label: t("nav.about.company"), href: "/company" },
+          { label: t("nav.about.process"), href: "/process" }
+        ],
+        href: "/company"
+      },
+      {
+        label: t("nav.closets.label"),
+        subItems: [
+          { label: t("nav.closets.walkIn"), href: "/closets/walk-in-closet" },
+          { label: t("nav.closets.wardrobe"), href: "/closets/wardrobe-closet" },
+          { label: t("nav.closets.smart"), href: "/closets/smart-storage-solution" }
+        ],
+        href: "/closets"
+      },
+      {
+        label: t("nav.kitchens.label"),
+        subItems: [
+          { label: t("nav.kitchens.island"), href: "/kitchens/kitchen-with-island" },
+          { label: t("nav.kitchens.uShaped"), href: "/kitchens/u-shaped-kitchen" },
+          { label: t("nav.kitchens.pantry"), href: "/kitchens/pantry-kitchen" }
+        ],
+        href: "/kitchens"
+      },
+      {
+        label: t("nav.doors.label"),
+        href: "/doors"
+      }
+      // If you re-enable Windows or Free Design later, add keys under Navbar.nav.*
+    ],
+    [t]
+  );
+
   return (
     <nav
       className={`
@@ -97,7 +91,7 @@ const Navbar: React.FC = () => {
             <Link href={getLocalizedHref("/")} passHref>
               <Image
                 src="/images/new_logo.png"
-                alt="Company Logo"
+                alt={t("logoAlt")}
                 width={128}
                 height={128}
               />
@@ -112,7 +106,7 @@ const Navbar: React.FC = () => {
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="lg:hidden text-white focus:outline-none"
-            aria-label="Toggle menu"
+            aria-label={t("aria.toggleMenu")}
           >
             <svg
               className="w-6 h-6"
@@ -160,9 +154,7 @@ const Navbar: React.FC = () => {
               {NAV_ITEMS.map((item) => (
                 <li
                   key={item.label}
-                  className={`relative ${
-                    item.subItems ? "group" : ""
-                  } lg:flex-shrink-0`}
+                  className={`relative ${item.subItems ? "group" : ""} lg:flex-shrink-0`}
                 >
                   {item.subItems ? (
                     <>

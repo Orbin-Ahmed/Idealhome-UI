@@ -1,41 +1,46 @@
 "use client";
 
 import React, { useState, FormEvent, ChangeEvent } from "react";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
   // 🔧 EMAIL CONFIGURATION - Change this email address when needed
-  const CONTACT_EMAIL = 'sales@keystoneuae.com';
+  const CONTACT_EMAIL = "sales@keystoneuae.com";
+
+  const t = useTranslations("Footer");
 
   // State for form data
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    city: '',
-    message: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    city: "",
+    message: "",
     agreeToPrivacy: false,
-    subscribeNewsletter: false
+    subscribeNewsletter: false,
   });
 
   // State for form submission
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitMessage, setSubmitMessage] = useState('');
-  const [submitStatus, setSubmitStatus] = useState(''); // 'success' or 'error'
+  const [submitMessage, setSubmitMessage] = useState("");
+  const [submitStatus, setSubmitStatus] = useState<"" | "success" | "error">("");
 
   // Handle input changes
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const target = e.target;
-    const name = target.name;
-    const value = target.value;
-    
-    // Type guard to check if it's a checkbox input
-    const isCheckbox = target.type === 'checkbox';
+  const handleInputChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const target = e.target as HTMLInputElement | HTMLTextAreaElement;
+    const { name, value } = target;
+
+    const isCheckbox =
+      (target as HTMLInputElement).type &&
+      (target as HTMLInputElement).type === "checkbox";
     const checked = isCheckbox ? (target as HTMLInputElement).checked : false;
-    
+
     setFormData((prev) => ({
       ...prev,
-      [name]: isCheckbox ? checked : value
+      [name]: isCheckbox ? checked : value,
     }));
   };
 
@@ -43,54 +48,60 @@ const Footer = () => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setSubmitMessage('');
+    setSubmitMessage("");
 
     try {
       // Basic validation
-      if (!formData.firstName || !formData.lastName || !formData.phone || !formData.city || !formData.message) {
-        throw new Error('Please fill in all required fields.');
+      if (
+        !formData.firstName ||
+        !formData.lastName ||
+        !formData.phone ||
+        !formData.city ||
+        !formData.message
+      ) {
+        throw new Error(t("errors.fillAllRequired"));
       }
 
       if (!formData.agreeToPrivacy) {
-        throw new Error('Please agree to the Privacy Policy.');
+        throw new Error(t("errors.agreePrivacy"));
       }
 
-      // Here you would typically send the data to your backend API
-      // The email will be sent to the address configured above
-      const response = await fetch('/api/contact', {
-        method: 'POST',
+      // Send to backend API
+      const response = await fetch("/api/contact", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           ...formData,
-          recipientEmail: CONTACT_EMAIL // Send the target email to the API
+          recipientEmail: CONTACT_EMAIL, // Send the target email to the API
         }),
       });
 
       if (!response.ok) {
-        throw new Error('Failed to send message. Please try again.');
+        throw new Error(t("errors.sendFailed"));
       }
 
       // Success
-      setSubmitStatus('success');
-      setSubmitMessage('Thank you! Your message has been sent successfully.');
-      
+      setSubmitStatus("success");
+      setSubmitMessage(t("successMessage"));
+
       // Reset form
       setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        city: '',
-        message: '',
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        city: "",
+        message: "",
         agreeToPrivacy: false,
-        subscribeNewsletter: false
+        subscribeNewsletter: false,
       });
-
     } catch (error) {
-      setSubmitStatus('error');
-      setSubmitMessage(error instanceof Error ? error.message : 'An unexpected error occurred.');
+      setSubmitStatus("error");
+      setSubmitMessage(
+        error instanceof Error ? error.message : t("errors.unexpected")
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -105,11 +116,9 @@ const Footer = () => {
           <div>
             <h3 className="flex items-center text-2xl font-semibold mb-4">
               <span className="inline-block w-1 h-7 bg-red-600 mr-3" />
-              CONTACT US
+              {t("contactForm.title")}
             </h3>
-            <p className="text-gray-300">
-              For more information, please fill out the form.
-            </p>
+            <p className="text-gray-300">{t("contactForm.subtitle")}</p>
           </div>
 
           {/* Form */}
@@ -123,7 +132,7 @@ const Footer = () => {
               <input
                 type="text"
                 name="firstName"
-                placeholder="First Name*"
+                placeholder={t("placeholders.firstName")}
                 required
                 value={formData.firstName}
                 onChange={handleInputChange}
@@ -132,14 +141,14 @@ const Footer = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="Email"
+                placeholder={t("placeholders.email")}
                 value={formData.email}
                 onChange={handleInputChange}
                 className="w-full bg-transparent border-b border-white placeholder-gray-400 text-white py-2 focus:outline-none"
               />
               <textarea
                 name="message"
-                placeholder="Message*"
+                placeholder={t("placeholders.message")}
                 required
                 value={formData.message}
                 onChange={handleInputChange}
@@ -152,7 +161,7 @@ const Footer = () => {
               <input
                 type="text"
                 name="lastName"
-                placeholder="Last Name*"
+                placeholder={t("placeholders.lastName")}
                 required
                 value={formData.lastName}
                 onChange={handleInputChange}
@@ -161,7 +170,7 @@ const Footer = () => {
               <input
                 type="text"
                 name="phone"
-                placeholder="Phone*"
+                placeholder={t("placeholders.phone")}
                 required
                 value={formData.phone}
                 onChange={handleInputChange}
@@ -170,7 +179,7 @@ const Footer = () => {
               <input
                 type="text"
                 name="city"
-                placeholder="City*"
+                placeholder={t("placeholders.city")}
                 required
                 value={formData.city}
                 onChange={handleInputChange}
@@ -181,22 +190,25 @@ const Footer = () => {
                 disabled={isSubmitting}
                 className="mt-4 inline-flex items-center justify-center px-6 py-3 bg-white text-black font-semibold rounded hover:opacity-90 transition-opacity disabled:opacity-50"
               >
-                {isSubmitting ? 'Sending...' : 'Send'}&nbsp;<span aria-hidden>→</span>
+                {isSubmitting ? t("buttons.sending") : t("buttons.send")}
+                &nbsp;<span aria-hidden>→</span>
               </button>
             </div>
 
             {/* Disclaimer */}
             <div className="col-span-full text-gray-400 text-sm mt-2">
-              * Required fields
+              {t("disclaimer")}
             </div>
 
             {/* Submit Message */}
             {submitMessage && (
-              <div className={`col-span-full text-sm mt-4 p-3 rounded ${
-                submitStatus === 'success' 
-                  ? 'bg-green-900 text-green-200 border border-green-700' 
-                  : 'bg-red-900 text-red-200 border border-red-700'
-              }`}>
+              <div
+                className={`col-span-full text-sm mt-4 p-3 rounded ${
+                  submitStatus === "success"
+                    ? "bg-green-900 text-green-200 border border-green-700"
+                    : "bg-red-900 text-red-200 border border-red-700"
+                }`}
+              >
                 {submitMessage}
               </div>
             )}
@@ -212,7 +224,11 @@ const Footer = () => {
                   className="h-4 w-4 accent-white bg-black border-white"
                 />
                 <span>
-                  I have read the <a href="/privacy-policy" className="underline hover:text-white">Privacy Policy</a>.*
+                  {t("privacy.prefix")}{" "}
+                  <a href="/privacy-policy" className="underline hover:text-white">
+                    {t("privacy.link")}
+                  </a>
+                  {t("privacy.suffix")}
                 </span>
               </label>
               <label className="flex items-center space-x-2">
@@ -223,7 +239,7 @@ const Footer = () => {
                   onChange={handleInputChange}
                   className="h-4 w-4 accent-white bg-black border-white"
                 />
-                <span>I would like to subscribe to the newsletter</span>
+                <span>{t("newsletterLabel")}</span>
               </label>
             </div>
           </form>
@@ -236,7 +252,7 @@ const Footer = () => {
           {/* Column 1 */}
           <div>
             <h4 className="font-semibold text-white mb-2">
-              IDEAL HOME FURNITURE FACTORY
+              {t("company.heading")}
             </h4>
             <p>ICAD-1, Mussafah</p>
             <p>Abu Dhabi</p>
@@ -244,7 +260,9 @@ const Footer = () => {
           </div>
           {/* Column 2 */}
           <div>
-            <h4 className="font-semibold text-white mb-2">Contact</h4>
+            <h4 className="font-semibold text-white mb-2">
+              {t("contact.heading")}
+            </h4>
             <p>tel. +971 (0)264 25445</p>
             <p>mob. +971 (0)50 312 2300</p>
             <p>mob. +971 (0)50 138 8555</p>
@@ -257,7 +275,7 @@ const Footer = () => {
       {/* Copyright Bar */}
       <div className="bg-black py-4">
         <p className="text-center text-gray-500 text-xs">
-          © {new Date().getFullYear()} Ideal Home. All rights reserved.
+          {t("copyright", { year: new Date().getFullYear() })}
         </p>
       </div>
     </footer>

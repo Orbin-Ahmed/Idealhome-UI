@@ -1,4 +1,7 @@
 {
+  "Button": {
+    "ctaButton": "Request Free 3D Design"
+  },
   "HomePage": {
     "closets": {
       "title": "CLOSETS",
@@ -47,7 +50,518 @@
     "taglineBefore": "",
     "taglineAfter": ", and move forward with confidence.",
     "seeItBefore": "See it before we build it",
-    "ctaButton": "Request Free 3D Design",
     "companyName": "Ideal Factory"
+  },
+  "Company": {
+    "aboutus": {
+      "title": "WE CARE, WE BUILD FOR TOMORROW",
+      "content": {
+        "firstline": "Welcome to Ideal Factory — a proudly Emirati-owned manufacturer specializing in premium joinery and uPVC window solutions, designed for today's modern homes. With deep roots in craftsmanship and a forward-thinking commitment to technology, we seamlessly blend tradition with innovation to deliver exceptional products that elevate living spaces across the UAE.",
+        "2ndline": "From stunning kitchens and walk-in closets to elegant doors and high-performance Schüco windows, every element we create is built with precision, passion, and purpose. Our in-house production facility, supported by our proprietary 3D design tool, ensures your ideas are brought to life quickly, reliably, and beautifully — no matter the size or complexity of the project.",
+        "3rdline": "At Ideal Factory, we value honesty, quality, and trust. We partner with homeowners, architects, and designers to achieve unique results that reflect true Emirati pride and global standards of excellence."
+      }
+    },
+    "statement": {
+      "title": "Avoid Overpaying for Standard Interiors — With Ideal Factory, Experience a Process Where You Approve, Understand, and Control Every Detail, with Factory-Direct Quality."
+      }
+    },
+    "Values": {
+      "Header": {
+        "title1": "WHY CHOOSE ",
+        "title2": "IDEAL FACTORY?", 
+        "description": "Discover what makes us the trusted choice for premium interior solutions across the UAE"
+      },
+      "Grid1": {
+        "title": "Factory-Direct Advantage",
+        "description": "Work straight with the maker — honest pricing backed by proven quality and a local Emirati ownership you can trust."
+      }, 
+      "Grid2": {
+        "title": "Love It or Leave It",
+        "description": "Not 100% sure about the design? No problem — our fast and complimentary 3D visualization allows you to make changes or walk away without commitment."
+      },
+      "Grid3": {
+        "title": "Your Vision, Brought to Life",
+        "description": "Collaborate with our designers to create interiors that perfectly match your style, preferences, and budget."
+      },
+      "Grid4": {
+        "title": "One-Stop Solutions",
+        "description": "Simplify your project by combining Closets, Kitchen, doors, windows, and more under a single contract — saving time, money, and stress."
+      },
+      "Grid5": {
+        "title": "Clear, Predictable Process",
+        "description": "No vague promises. You'll get a clear timeline, transparent pricing, and consistent communication from day one."
+      },
+      "Grid6": {
+        "title": "Open-Door Policy",
+        "description": "You're always welcome to visit our Abu Dhabi facility and see your products being manufactured firsthand."
+      },
+      "Grid7": {
+        "title": "Premium Warranty",
+        "description": "Enjoy peace of mind with a 6-year warranty that protects you against manufacturing defects and guarantees quality."
+      }
+    },
+  "Process": {
+    "headerMain1": "TRANSFORMING",
+    "headerMain2": "REALITY",
+    "headerVision": "YOUR VISION",
+    "headerInto": "INTO",
+    "headerSubtitle": "Step by step, with you involved at every stage — from initial consultation to final installation",
+    "steps": {
+      "1": {
+        "title": "Consultation & 3D Design",
+        "description": "We start by listening to your ideas, needs, and budget. Then we bring them to life — You'll receive a free 3D design preview of your kitchen or closet. We refine your design with your feedback, offering unlimited revisions until it's perfect.",
+        "icon": "🎨"
+      },
+      "2": {
+        "title": "Transparent Quotation & Pricing",
+        "description": "After you approve your design, we provide a fully transparent, factory-direct quotation so you know precisely what you're paying for, with no hidden surprises.",
+        "icon": "💰"
+      },
+      "3": {
+        "title": "Your Approval, Your Way",
+        "description": "We won't move ahead until you sign off on every detail — from materials and finishes to layout and functionality. Your involvement ensures you are confident and in control.",
+        "icon": "✅"
+      },
+      "4": {
+        "title": "Production You Can Trust",
+        "description": "Once approved, our skilled team gets to work in our Abu Dhabi factory using premium materials and strict quality standards. You can even visit the workshop to see progress for yourself.",
+        "icon": "🏭"
+      },
+      "5": {
+        "title": "Real-Time Progress Updates",
+        "description": "You stay in the loop with scheduled updates, so you know exactly how your project is progressing, removing any guesswork or uncertainty.",
+        "icon": "📊"
+      },
+      "6": {
+        "title": "Professional Installation",
+        "description": "Our team ensures seamless installation, respecting your home and your schedule while delivering top-quality finishing and fitting.",
+        "icon": "🔧"
+      }
+    },
+    "ctaHeading": "Ready to Transform Your Space?",
+    "ctaParagraph": "Start your journey today with a free 3D design consultation",
+    "ctaFeatures": {
+      "feature1": "✓ Free Consultation",
+      "feature2": "✓ 3D Visualization",
+      "feature3": "✓ No Commitment"
+    }
+  },
+  "Kitchen": {
+    "sectionTitle": "What You'll Love About Your Kitchen",
+    "features": {
+      "1": {
+        "title": "Effortless Functionality",
+        "text": "Smartly designed for easier cooking, organizing, and cleaning."
+      },
+      "2": {
+        "title": "Tailored to You",
+        "text": "Layouts designed around how you cook, store, and entertain."
+      },
+      "3": {
+        "title": "Style That Lasts",
+        "text": "Elegant finishes built to handle everyday use with lasting durability."
+      },
+      "4": {
+        "title": "Everything in Its Place",
+        "text": "Smart storage keeps essentials organized, visible, and within reach."
+      },
+      "5": {
+        "title": "Seamless Appliance Fit",
+        "text": "Clean, integrated design that hides appliances without losing access."
+      },
+      "6": {
+        "title": "See It Before It's Built",
+        "text": "Free 3D design lets you explore and refine your kitchen before you commit."
+      }
+    },
+    "items": {
+      "1": {
+        "title": "KITCHEN WITH ISLAND",
+        "subtitle": {
+          "part1": "Step into a space designed just for you — where luxury",
+          "part2": "organization",
+          "part3": "and comfort come together"
+        }
+      },
+      "2": {
+        "title": "U-SHAPED KITCHEN",
+        "subtitle": {
+          "part1": "Our U-shaped kitchens wrap efficiency around you — offering abundant counter space",
+          "part2": "smart storage",
+          "part3": "and a streamlined workflow",
+          "part4": "all in a stylish",
+          "part5": "immersive design."
+        }
+      },
+      "3": {
+        "title": "PANTRY KITCHEN",
+        "subtitle": {
+          "part1": "A dedicated pantry zone that keeps everyday essentials out of sight",
+          "part2": "yet always within reach,",
+          "part3": "Clean lines",
+          "part4": "smart shelving",
+          "part5": "and a cohesive finish make it a seamless blend of style and efficiency."
+        }
+      }
+    }
+  },
+  "KitchenIsland": {
+    "hero": {
+      "title": "Your Kitchen's Heart, Reimagined",
+      "subtitle": "Our island kitchens combine smart function with elegant design — perfect for cooking, dining, and connecting"
+    },
+    "gallery": {
+      "item3": {
+        "title": "Walnut Matte and Soft Beige Island Kitchen",
+        "description": "Warm walnut tones paired with soft beige cabinetry create a balanced, inviting atmosphere — blending natural elegance with everyday comfort.",
+        "ctaText": "View it in 3D "
+      }
+    },
+    "discover": {
+      "title": "Discover More Kitchen Inspirations",
+      "subtitle": "Browse our curated selection of kitchen styles — uniquely crafted to suit your space, reflect your taste, and complement your daily routine."
+    },
+    "products": {
+      "1": { "title": "U-Shaped Kitchen" },
+      "2": { "title": "Pantry Kitchen" }
+    }
+  },
+  "PantryKitchen": {
+    "hero": {
+      "title": "Designed for Daily Ease",
+      "subtitle": "A dedicated pantry zone that keeps everyday essentials out of sight, yet always within reach. Clean lines, smart shelving, and a cohesive finish make it a seamless blend of style and efficiency."
+    },
+    "gallery": {
+      "item3": {
+        "title": "Walnut Matte and Soft Beige Island Kitchen",
+        "description": "Warm walnut tones paired with soft beige cabinetry create a balanced, inviting atmosphere — blending natural elegance with everyday comfort.",
+        "ctaText": "View it in 3D "
+      }
+    },
+    "discover": {
+      "title": "Explore More Kitchen Inspirations",
+      "subtitle": "Dive into our handpicked kitchen designs — each tailored to fit your space, express your style, and enhance how you cook, live, and gather."
+    },
+    "products": {
+      "1": { "title": "U-Shaped Kitchen" },
+      "2": { "title": "Kitchen With Island" }
+    }
+  },
+  "UShapedKitchen": {
+    "hero": {
+      "title": "Surround Yourself with Function",
+      "subtitle": "Our U-shaped kitchens wrap efficiency around you — offering abundant counter space, smart storage, and a streamlined workflow, all in a stylish, immersive design."
+    },
+    "gallery": {
+      "item3": {
+        "title": "Cool Grey and Sleek Finish U-Shaped Kitchen",
+        "description": "Cool grey tones paired with sleek surfaces create a modern, calming ambiance — combining understated elegance with everyday practicality.",
+        "ctaText": "View it in 3D "
+      }
+    },
+    "discover": {
+      "title": "Discover More Kitchen Inspirations",
+      "subtitle": "Browse our curated selection of kitchen styles — uniquely crafted to suit your space, reflect your taste, and complement your daily routine."
+    },
+    "products": {
+      "1": { "title": "Pantry Kitchen" },
+      "2": { "title": "Kitchen With Island" }
+    }
+  },
+  "Closet": {
+    "sectionTitle": "What You'll Love About Your Closet",
+    "features": {
+      "1": {
+        "title": "Tailored to Fit Your Space",
+        "text": "Built to your room dimensions — whether reach-in or walk-in — for a perfect, seamless fit."
+      },
+      "2": {
+        "title": "Smart, Organized Interiors",
+        "text": "Custom configurations for hanging, shelving, drawers, and accessories — everything in its place, always within reach."
+      },
+      "3": {
+        "title": "Elegant Designs That Match Your Style",
+        "text": "From sleek modern to classic luxury, your closet's look is fully personalized to suit your taste and home theme."
+      },
+      "4": {
+        "title": "Premium Quality Materials",
+        "text": "Durable, moisture-resistant boards and top-grade finishes ensure your closet stays beautiful for years."
+      },
+      "5": {
+        "title": "Smooth & Silent Operation",
+        "text": "Soft-close drawers, smooth sliders, and well-crafted doors for everyday ease and comfort."
+      },
+      "6": {
+        "title": "3D Design Preview Before We Build",
+        "text": "Visualize your entire closet in 3D — fast, free, and editable — so you know exactly what you’re getting."
+      }
+    },
+    "items": {
+      "1": {
+        "title": "WALK-IN CLOSETS",
+        "subtitle": "Step into a space designed just for you — where luxury, organization, and comfort come together",
+        "subtitleItems": {
+          "part1": "Step into a space designed just for you — where luxury",
+          "part2": "organization",
+          "part3": "and comfort come together"
+        }
+      },
+      "2": {
+        "title": "WARDROBE CLOSETS",
+        "subtitle": "A stylish, space-saving solution designed to keep your essentials organized, accessible, and tailored to your daily routine",
+        "subtitleItems": {
+          "part1": "A stylish, space-saving solution designed to keep your essentials organized",
+          "part2": "accessible",
+          "part3": "and tailored to your daily routine"
+        }
+      },
+      "3": {
+        "title": "SMART STORAGE",
+        "subtitleItems": {
+          "part1": "Interior",
+          "part2": "Front",
+          "part3": "Wood. PVC",
+          "part4": "uPVC Exterior Doors",
+          "part5": "Sliding",
+          "part6": "Glass & Aluminum",
+          "part7": "Modern",
+          "part8": "Classic"
+        }
+      }
+    }
+  },
+  "SmartStorage": {
+    "hero": {
+      "title": "Smart Storage, Tailored for Your Life",
+      "p1": "We turn underutilized spaces into beautifully crafted, functional storage — tailored to your home and the way you live.",
+      "subheading": "See It Before We Build It — in 3D.",
+      "p2": "Quick. Free. Custom-fit to your space and needs."
+    },
+    "sectionTitle": "What You'll Love About Your Closet",
+    "features": {
+      "1": {
+        "title": "Every storage unit is custom",
+        "text": "designed to fit awkward corners, unused walls, and underutilized spaces — maximizing functionality without wasting a square inch."
+      },
+      "2": {
+        "title": "Say goodbye to mess",
+        "text": "Built-in compartments, pull-out trays, and vertical dividers keep everything in its place — from shoes and bags to tools and toys."
+      },
+      "3": {
+        "title": "Seamlessly Blends with Your Interiors",
+        "text": "Our solutions come in premium finishes that match your home's décor — modern, classic, or anything in between."
+      },
+      "4": {
+        "title": "Everyday Access, Zero Hassle",
+        "text": "everything is built for comfort and convenience in daily use."
+      },
+      "5": {
+        "title": "Transform Dead Spaces into Useful Areas",
+        "text": "Make the most of hallways, under-stair voids, laundry nooks, or attic corners — turning them into beautiful, functional storage zones."
+      },
+      "6": {
+        "title": "Designed in 3D Before You Commit",
+        "text": "Visualize your smart storage in high-quality 3D — free of charge"
+      }
+    },
+    "bottomNote": {
+      "strong": "Designed in 3D Before You Commit",
+      "tail": "Visualize your smart storage in high-quality 3D — free of charge"
+    }
+  },
+  "WalkInCloset": {
+    "hero": {
+      "title": "A Statement of Luxury. A Space That Works for You.",
+      "p1": "Step into a space designed just for you — where luxury, organization, and comfort come together. Our custom Walk-In Closets are more than storage — they're personal sanctuaries crafted to elevate your everyday routine. With premium finishes, smart layouts, and seamless functionality, your walk-in becomes an extension of your lifestyle and style.",
+      "p2Lead": "And before anything is built, you'll see it first — in stunning 3D.",
+      "p2Strong": "Fast. Free. Personalized."
+    },
+    "sectionTitle": "What You'll Love About Your Closet",
+    "features": {
+      "1": {
+        "title": "Effortless Organization",
+        "text": "Everything has a place — for a clutter-free, easy-to-use wardrobe."
+      },
+      "2": {
+        "title": "Designed Around You",
+        "text": "Layouts customized to your routine, storage needs, and style."
+      },
+      "3": {
+        "title": "A Daily Boutique Experience",
+        "text": "Enjoy the feel of a personal showroom with elegant, functional touches."
+      },
+      "4": {
+        "title": "Elevated Comfort & Privacy",
+        "text": "Your private dressing space — peaceful, inspiring, and made for you."
+      },
+      "5": {
+        "title": "Crafted to Match Your Home",
+        "text": "Finishes, colors, and details tailored to your interior design theme."
+      },
+      "6": {
+        "title": "See It in 3D Before You Commit",
+        "text": "Get a free 3D preview of your closet — explore and approve before we build."
+      }
+    },
+    "bottomNote": {
+      "strong": "See It in 3D Before You Commit",
+      "tail": "Get a free 3D preview of your closet — explore and approve before we build."
+    }
+  },
+  "WardrobeCloset": {
+    "hero": {
+      "title": "Our Wardrobe Closets are Designed for Everyday Efficiency.",
+      "p1": "A stylish, space-saving solution designed to keep your essentials organized, accessible, and tailored to your daily routine.",
+      "p2Lead": "And before we build, you'll see it in a full 3D design —",
+      "p2Strong": "fast, free, and exactly how you want it."
+    },
+    "sectionTitle": "What You'll Love About Your Wardrobe",
+    "features": {
+      "1": {
+        "title": "Custom-Fit Storage",
+        "text": "Everything has a place — for a clutter-free, easy-to-use wardrobe."
+      },
+      "2": {
+        "title": "Seamless Experience",
+        "text": "Layouts customized to your routine, storage needs, and style."
+      },
+      "3": {
+        "title": "Elegant & Functional Design",
+        "text": "Enjoy the feel of a personal showroom with elegant, functional touches."
+      },
+      "4": {
+        "title": "Elegant & Durable",
+        "text": "Your private dressing space — peaceful, inspiring, and made for you."
+      },
+      "5": {
+        "title": "Integrated Lighting",
+        "text": "Finishes, colors, and details tailored to your interior design theme."
+      }
+    },
+    "bottomNote": {
+      "strong": "3D Visualization Before Production",
+      "tail": "Instantly preview your custom wardrobe in realistic 3D — free, editable, and ready before we build."
+    }
+  },
+  "Doors": {
+    "hero": {
+      "titleLine1": "CLASSIC, MODERN AND CUSTOMIZED",
+      "titleLine2": "WOODEN DOORS",
+      "p1": "At Ideal Home, our wooden doors reflect craftsmanship, blending strength, elegance, and versatility. Designed to elevate any space — from classic and traditional to sleek and modern — each door is a statement of enduring quality.",
+      "p2": "With limitless configurations and premium finishes, our doors bring warmth, character, and a tailored aesthetic to every home."
+    },
+    "items": {
+      "1": {
+        "title": "LAMINATED",
+        "subtitleItems": {
+          "part1": "With European Woods"
+        }
+      },
+      "2": {
+        "title": "STAINED VENEER",
+        "subtitleItems": {
+          "part1": "Natural wood grain"
+        }
+      },
+      "3": {
+        "title": "PAINTED SMOOTH FINISH",
+        "subtitleItems": {
+          "part1": "In matt"
+        }
+      },
+      "4": {
+        "title": "SOLID",
+        "subtitleItems": {
+          "part1": "Natural solid wood"
+        }
+      }
+    }
+  },
+  "WoodenDoorSection": {
+    "leftPanel": {
+      "title": "Our Design, Your Choice",
+      "subtitle": "See what we offer"
+    },
+    "slider": {
+      "alt": "Wooden door {index}"
+    }
+  },
+  "EndlessFinishesSection": {
+    "slider": {
+      "alt": "Interior door {index}"
+    },
+    "right": {
+      "title": "Endless Finishes. Infinite Impressions.",
+      "paragraph": "Choose from over 60 finishes — from rich natural woods to refined lacquers — in a variety of sizes, grains, and styles. Whether you want a bold statement piece or a door that blends seamlessly into your walls, our collection offers the versatility and elegance to suit every taste and design detail."
+    }
+  },
+  "Navbar": {
+    "logoAlt": "Company Logo",
+    "aria": {
+      "toggleMenu": "Toggle menu"
+    },
+    "nav": {
+      "home": "HOME",
+      "about": {
+        "label": "ABOUT US",
+        "company": "Company",
+        "process": "OUR PROCESS"
+      },
+      "closets": {
+        "label": "ClOSETS",
+        "walkIn": "Walk-In Closets",
+        "wardrobe": "Wardrobe Closets",
+        "smart": "Smart Storage Solutions"
+      },
+      "kitchens": {
+        "label": "KITCHENS",
+        "island": "Kitchen with Island",
+        "uShaped": "U-Shaped Kitchen",
+        "pantry": "Pantry Kitchen"
+      },
+      "doors": {
+        "label": "DOORS"
+      }
+    }
+  },
+  "Footer": {
+    "contactForm": {
+      "title": "CONTACT US",
+      "subtitle": "For more information, please fill out the form."
+    },
+    "placeholders": {
+      "firstName": "First Name*",
+      "lastName": "Last Name*",
+      "email": "Email",
+      "phone": "Phone*",
+      "city": "City*",
+      "message": "Message*"
+    },
+    "buttons": {
+      "send": "Send",
+      "sending": "Sending..."
+    },
+    "disclaimer": "* Required fields",
+    "privacy": {
+      "prefix": "I have read the",
+      "link": "Privacy Policy",
+      "suffix": ".*"
+    },
+    "newsletterLabel": "I would like to subscribe to the newsletter",
+    "successMessage": "Thank you! Your message has been sent successfully.",
+    "errors": {
+      "fillAllRequired": "Please fill in all required fields.",
+      "agreePrivacy": "Please agree to the Privacy Policy.",
+      "sendFailed": "Failed to send message. Please try again.",
+      "unexpected": "An unexpected error occurred."
+    },
+    "company": {
+      "heading": "IDEAL HOME FURNITURE FACTORY"
+    },
+    "contact": {
+      "heading": "Contact"
+    },
+    "copyright": "© {year} Ideal Home. All rights reserved."
   }
 }
+

@@ -1,67 +1,63 @@
 "use client";
 
 import React from "react";
-
-const cards = [
-  {
-    number: 1,
-    title: "Factory-Direct Advantage",
-    description:
-      "Work straight with the maker — honest pricing backed by proven quality and a local Emirati ownership you can trust.",
-    icon: "🏭",
-    color: "from-[#57b7c0] to-[#57b7c0]",
-  },
-  {
-    number: 2,
-    title: "Love It or Leave It",
-    description:
-      "Not 100% sure about the design? No problem — our fast and complimentary 3D visualization allows you to make changes or walk away without commitment.",
-    icon: "💖",
-    color: "from-[#57b7c0] to-[#57b7c0]",
-  },
-  {
-    number: 3,
-    title: "Your Vision, Brought to Life",
-    description:
-      "Collaborate with our designers to create interiors that perfectly match your style, preferences, and budget.",
-    icon: "✨",
-    color: "from-[#57b7c0] to-[#57b7c0]",
-  },
-  {
-    number: 4,
-    title: "One-Stop Solutions",
-    description:
-      "Simplify your project by combining Closets, Kitchen, doors, windows, and more under a single contract — saving time, money, and stress.",
-    icon: "🎯",
-    color: "from-[#57b7c0] to-[#57b7c0]",
-  },
-  {
-    number: 5,
-    title: "Clear, Predictable Process",
-    description:
-      "No vague promises. You'll get a clear timeline, transparent pricing, and consistent communication from day one.",
-    icon: "📋",
-    color: "from-[#57b7c0] to-[#57b7c0]",
-  },
-  {
-    number: 6,
-    title: "Open-Door Policy",
-    description:
-      "You're always welcome to visit our Abu Dhabi facility and see your products being manufactured firsthand.",
-    icon: "🚪",
-    color: "from-[#57b7c0] to-[#57b7c0]",
-  },
-  {
-    number: 7,
-    title: "Premium Warranty",
-    description:
-      "Enjoy peace of mind with a 6-year warranty that protects you against manufacturing defects and guarantees quality.",
-    icon: "🛡️",
-    color: "from-[#57b7c0] to-[#57b7c0]",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const ValuesGrid = () => {
+  const t = useTranslations("Values");
+
+  const cards = [
+    {
+      number: 1,
+      title: t("Grid1.title"),
+      description:t("Grid1.description"),
+      icon: "🏭",
+      color: "from-[#57b7c0] to-[#57b7c0]",
+    },
+    {
+      number: 2,
+      title: t("Grid2.title"),
+      description:t("Grid2.description"),
+      icon: "💖",
+      color: "from-[#57b7c0] to-[#57b7c0]",
+    },
+    {
+      number: 3,
+      title: t("Grid3.title"),
+      description:t("Grid3.description"),
+      icon: "✨",
+      color: "from-[#57b7c0] to-[#57b7c0]",
+    },
+    {
+      number: 4,
+      title: t("Grid4.title"),
+      description:t("Grid4.description"),
+      icon: "🎯",
+      color: "from-[#57b7c0] to-[#57b7c0]",
+    },
+    {
+      number: 5,
+      title: t("Grid5.title"),
+      description:t("Grid5.description"),
+      icon: "📋",
+      color: "from-[#57b7c0] to-[#57b7c0]",
+    },
+    {
+      number: 6,
+      title: t("Grid6.title"),
+      description:t("Grid6.description"),
+      icon: "🚪",
+      color: "from-[#57b7c0] to-[#57b7c0]",
+    },
+    {
+      number: 7,
+      title: t("Grid7.title"),
+      description:t("Grid7.description"),
+      icon: "🛡️",
+      color: "from-[#57b7c0] to-[#57b7c0]",
+    },
+  ];
+
   return (
     <section className="bg-gradient-to-br from-gray-50 to-gray-100 py-20 px-6">
       <div className="max-w-7xl mx-auto">
@@ -70,14 +66,13 @@ const ValuesGrid = () => {
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="w-12 h-1 bg-gradient-to-r from-[#57b7c0] to-[#57b7c0] rounded-full"></div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-              WHY CHOOSE
-              <span className="text-[#57b7c0] ml-2">IDEAL FACTORY?</span>
+              {t("Header.title1")}
+              <span className="text-[#57b7c0] ml-2">{t("Header.title2")}</span>
             </h2>
             <div className="w-12 h-1 bg-gradient-to-r from-[#57b7c0] to-[#57b7c0] rounded-full"></div>
           </div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover what makes us the trusted choice for premium interior
-            solutions across the UAE
+            {t("Header.description")}
           </p>
         </div>
 

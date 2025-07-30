@@ -5,92 +5,9 @@ import DynamicFeatureSection from "@/components/DynamicFeatureSection";
 import ItemFinishFeatureSection from "@/components/ItemFinishFeatureSection";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { useTranslations } from "next-intl";
 
-const features = [
-  {
-    title: "Effortless Functionality",
-    text: "Smartly designed for easier cooking, organizing, and cleaning.",
-  },
-  {
-    title: "Tailored to You",
-    text: "Layouts designed around how you cook, store, and entertain.",
-  },
-  {
-    title: "Style That Lasts",
-    text: "Elegant finishes built to handle everyday use with lasting durability.",
-  },
-  {
-    title: "Everything in Its Place",
-    text: "Smart storage keeps essentials organized, visible, and within reach.",
-  },
-  {
-    title: "Seamless Appliance Fit",
-    text: "Clean, integrated design that hides appliances without losing access.",
-  },
-  {
-    title: "See It Before It's Built",
-    text: "Free 3D design lets you explore and refine your kitchen before you commit.",
-  },
-];
-
-const itemFeatures = [
-  {
-    title: "KITCHEN WITH ISLAND",
-    images: [
-      "/images/kitchen/island-1.jpg",
-      "/images/kitchen/island-2.jpg",
-    ],
-    textPosition: "left" as const,
-    subtitleItems: [
-      { label: "Step into a space designed just for you — where luxury" },
-      { label: "organization" },
-      { label: "and comfort come together" },
-    ],
-    titleLink: "/kitchens/kitchen-with-island",
-  },
-  {
-    title: "U-SHAPED KITCHEN",
-    images: [
-      "/images/kitchen/u-shaped-1.jpg",
-      "/images/kitchen/u-shaped-2.jpg",
-    ],
-    textPosition: "right" as const,
-    subtitleItems: [
-      {
-        label:
-          "Our U-shaped kitchens wrap efficiency around you — offering abundant counter space",
-      },
-      { label: "smart storage" },
-      { label: "and a streamlined workflow" },
-      { label: "all in a stylish" },
-      { label: "immersive design." },
-    ],
-    titleLink: "/kitchens/u-shaped-kitchen",
-  },
-  {
-    title: "PANTRY KITCHEN",
-    images: [
-      "/images/kitchen/pantry-1.jpg",
-      "/images/kitchen/pantry-2.jpg",
-    ],
-    textPosition: "left" as const,
-    subtitleItems: [
-      {
-        label:
-          "A dedicated pantry zone that keeps everyday essentials out of sight",
-      },
-      { label: "yet always within reach," },
-      { label: "Clean lines" },
-      { label: "smart shelving" },
-      {
-        label:
-          "and a cohesive finish make it a seamless blend of style and efficiency.",
-      },
-    ],
-    titleLink: "/kitchens/pantry-kitchen",
-  },
-];
-
+// Keep images outside (unchanged)
 const images = [
   "/images/kitchen/slider-1.jpg",
   "/images/kitchen/slider-2.jpg",
@@ -100,17 +17,91 @@ const images = [
 const KitchenPage: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
 
+  // Translations
+  const t = useTranslations("Kitchen");
+  const b = useTranslations("Button");
+
+  // Rebuild features with localized strings (same structure)
+  const features = [
+    {
+      title: t("features.1.title"),
+      text: t("features.1.text"),
+    },
+    {
+      title: t("features.2.title"),
+      text: t("features.2.text"),
+    },
+    {
+      title: t("features.3.title"),
+      text: t("features.3.text"),
+    },
+    {
+      title: t("features.4.title"),
+      text: t("features.4.text"),
+    },
+    {
+      title: t("features.5.title"),
+      text: t("features.5.text"),
+    },
+    {
+      title: t("features.6.title"),
+      text: t("features.6.text"),
+    },
+  ];
+
+  // Rebuild itemFeatures with localized strings (same structure & links)
+  const itemFeatures = [
+    {
+      title: t("items.1.title"),
+      images: ["/images/kitchen/island-1.jpg", "/images/kitchen/island-2.jpg"],
+      textPosition: "left" as const,
+      subtitleItems: [
+        { label: t("items.1.subtitle.part1") },
+        { label: t("items.1.subtitle.part2") },
+        { label: t("items.1.subtitle.part3") },
+      ],
+      titleLink: "/kitchens/kitchen-with-island",
+    },
+    {
+      title: t("items.2.title"),
+      images: ["/images/kitchen/u-shaped-1.jpg", "/images/kitchen/u-shaped-2.jpg"],
+      textPosition: "right" as const,
+      subtitleItems: [
+        { label: t("items.2.subtitle.part1") },
+        { label: t("items.2.subtitle.part2") },
+        { label: t("items.2.subtitle.part3") },
+        { label: t("items.2.subtitle.part4") },
+        { label: t("items.2.subtitle.part5") },
+      ],
+      titleLink: "/kitchens/u-shaped-kitchen",
+    },
+    {
+      title: t("items.3.title"),
+      images: ["/images/kitchen/pantry-1.jpg", "/images/kitchen/pantry-2.jpg"],
+      textPosition: "left" as const,
+      subtitleItems: [
+        { label: t("items.3.subtitle.part1") },
+        { label: t("items.3.subtitle.part2") },
+        { label: t("items.3.subtitle.part3") },
+        { label: t("items.3.subtitle.part4") },
+        { label: t("items.3.subtitle.part5") },
+      ],
+      titleLink: "/kitchens/pantry-kitchen",
+    },
+  ];
+
   return (
     <>
       <Navbar />
       <div className="bg-white overflow-hidden">
         {/* Hero Slider */}
         <Slider images={images} />
+
         {/* Features */}
         <DynamicFeatureSection
-          sectionTitle="What You'll Love About Your Kitchen"
+          sectionTitle={t("sectionTitle")}
           features={features}
-          ctaText="Request Free 3D Design"
+          ctaText={b("ctaButton")}
           ctaAction={() => setShowModal(true)}
         />
 

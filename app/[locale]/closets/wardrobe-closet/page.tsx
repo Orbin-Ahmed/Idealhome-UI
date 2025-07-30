@@ -6,29 +6,7 @@ import Navbar from "@/components/Navbar";
 import Slider from "@/components/Slider";
 import TwoImageSection from "@/components/TwoImageSection";
 import Footer from "@/components/Footer";
-
-const features = [
-  {
-    title: "Custom-Fit Storage",
-    text: "Everything has a place — for a clutter-free, easy-to-use wardrobe.",
-  },
-  {
-    title: "Seamless Experience",
-    text: "Layouts customized to your routine, storage needs, and style.",
-  },
-  {
-    title: "Elegant & Functional Design",
-    text: "Enjoy the feel of a personal showroom with elegant, functional touches.",
-  },
-  {
-    title: "Elegant & Durable",
-    text: "Your private dressing space — peaceful, inspiring, and made for you.",
-  },
-  {
-    title: "Integrated Lighting",
-    text: "Finishes, colors, and details tailored to your interior design theme.",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const sectionalImages = [
   {
@@ -65,6 +43,34 @@ const images = [
 const WardrobeCloset: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
 
+  // Translations
+  const t = useTranslations("WardrobeCloset");
+  const b = useTranslations("Button");
+
+  // Features (localized; same structure)
+  const features = [
+    {
+      title: t("features.1.title"),
+      text: t("features.1.text"),
+    },
+    {
+      title: t("features.2.title"),
+      text: t("features.2.text"),
+    },
+    {
+      title: t("features.3.title"),
+      text: t("features.3.text"),
+    },
+    {
+      title: t("features.4.title"),
+      text: t("features.4.text"),
+    },
+    {
+      title: t("features.5.title"),
+      text: t("features.5.text"),
+    },
+  ];
+
   return (
     <>
       <Slider images={images} />
@@ -79,19 +85,15 @@ const WardrobeCloset: React.FC = () => {
         <section className="pt-12 pb-4 bg-white border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#57b7c0] mb-6">
-              Our Wardrobe Closets are Designed for Everyday Efficiency.
+              {t("hero.title")}
             </h2>
             <div>
               <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-4">
-                A stylish, space-saving solution designed to keep your
-                essentials organized, accessible, and tailored to your daily
-                routine.
+                {t("hero.p1")}
               </p>
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-                And before we build, you'll see it in a full 3D design —{" "}
-                <strong className="font-semibold">
-                  fast, free, and exactly how you want it.
-                </strong>
+                {t("hero.p2Lead")}{" "}
+                <strong className="font-semibold">{t("hero.p2Strong")}</strong>
               </p>
             </div>
 
@@ -107,7 +109,7 @@ const WardrobeCloset: React.FC = () => {
                   hover:opacity-90
                 "
               >
-                <a href="#contact-us">Request Free 3D Design</a>
+                <a href="#contact-us">{b("ctaButton")}</a>
               </button>
             </div>
           </div>
@@ -121,15 +123,13 @@ const WardrobeCloset: React.FC = () => {
         {/* Features */}
         <section className=" bg-white">
           <DynamicFeatureSection
-            sectionTitle="What You'll Love About Your Wardrobe"
+            sectionTitle={t("sectionTitle")}
             features={features}
-            ctaText="Request Free 3D Design"
+            ctaText={b("ctaButton")}
             ctaAction={() => setShowModal(true)}
           />
           <p className="text-center text-lg md:text-xl text-gray-600 leading-relaxed">
-            <strong>3D Visualization Before Production</strong> - Instantly
-            preview your custom wardrobe in realistic 3D — free, editable, and
-            ready before we build.
+            <strong>{t("bottomNote.strong")}</strong> - {t("bottomNote.tail")}
           </p>
         </section>
 

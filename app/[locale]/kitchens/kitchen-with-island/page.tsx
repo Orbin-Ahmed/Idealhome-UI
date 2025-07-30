@@ -5,50 +5,7 @@ import Slider from "@/components/Slider";
 import CustomImagePos from "@/components/CustomImagePos";
 import ProductCardGrid from "@/components/ProductCardGrid";
 import Footer from "@/components/Footer";
-
-const kitchenGalleryItems = [
-  {
-    type: "image" as const,
-    image: "/images/kitchen/kitchen-with-island/kitchen-with-island-1.jpg",
-  },
-  {
-    type: "image" as const,
-    image: "/images/kitchen/kitchen-with-island/top-view-kitchen-1.jpg",
-  },
-  {
-    type: "description" as const,
-    title: "Walnut Matte and Soft Beige Island Kitchen",
-    description:
-      "Warm walnut tones paired with soft beige cabinetry create a balanced, inviting atmosphere — blending natural elegance with everyday comfort.",
-    ctaText: "View it in 3D ",
-    ctaLink: "/",
-  },
-  {
-    type: "image" as const,
-    image: "/images/kitchen/kitchen-with-island/kitchen-with-island-2.jpg",
-  },
-  {
-    type: "image" as const,
-    image: "/images/kitchen/kitchen-with-island/kitchen-with-island-3.jpg",
-  },
-  {
-    type: "image" as const,
-    image: "/images/kitchen/kitchen-with-island/top-view-kitchen-2.jpg",
-  },
-];
-
-const products = [
-  {
-    title: "U-Shaped Kitchen",
-    image: "/images/kitchen/kitchen-with-island/u-shaped.jpg",
-    link: "/kitchens/u-shaped-kitchen",
-  },
-  {
-    title: "Pantry Kitchen",
-    image: "/images/kitchen/kitchen-with-island/pantry.jpg",
-    link: "/kitchens/pantry-kitchen",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const images = [
   "/images/kitchen/kitchen-with-island/slider-1.jpg",
@@ -58,6 +15,54 @@ const images = [
 
 const KitchenWithIsland: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
+
+  // Translations
+  const t = useTranslations("KitchenIsland");
+  const b = useTranslations("Button");
+
+  // Localized content while preserving structure
+  const kitchenGalleryItems = [
+    {
+      type: "image" as const,
+      image: "/images/kitchen/kitchen-with-island/kitchen-with-island-1.jpg",
+    },
+    {
+      type: "image" as const,
+      image: "/images/kitchen/kitchen-with-island/top-view-kitchen-1.jpg",
+    },
+    {
+      type: "description" as const,
+      title: t("gallery.item3.title"),
+      description: t("gallery.item3.description"),
+      ctaText: t("gallery.item3.ctaText"),
+      ctaLink: "/",
+    },
+    {
+      type: "image" as const,
+      image: "/images/kitchen/kitchen-with-island/kitchen-with-island-2.jpg",
+    },
+    {
+      type: "image" as const,
+      image: "/images/kitchen/kitchen-with-island/kitchen-with-island-3.jpg",
+    },
+    {
+      type: "image" as const,
+      image: "/images/kitchen/kitchen-with-island/top-view-kitchen-2.jpg",
+    },
+  ];
+
+  const products = [
+    {
+      title: t("products.1.title"),
+      image: "/images/kitchen/kitchen-with-island/u-shaped.jpg",
+      link: "/kitchens/u-shaped-kitchen",
+    },
+    {
+      title: t("products.2.title"),
+      image: "/images/kitchen/kitchen-with-island/pantry.jpg",
+      link: "/kitchens/pantry-kitchen",
+    },
+  ];
 
   return (
     <>
@@ -73,47 +78,48 @@ const KitchenWithIsland: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Title */}
             <h2 className="text-3xl md:text-4xl font-bold text-[#57b7c0] mb-5 text-left">
-              Your Kitchen's Heart, Reimagined
+              {t("hero.title")}
             </h2>
 
             {/* Subtitle */}
             <h4 className="text-lg md:text-xl font-normal text-gray-600 leading-relaxed max-w-6xl">
-              Our island kitchens combine smart function with elegant design —
-              perfect for cooking, dining, and connecting
+              {t("hero.subtitle")}
             </h4>
           </div>
         </section>
+
         <CustomImagePos items={kitchenGalleryItems} />
+
         <div className="text-center pt-8 bg-white">
           <button
             onClick={() => setShowModal(true)}
             className="
-                  inline-block px-6 py-3
-                  bg-[#57b7c0] text-white font-semibold
-                  rounded-lg shadow-md
-                  min-w-[220px]
-                  transition-opacity duration-300
-                  hover:opacity-90
-                "
+              inline-block px-6 py-3
+              bg-[#57b7c0] text-white font-semibold
+              rounded-lg shadow-md
+              min-w-[220px]
+              transition-opacity duration-300
+              hover:opacity-90
+            "
           >
-            <a href="#contact-us">Request Free 3D Design</a>
+            <a href="#contact-us">{b("ctaButton")}</a>
           </button>
         </div>
+
         <section className="py-8 bg-white border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Title */}
             <h2 className="text-3xl md:text-4xl font-bold text-[#57b7c0] mb-5 text-left">
-              Discover More Kitchen Inspirations
+              {t("discover.title")}
             </h2>
 
             {/* Subtitle */}
             <h4 className="text-lg md:text-xl font-normal text-gray-600 leading-relaxed max-w-6xl">
-              Browse our curated selection of kitchen styles — uniquely crafted
-              to suit your space, reflect your taste, and complement your daily
-              routine.
+              {t("discover.subtitle")}
             </h4>
           </div>
         </section>
+
         <ProductCardGrid products={products} />
       </div>
       <Footer />
