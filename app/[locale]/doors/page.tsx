@@ -50,7 +50,7 @@ const DoorPage: React.FC = () => {
         <WoodenDoorSection />
 
         <section className="pt-12 pb-4 bg-white border-gray-200">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
             {/* <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#57b7c0] mb-6"> */}
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
               {t("hero.titleLine1")} <br />

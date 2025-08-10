@@ -77,7 +77,7 @@ const pantryKitchen: React.FC = () => {
         <section className="py-8 bg-gray-50 border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Title */}
-            <h2 className="text-3xl md:text-4xl font-bold text-[#57b7c0] mb-5 text-left">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#57b7c0] mb-5 ">
               {t("hero.title")}
             </h2>
 
@@ -109,7 +109,7 @@ const pantryKitchen: React.FC = () => {
         <section className="py-8 bg-white border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Title */}
-            <h2 className="text-3xl md:text-4xl font-bold text-[#57b7c0] mb-5 text-left">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#57b7c0] mb-5 ">
               {t("discover.title")}
             </h2>
 
