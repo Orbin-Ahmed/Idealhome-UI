@@ -3,7 +3,6 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const nextConfig = {
   output: "standalone",
-  outputFileTracing: false,
   images: {
     remotePatterns: [
       {
