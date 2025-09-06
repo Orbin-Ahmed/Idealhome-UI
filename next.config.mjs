@@ -2,18 +2,16 @@
 import createNextIntlPlugin from "next-intl/plugin";
 
 const nextConfig = {
+  output: "standalone",
   images: {
-    remotePatterns: [{ protocol: "https", hostname: "**" }],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+      },
+    ],
   },
-
-  outputFileTracingIgnores: [
-    {
-      "**/*": ["**/.next/**", "**/.turbo/**", "**/.cache/**", "**/.vercel/**"],
-    },
-    { "**/*": ["**/dist/**", "**/build/**"] },
-    { "**/*": ["**/.git/**", "**/.idea/**"] },
-    { "**/*": ["**/*.map", "**/*.log"] },
-  ],
+  experimental: {},
 };
 
 const withNextIntl = createNextIntlPlugin();
