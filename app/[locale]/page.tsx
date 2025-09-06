@@ -4,6 +4,7 @@ import DesignSection from "@/components/DesignSection";
 import ItemFinishFeatureSection from "@/components/ItemFinishFeatureSection";
 import Footer from "@/components/Footer";
 import { useTranslations } from "next-intl";
+import Chatbots from "@/components/Chatbots";
 
 export default function Home() {
   const t = useTranslations("HomePage");
@@ -82,6 +83,14 @@ export default function Home() {
       <DesignSection />
       <ItemFinishFeatureSection features={itemFeatures} />
       <Footer />
+      <Chatbots
+        webhookUrl="https://automation.idealhomeuae.com/webhook/961f7707-cb4f-4645-81af-13383aefb221/chat"
+        brandColor="#57b7c0"
+        initialMessage={
+          "Hi there! 👋 I'm your AI assistant. How can I help you today?"
+        }
+        quickActions={["Hello!", "Get Quote", "View Gallery", "Contact Us"]}
+      />
     </>
   );
 }
