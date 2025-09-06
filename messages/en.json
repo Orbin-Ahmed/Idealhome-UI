@@ -39,6 +39,13 @@
         "modern": "Modern",
         "classic": "Classic"
       }
+    },
+    "chatWelcome": {
+      "message": "Hi there! 👋 I'm your AI assistant. How can I help you today?",
+      "quickAction_1": "Hello!",
+      "quickAction_2": "Get Quote",
+      "quickAction_3": "View Gallery",
+      "quickAction_4": "Contact Us"
     }
   },
   "DesignSection": {
@@ -63,43 +70,43 @@
     },
     "statement": {
       "title": "Avoid Overpaying for Standard Interiors — With Ideal Factory, Experience a Process Where You Approve, Understand, and Control Every Detail, with Factory-Direct Quality."
-      }
+    }
+  },
+  "Values": {
+    "Header": {
+      "title1": "WHY CHOOSE ",
+      "title2": "IDEAL FACTORY?",
+      "description": "Discover what makes us the trusted choice for premium interior solutions across the UAE"
     },
-    "Values": {
-      "Header": {
-        "title1": "WHY CHOOSE ",
-        "title2": "IDEAL FACTORY?", 
-        "description": "Discover what makes us the trusted choice for premium interior solutions across the UAE"
-      },
-      "Grid1": {
-        "title": "Factory-Direct Advantage",
-        "description": "Work straight with the maker — honest pricing backed by proven quality and a local Emirati ownership you can trust."
-      }, 
-      "Grid2": {
-        "title": "Love It or Leave It",
-        "description": "Not 100% sure about the design? No problem — our fast and complimentary 3D visualization allows you to make changes or walk away without commitment."
-      },
-      "Grid3": {
-        "title": "Your Vision, Brought to Life",
-        "description": "Collaborate with our designers to create interiors that perfectly match your style, preferences, and budget."
-      },
-      "Grid4": {
-        "title": "One-Stop Solutions",
-        "description": "Simplify your project by combining Closets, Kitchen, doors, windows, and more under a single contract — saving time, money, and stress."
-      },
-      "Grid5": {
-        "title": "Clear, Predictable Process",
-        "description": "No vague promises. You'll get a clear timeline, transparent pricing, and consistent communication from day one."
-      },
-      "Grid6": {
-        "title": "Open-Door Policy",
-        "description": "You're always welcome to visit our Abu Dhabi facility and see your products being manufactured firsthand."
-      },
-      "Grid7": {
-        "title": "Premium Warranty",
-        "description": "Enjoy peace of mind with a 6-year warranty that protects you against manufacturing defects and guarantees quality."
-      }
+    "Grid1": {
+      "title": "Factory-Direct Advantage",
+      "description": "Work straight with the maker — honest pricing backed by proven quality and a local Emirati ownership you can trust."
     },
+    "Grid2": {
+      "title": "Love It or Leave It",
+      "description": "Not 100% sure about the design? No problem — our fast and complimentary 3D visualization allows you to make changes or walk away without commitment."
+    },
+    "Grid3": {
+      "title": "Your Vision, Brought to Life",
+      "description": "Collaborate with our designers to create interiors that perfectly match your style, preferences, and budget."
+    },
+    "Grid4": {
+      "title": "One-Stop Solutions",
+      "description": "Simplify your project by combining Closets, Kitchen, doors, windows, and more under a single contract — saving time, money, and stress."
+    },
+    "Grid5": {
+      "title": "Clear, Predictable Process",
+      "description": "No vague promises. You'll get a clear timeline, transparent pricing, and consistent communication from day one."
+    },
+    "Grid6": {
+      "title": "Open-Door Policy",
+      "description": "You're always welcome to visit our Abu Dhabi facility and see your products being manufactured firsthand."
+    },
+    "Grid7": {
+      "title": "Premium Warranty",
+      "description": "Enjoy peace of mind with a 6-year warranty that protects you against manufacturing defects and guarantees quality."
+    }
+  },
   "Process": {
     "headerMain1": "TRANSFORMING",
     "headerMain2": "REALITY",
@@ -564,4 +571,3 @@
     "copyright": "© {year} Ideal Home. All rights reserved."
   }
 }
-

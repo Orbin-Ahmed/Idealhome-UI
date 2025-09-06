@@ -86,10 +86,13 @@ export default function Home() {
       <Chatbots
         webhookUrl="https://automation.idealhomeuae.com/webhook/961f7707-cb4f-4645-81af-13383aefb221/chat"
         brandColor="#57b7c0"
-        initialMessage={
-          "Hi there! 👋 I'm your AI assistant. How can I help you today?"
-        }
-        quickActions={["Hello!", "Get Quote", "View Gallery", "Contact Us"]}
+        initialMessage={t("chatWelcome.message")}
+        quickActions={[
+          t("chatWelcome.quickAction_1"),
+          t("chatWelcome.quickAction_2"),
+          t("chatWelcome.quickAction_3"),
+          t("chatWelcome.quickAction_4"),
+        ]}
       />
     </>
   );
