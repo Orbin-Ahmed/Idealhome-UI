@@ -278,16 +278,16 @@ const Chatbots: React.FC<ChatbotProps> = ({
   const QuickActionsDock: React.FC = () => {
     if (!showQuick) return null;
     return (
-      <div className="mb-3">
+      <div className="mt-3 animate-fadeIn">
         <div
-          className="flex gap-2 overflow-x-auto no-scrollbar py-2 -mx-1 px-1"
+          className="flex flex-wrap gap-2"
           aria-label="Suggested quick replies"
         >
           {dynamicQuickActions.map((action, index) => (
             <button
               key={`${action}-${index}`}
               onClick={() => handleQuickAction(action)}
-              className="shrink-0 inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-full hover:bg-gray-50 hover:border-gray-400 hover:shadow transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-offset-1"
+              className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-full hover:bg-gray-50 hover:border-gray-400 hover:shadow transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-offset-1"
               style={{ ["--tw-ring-color" as any]: brandColor }}
               title={action}
             >
@@ -434,11 +434,12 @@ const Chatbots: React.FC<ChatbotProps> = ({
                     ))}
                     {isTyping && <TypingIndicator />}
                     <div ref={messagesEndRef} />
+                    <QuickActionsDock />
                   </div>
                 </div>
 
                 <div className="p-5 border-t border-gray-200/50 bg-white/80 backdrop-blur-sm rounded-b-3xl">
-                  <QuickActionsDock />
+                  {/* <QuickActionsDock /> */}
 
                   {selectedFile && (
                     <div className="flex items-center justify-between gap-2 px-3 py-2 mb-2 bg-gray-100 border border-gray-200 rounded-xl text-xs text-gray-700">
